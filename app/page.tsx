@@ -6,19 +6,23 @@ import Why from './components/Why/index';
 import Network from './components/Network/index';
 import Clientsay from './components/Clientsay/index';
 import Newsletter from './components/Newsletter/Newsletter';
+import HeroSection from './components/Banner/index';
 
 
 export default function Home() {
   return (
     <main>
-      <Banner />
+      <HeroSection />
+
+      {/* <Banner /> */}
+
       <Companies />
       <Buyers />
       <Provide />
       <Why />
       <Network />
       <Clientsay />
-      <Newsletter />
+      {/* <Newsletter /> */}
     </main>
   )
 }

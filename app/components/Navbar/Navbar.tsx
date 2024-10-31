@@ -34,20 +34,20 @@ const Navbar = () => {
         <Disclosure as="nav" className="navbar">
             <>
                 <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
-                    <div className="relative flex h-20 items-center justify-between">
+                    <div className="relative flex h-16 items-center justify-between">
                         <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
 
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
                                 <img
-                                    className="block h-12 w-40 lg:hidden"
-                                    src={'/assets/logo/logo.png'}
+                                    className="block h-28 w-40 lg:hidden"
+                                    src={'/assets/logo/ocean1.svg'}
                                     alt="dsign-logo"
                                 />
                                 <img
-                                    className="hidden h-full w-full lg:block"
-                                    src={'/assets/logo/logo.png'}
+                                    className="hidden h-40 w-full lg:block"
+                                    src={'/assets/logo/ocean1.svg'}
                                     alt="dsign-logo"
                                 />
                             </div>

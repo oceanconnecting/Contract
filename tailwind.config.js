@@ -8,32 +8,55 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  
   theme: {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      
+      // Basic Colors
       'white': '#ffffff',
       'black': '#000000',
+    
+      // Blues
       'blue': '#0075FF',
-      "lightblue": "#DAEBFF",
-      'lightgrey': '#AEC7E4',
+      'blue-200': '#bfdbfe',
+      'blue-300': '#93c5fd',
+      'blue-500': '#0075FF', // Duplicated - Remove one if necessary
+      'blue-600': '#2563eb',
+      'lightblue': '#DAEBFF',
+      'babyblue': '#E2F3F9',
+      'bluegray': "#7D82A1",
+      'bluegrey': "#7C8F9E",
+      'midblue': '#00276F',
+      'bluebg': "rgba(47, 184, 227, 0.2)",
+    
+      // Navy and Dark Blues
       'navyblue': '#002834',
-      'beach': '#8EA9C1',
-      'circlebg' : "rgba(77, 213, 143, 0.25)",
-      'darkblue' : ' #000321',
-      'offwhite' : 'rgba(255, 255, 255, 0.75);',
-      'bordertop' : 'rgba(196, 196, 196, 0.5);',
-      'blue-500' : '#0075FF',
-      'darkgray' : '#90A3B4',
-      'babyblue' : '#E2F3F9',
+      'darkblue': '#000321',
+      'midnightblue': '#183B56',
+    
+      // Greys
+      'gray-900': '#111827',
+      'gray-700': '#374151',
       'grey500': '#ECECEC',
-      'bluegray' : "#7D82A1",
-      'bluegrey' : "#7C8F9E",
-      'midnightblue' : '#183B56',
-      'midblue' : '#00276F',
-      'bluebg' : "rgba(47, 184, 227, 0.2)",
-      'border' : "rgba(128, 135, 137, 0.35)"
+      'darkgray': '#90A3B4',
+      'lightgrey': '#AEC7E4',
+    
+      // Reds
+      'red-600': '#dc2626',
+    
+      // Purples
+      'purple-200': '#e9d5ff',
+    
+      // Additional Colors
+      'beach': '#8EA9C1',
+      'offwhite': 'rgba(255, 255, 255, 0.75)',
+      'circlebg': "rgba(77, 213, 143, 0.25)",
+      'bordertop': 'rgba(196, 196, 196, 0.5)',
+      'border': "rgba(128, 135, 137, 0.35)"
     },
+    
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
       sm: ['0.875rem', { lineHeight: '1.25rem' }],
