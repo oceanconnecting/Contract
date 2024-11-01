@@ -7,6 +7,8 @@ import Network from './components/Network/index';
 import Clientsay from './components/Clientsay/index';
 import Newsletter from './components/Newsletter/Newsletter';
 import HeroSection from './components/Banner/index';
+import QuestionSection from './components/question/question';
+import StepsSection from './components/steps/steps';
 
 
 export default function Home() {
@@ -21,7 +23,10 @@ export default function Home() {
       <Provide />
       <Why />
       <Network />
+      <StepsSection/>
+      <QuestionSection/>
       <Clientsay />
+      
       {/* <Newsletter /> */}
     </main>
   )
