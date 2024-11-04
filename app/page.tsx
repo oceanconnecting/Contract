@@ -9,16 +9,16 @@ import Newsletter from './components/Newsletter/Newsletter';
 import HeroSection from './components/Banner/index';
 import QuestionSection from './components/question/question';
 import StepsSection from './components/steps/steps';
+import CardSection from  './components/card/card';
 
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
-
       {/* <Banner /> */}
-
       <Companies />
+      <CardSection/>
       <Buyers />
       <Provide />
       <Why />
@@ -26,7 +26,6 @@ export default function Home() {
       <StepsSection/>
       <QuestionSection/>
       <Clientsay />
-      
       {/* <Newsletter /> */}
     </main>
   )

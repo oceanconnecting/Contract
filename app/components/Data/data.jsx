@@ -37,7 +37,7 @@ export const heroSectionContent = {
     ],
   };
 
-  export const contractCardSectionContent = {
+  export const contractContent = {
     title: "Pays disponibles pour la recherche d'emploi à l'étranger",
     description: "Vous trouverez des opportunités d'emploi dans toute l'Europe. Chez OceanConnecting, nous vous donnons accès aux marchés du travail de plusieurs pays européens et nous vous aidons à obtenir un contrat de travail et les documents nécessaires. Rejoignez-nous et commencez votre carrière en Europe facilement et en douceur.",
     button:'To Apply',

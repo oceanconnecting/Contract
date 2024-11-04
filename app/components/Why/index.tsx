@@ -7,16 +7,16 @@ interface whydata {
 
 const whydata: whydata[] = [
     {
-        heading: "Quality",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        heading: "Qualité",
+        subheading: "Nos contrats garantissent les meilleures opportunités, développant ainsi votre carrière avec confiance.",
     },
     {
         heading: "Communication",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        subheading: "Améliorez vos interactions professionnelles avec nos outils de pointe.",
     },
     {
-        heading: "Reliability",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        heading: "Fiabilité",
+        subheading: "Profitez de solutions durables et performantes pour tous vos besoins professionnels.",
     }
 ]
 
@@ -29,14 +29,14 @@ const Why = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
 
                     {/* COLUMN-1 */}
-                    <div className="lg:-ml-64">
+                    <div className="lg:-ml-64 ">
                         <Image src="/assets/why/iPad.png" alt="iPad-image" width={4000} height={900} />
                     </div>
 
                     {/* COLUMN-2 */}
                     <div>
-                        <h3 className="text-4xl lg:text-5xl pt-4 font-semibold sm:leading-tight mt-5 text-center lg:text-start">Why we best?</h3>
-                        <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-beach lg:text-start">Dont waste time on search manual tasks. Let Automation do it for you. Simplify workflows, reduce errors, and save time.</h4>
+                        <h3 className="text-4xl lg:text-5xl pt-4 font-semibold sm:leading-tight mt-5 text-center lg:text-start">Pourquoi nous choisir ?</h3>
+                        <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-beach lg:text-start">Ne perdez plus de temps dans des démarches complexes. Avec notre service de fourniture de contrats de travail en Europe, nous automatisons et simplifions le processus pour vous. Sécurisez votre emploi, réduisez les erreurs administratives et gagnez du temps précieux.</h4>
 
                         <div className="mt-10">
                             {whydata.map((items, i) => (

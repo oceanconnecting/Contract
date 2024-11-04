@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { heroSectionContent } from '../Data/data';
-import { contractCardSectionContent } from '../Data/data';
+import { contractContent } from '../Data/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
@@ -86,7 +86,7 @@ const HeroSection = () => {
             </div>
             <div className="w-full lg:w-1/2 lg:pl-8 flex justify-center lg:justify-end mt-8 lg:mt-0">
               <div className="relative w-full h-auto sm:h-72 lg:h-auto max-w-lg z-0">
-                <LeafletMap contracts={contractCardSectionContent?.contracts || []} />
+                <LeafletMap contracts={contractContent?.contracts || []} />
               </div>
             </div>
           </div>

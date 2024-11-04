@@ -22,6 +22,7 @@ module.exports = {
       'blue': '#0075FF',
       'blue-200': '#bfdbfe',
       'blue-300': '#93c5fd',
+      'blue-400': '#60a5fa',
       'blue-500': '#0075FF', // Duplicated - Remove one if necessary
       'blue-600': '#2563eb',
       'lightblue': '#DAEBFF',
@@ -45,6 +46,8 @@ module.exports = {
     
       // Reds
       'red-600': '#dc2626',
+      'red-500': '#ef4444',
+      'red-300': '#f87171',
     
       // Purples
       'purple-200': '#e9d5ff',
