@@ -1,24 +1,27 @@
-import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
-import { LockClosedIcon } from '@heroicons/react/20/solid'
-
+import { Dialog, Transition } from '@headlessui/react';
+import { Fragment, useState } from 'react';
+import { LockClosedIcon } from '@heroicons/react/20/solid';
+import Image from 'next/image'; // Import Image from next/image
 
 const Register = () => {
-    let [isOpen, setIsOpen] = useState(false)
+    let [isOpen, setIsOpen] = useState(false);
 
     const closeModal = () => {
-        setIsOpen(false)
-    }
+        setIsOpen(false);
+    };
 
     const openModal = () => {
-        setIsOpen(true)
-    }
+        setIsOpen(true);
+    };
 
     return (
         <>
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0">
-                <div className='hidden lg:block'>
-                    <button className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue" onClick={openModal}>
+            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
+                <div className="hidden lg:block">
+                    <button
+                        className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue"
+                        onClick={openModal}
+                    >
                         Sign up
                     </button>
                 </div>
@@ -50,14 +53,15 @@ const Register = () => {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-
                                     <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                                         <div className="w-full max-w-md space-y-8">
                                             <div>
-                                                <img
+                                                <Image
                                                     className="mx-auto h-12 w-auto"
                                                     src="/assets/logo/logo.png"
                                                     alt="Your Company"
+                                                    width={48} // Specify width
+                                                    height={48} // Specify height
                                                 />
                                                 <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
                                                     Register your account
@@ -104,11 +108,13 @@ const Register = () => {
                                                             type="checkbox"
                                                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                                         />
-                                                        <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
+                                                        <label
+                                                            htmlFor="remember-me"
+                                                            className="ml-2 block text-sm text-gray-900"
+                                                        >
                                                             Remember me
                                                         </label>
                                                     </div>
-
                                                 </div>
 
                                                 <div>
@@ -117,7 +123,10 @@ const Register = () => {
                                                         className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue py-2 px-4 text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                                     >
                                                         <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                                                            <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
+                                                            <LockClosedIcon
+                                                                className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                                                                aria-hidden="true"
+                                                            />
                                                         </span>
                                                         Register Now
                                                     </button>
@@ -126,11 +135,10 @@ const Register = () => {
                                         </div>
                                     </div>
 
-
                                     <div className="mt-4 flex justify-end">
                                         <button
                                             type="button"
-                                            className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 "
+                                            className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900"
                                             onClick={closeModal}
                                         >
                                             Got it, thanks!
@@ -143,7 +151,7 @@ const Register = () => {
                 </Dialog>
             </Transition>
         </>
-    )
-}
+    );
+};
 
 export default Register;

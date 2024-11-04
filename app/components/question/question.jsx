@@ -1,40 +1,34 @@
 import React from 'react';
-
-
+import Image from 'next/image';
 
 const content = {
-    title: 'Questions & réponses',
-    description: 'Découvrez les questions et réponses les plus courantes sur la Célébration',
-    questions: [
-      {
-        question: 'Durée du contrat ?',
-        answer: "Le contrat est d'une durée d'un an et peut être renouvelé jusqu'à cinq ans, ce qui garantit une stabilité et une croissance à long terme.",
-      },
-      {
-        question: 'Un hébergement est-il prévu ?',
-        answer: "L'hébergement et les soins médicaux sont fournis pour assurer votre confort et votre santé.",
-      },
-      {
-        question: 'Le service est-il disponible dans toutes les villes ou seulement à Agadir et Casablanca ?',
-        answer: 'Oui, nous traitons les demandes pour toutes les villes, pas seulement Casablanca, ce qui garantit que nos services sont accessibles où que vous soyez.',
-      },
-      {
-        question: "Quelqu'un a-t-il déjà eu recours à vos services ?",
-        answer: "Oui, de nombreuses personnes ont utilisé nos services avec succès et ont trouvé des opportunités d'emploi intéressantes en Europe.",
-      },
-    ],
-    footer: {
-      text: "Vous n'avez pas trouvé la réponse que vous cherchiez ?",
-      linkText: "Contactez notre service d'assistance",
+  title: 'Questions & réponses',
+  description: 'Découvrez les questions et réponses les plus courantes sur la Célébration',
+  questions: [
+    {
+      question: 'Durée du contrat ?',
+      answer: "Le contrat est d'une durée d'un an et peut être renouvelé jusqu'à cinq ans, ce qui garantit une stabilité et une croissance à long terme.",
     },
-  };
-
-
-
+    {
+      question: 'Un hébergement est-il prévu ?',
+      answer: "L'hébergement et les soins médicaux sont fournis pour assurer votre confort et votre santé.",
+    },
+    {
+      question: 'Le service est-il disponible dans toutes les villes ou seulement à Agadir et Casablanca ?',
+      answer: 'Oui, nous traitons les demandes pour toutes les villes, pas seulement Casablanca, ce qui garantit que nos services sont accessibles où que vous soyez.',
+    },
+    {
+      question: "Quelqu'un a-t-il déjà eu recours à vos services ?",
+      answer: "Oui, de nombreuses personnes ont utilisé nos services avec succès et ont trouvé des opportunités d'emploi intéressantes en Europe.",
+    },
+  ],
+  footer: {
+    text: "Vous n'avez pas trouvé la réponse que vous cherchiez ?",
+    linkText: "Contactez notre service d'assistance",
+  },
+};
 
 const QuestionSection = () => {
-  
-
   return (
     <section className="py-10 bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300 sm:py-16 lg:py-14">
       <div
@@ -58,7 +52,12 @@ const QuestionSection = () => {
           {content.questions.map((question, index) => (
             <div key={index} className="flex items-start">
               <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-full">
-                <img src='./assets/icon/question-mark-round-icon.svg' alt="Question mark" />
+                <Image
+                  src="/assets/icon/question-mark-round-icon.svg"
+                  alt="Question mark"
+                  width={32}
+                  height={32}
+                />
               </div>
               <div className="ml-4">
                 <p className="text-xl font-bold">{question.question}</p>

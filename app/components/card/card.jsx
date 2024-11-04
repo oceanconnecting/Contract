@@ -3,6 +3,7 @@ import { FaMapMarkerAlt, FaLanguage, FaCalendarAlt, FaMoneyBillWave, FaMedkit } 
 import { MdDomainAdd } from "react-icons/md";
 import { GrFormNext } from "react-icons/gr";
 import Link from 'next/link';
+import Image from 'next/image'; // Import Image from next/image
 import { contractContent } from '../Data/data';
 
 const CardSection = () => {
@@ -22,9 +23,11 @@ const CardSection = () => {
                 key={index}
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-2"
               >
-                <img
+                <Image
                   src={contract?.imageUrl || '/path-to-default-image.jpg'} 
                   alt={contract?.country || 'Unknown'}
+                  width={400} // Adjusted width
+                  height={192} // Adjusted height
                   className="w-full h-48 object-cover rounded-t-lg mb-4"
                 />
                 <div className="flex items-center mb-4">
@@ -43,7 +46,7 @@ const CardSection = () => {
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   <FaMedkit className="inline-block mr-2 text-blue-600" />{contract?.additionalInfo || 'N/A'}
                 </p>
-                <Link href={contract?.link || '#'}> {/* Correct usage */}
+                <Link href={contract?.link || '#'}>
                   <button className="mt-2 px-8 py-2 bg-gradient-to-r from-blue-600 to-red-600 text-white rounded-full shadow-md hover:from-blue-400 hover:to-red-300 transition-colors duration-300">
                     <span className="flex items-center font-bold">
                       {contractContent?.button} <GrFormNext className='font-bold' />

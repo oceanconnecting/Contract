@@ -45,7 +45,7 @@ const Provide = () => {
                     <div className='col-span-6 flex justify-center'>
                         <div className="flex flex-col align-middle justify-center p-10">
                             <p className="text-4xl lg:text-6xl pt-4 font-bold lh-81 mt-5 text-center lg:text-start">Nous fournissons ce service.</p>
-                            <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">Chez OceanConnecting, nous sommes spécialisés dans la mise en relation de personnes avec des contrats de travail dans toute l'Europe. Notre soutien complet comprend l'obtention de postes de travail et la gestion des documents nécessaires pour assurer une transition en douceur pour nos clients.</h4>
+                            <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">Chez OceanConnecting, nous sommes spécialisés dans la mise en relation de personnes avec des contrats de travail dans toute l&apos;Europe. Notre soutien complet comprend l&apos;obtention de postes de travail et la gestion des documents nécessaires pour assurer une transition en douceur pour nos clients.</h4>
                             <Link href={'/'} className="mt-4 text-xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent flex gap-2 mx-auto lg:mx-0 space-links">En savoir plus <Image src={'/assets/provide/arrow.svg'} alt={'arrow'} width={20} height={20} /></Link>
                         </div>
                     </div>

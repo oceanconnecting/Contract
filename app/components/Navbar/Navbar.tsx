@@ -2,11 +2,11 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image'; // Import Image from next/image
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Signdialog from "./Signdialog";
 import Registerdialog from "./Registerdialog";
-
 
 interface NavigationItem {
     name: string;
@@ -20,14 +20,13 @@ const navigation: NavigationItem[] = [
     { name: 'About', href: '#about', current: false },
     { name: 'Project', href: '#project', current: false },
     { name: 'Help', href: '/', current: false },
-]
+];
 
 function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(' ');
 }
 
 const Navbar = () => {
-
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
@@ -40,15 +39,19 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <img
+                                <Image
                                     className="block h-28 w-40 lg:hidden"
-                                    src={'/assets/logo/ocean1.svg'}
+                                    src="/assets/logo/ocean1.svg"
                                     alt="dsign-logo"
+                                    width={160} // Adjusted width
+                                    height={112} // Adjusted height
                                 />
-                                <img
+                                <Image
                                     className="hidden h-40 w-full lg:block"
-                                    src={'/assets/logo/ocean1.svg'}
+                                    src="/assets/logo/ocean1.svg"
                                     alt="dsign-logo"
+                                    width={400} // Adjusted width
+                                    height={160} // Adjusted height
                                 />
                             </div>
 
@@ -77,17 +80,15 @@ const Navbar = () => {
 
                         <Signdialog />
 
-
                         {/* REGISTER DIALOG */}
 
                         <Registerdialog />
-
 
                         {/* DRAWER FOR MOBILE VIEW */}
 
                         {/* DRAWER ICON */}
 
-                        <div className='block lg:hidden'>
+                        <div className="block lg:hidden">
                             <Bars3Icon className="block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)} />
                         </div>
 
@@ -96,12 +97,11 @@ const Navbar = () => {
                         <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
                             <Drawerdata />
                         </Drawer>
-
                     </div>
                 </div>
             </>
         </Disclosure>
-    )
-}
+    );
+};
 
 export default Navbar;
