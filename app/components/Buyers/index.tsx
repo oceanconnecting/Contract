@@ -11,27 +11,28 @@ const cardData: cardDataType[] = [
     {
         imgSrc: '/assets/buyers/ourbuyers.svg',
         percent: '80k',
-        heading: "Our buyers",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        heading: "Contrats signés",
+        subheading: "Des milliers d'emplois sécurisés en Europe.",
     },
     {
         imgSrc: '/assets/buyers/projectcompleted.svg',
         percent: '90k',
-        heading: "Project completed",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
-    },
-    {
-        imgSrc: '/assets/buyers/happybuyers.svg',
-        percent: '80%',
-        heading: "Happy buyers",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        heading: "Clients satisfaits",
+        subheading: "La majorité de nos clients apprécient nos services.",
     },
     {
         imgSrc: '/assets/buyers/teammembers.svg',
         percent: '50+',
-        heading: "Team members",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
-    }
+        heading: "Partenaires en Europe",
+        subheading: "Collaboration avec plus de cinquante partenaires.",
+    },
+    {
+        imgSrc: '/assets/buyers/happybuyers.svg',
+        percent: '80%',
+        heading: "Projets terminés",
+        subheading: "Nombreux projets réalisés avec succès.",
+    },
+    
 
 ]
 
