@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaLanguage, FaCalendarAlt, FaMoneyBillWave, FaMedkit } 
 import { MdDomainAdd } from "react-icons/md";
 import { GrFormNext } from "react-icons/gr";
 import Link from 'next/link';
-import Image from 'next/image'; // Import Image from next/image
+import Image from 'next/image'; 
 import { contractContent } from '../Data/data';
 
 const CardSection = () => {
@@ -26,8 +26,8 @@ const CardSection = () => {
                 <Image
                   src={contract?.imageUrl || '/path-to-default-image.jpg'} 
                   alt={contract?.country || 'Unknown'}
-                  width={400} // Adjusted width
-                  height={192} // Adjusted height
+                  width={400} 
+                  height={192} 
                   className="w-full h-48 object-cover rounded-t-lg mb-4"
                 />
                 <div className="flex items-center mb-4">

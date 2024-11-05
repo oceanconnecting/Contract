@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { MdAccountCircle } from "react-icons/md";
 
 interface NavigationItem {
   name: string;
@@ -38,12 +39,11 @@ const Data = () => {
                 {item.name}
               </Link>
             ))}
-            <div className="mt-4"></div>
-            <button className="bg-white w-full bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent border border-lightblue font-medium py-2 px-4 rounded">
-              Sign In
-            </button>
-            <button className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">
-              Sign up
+            <div className="mt-8"></div>
+            <button className=" text-white flex items-center text-lg font-bold bg-gradient-to-r from-blue-600 to-red-600 transition duration-150 ease-in-out leafbutton w-full border  py-2 px-2 ">
+            
+            <MdAccountCircle className="mr-2 text-3xl" />
+            <span>Espace Client</span>
             </button>
           </div>
         </div>

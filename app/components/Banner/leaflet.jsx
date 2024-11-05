@@ -1,8 +1,9 @@
-"use client"; // This line marks the component as a Client Component
+"use client";
 
 import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
-import 'leaflet/dist/leaflet.css'; // Import Leaflet's CSS
+import 'leaflet/dist/leaflet.css'; 
+
 
 const LeafletMap = ({ contracts }) => {
   const mapRef = useRef(null);
@@ -10,7 +11,7 @@ const LeafletMap = ({ contracts }) => {
 
   useEffect(() => {
     if (!mapRef.current) {
-      mapRef.current = L.map(mapContainerRef.current).setView([51.505, -0.09], 3); // Default view coordinates
+      mapRef.current = L.map(mapContainerRef.current).setView([51.505, -0.09], 4); 
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
