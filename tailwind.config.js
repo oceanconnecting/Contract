@@ -18,6 +18,13 @@ module.exports = {
       'white': '#ffffff',
       'black': '#000000',
     
+
+      //green 
+      'green-700': '#15803d',
+      'green-100': '#dcfce7',
+      'green-600': '#16a34a',
+      'green-500': '#22c55e',
+
       // Blues
       'blue': '#0075FF',
       'blue-200': '#bfdbfe',
@@ -40,6 +47,10 @@ module.exports = {
       // Greys
       'gray-900': '#111827',
       'gray-700': '#374151',
+      'gray-100': '#f3f4f6',
+      'gray-300': '#d1d5db',
+      'gray-400': '#9ca3af',
+      'gray-600': '#4b5563',
       'grey500': '#ECECEC',
       'darkgray': '#90A3B4',
       'lightgrey': '#AEC7E4',

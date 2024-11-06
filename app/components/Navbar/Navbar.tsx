@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="relative flex h-24 lg:h-16 items-center justify-between">
             <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
               {/* LOGO */}
-
+              <Link href="/" passHref>
               <div className="flex flex-shrink-0 items-center">
                 <Image
                   className="block h-20 w-full lg:hidden"
@@ -52,6 +52,8 @@ const Navbar = () => {
                   height={160} // Adjusted height
                 />
               </div>
+              </Link>
+
 
               {/* LINKS */}
 
@@ -77,10 +79,12 @@ const Navbar = () => {
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
               <div className="hidden lg:block">
-                <button className="text-white flex items-center space-links  text-lg font-bold ml-9 py-2 px-6 transition duration-150 ease-in-out leafbutton bg-gradient-to-r from-blue-600 to-red-600 hover:opacity-75">
-                  <MdAccountCircle className="mr-2 text-3xl" />
-                  <span>Espace Client</span>
-                </button>
+                <Link href="/espace-client" passHref>
+                  <button className="text-white flex items-center space-links text-lg font-bold ml-9 py-2 px-6 transition duration-150 ease-in-out leafbutton bg-gradient-to-r from-blue-600 to-red-600 hover:opacity-75">
+                    <MdAccountCircle className="mr-2 text-3xl" />
+                    <span>Espace Client</span>
+                  </button>
+                </Link>
               </div>
             </div>
 

@@ -9,31 +9,29 @@ interface cardDataType {
 
 const cardData: cardDataType[] = [
     {
-        imgSrc: '/assets/buyers/ourbuyers.svg',
-        percent: '80k',
+        imgSrc: '/assets/buyers/icon1.svg',
+        percent: '80+',
         heading: "Contrats signés",
         subheading: "Des milliers d'emplois sécurisés en Europe.",
     },
     {
-        imgSrc: '/assets/buyers/projectcompleted.svg',
-        percent: '90k',
+        imgSrc: '/assets/buyers/icon2.svg',
+        percent: '290',
         heading: "Clients satisfaits",
         subheading: "La majorité de nos clients apprécient nos services.",
     },
     {
-        imgSrc: '/assets/buyers/teammembers.svg',
-        percent: '50+',
+        imgSrc: '/assets/buyers/icon3.svg',
+        percent: '70+',
         heading: "Partenaires en Europe",
         subheading: "Collaboration avec plus de cinquante partenaires.",
     },
     {
-        imgSrc: '/assets/buyers/happybuyers.svg',
-        percent: '80%',
+        imgSrc: '/assets/buyers/icon4.svg',
+        percent: '85%',
         heading: "Projets terminés",
         subheading: "Nombreux projets réalisés avec succès.",
     },
-    
-
 ]
 
 const Buyers = () => {
@@ -42,8 +40,8 @@ const Buyers = () => {
             <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-5'>
                 {cardData.map((items, i) => (
                     <div className='flex flex-col justify-center items-center' key={i}>
-                        <div className='flex justify-center border border-border  p-2 w-10 rounded-lg'>
-                            <Image src={items.imgSrc} alt={items.imgSrc} width={30} height={30} />
+                        <div className='flex justify-center border border-border  p-2 w-20 rounded-lg'>
+                            <Image src={items.imgSrc} alt={items.imgSrc} width={40} height={40} />
                         </div>
                         <h2 className='text-4xl lg:text-6xl text-black font-semibold text-center mt-5'>{items.percent}</h2>
                         <h3 className='text-2xl text-black font-semibold text-center lg:mt-6'>{items.heading}</h3>
@@ -54,5 +52,4 @@ const Buyers = () => {
         </div>
     )
 }
-
 export default Buyers;
