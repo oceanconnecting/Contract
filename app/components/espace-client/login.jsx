@@ -2,13 +2,13 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { FaEye, FaEyeSlash } from "react-icons/fa"; // Import icons from react-icons
-import SignUpComponent from "./SignUpComponent"; // Import the SignUpComponent
+import { FaEye, FaEyeSlash } from "react-icons/fa"; 
+import SignUpComponent from "./SignUpComponent"; 
 
 const SignInComponent = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
-  const [isSignIn, setIsSignIn] = useState(true); // State to manage the view
+  const [isSignIn, setIsSignIn] = useState(true); 
 
   const handleToggleView = () => {
     setIsSignIn((prev) => !prev);
@@ -28,7 +28,7 @@ const SignInComponent = () => {
             }}
           ></div>
         </div>
-        <div className="lg:w-2/2 xl:w-5/12 p-6 sm:p-12">
+        <div className="lg:w-1/2 xl:w-6/12 p-6 sm:p-12">
           <div>
             <Image
               src="/assets/logo/ocean1.svg"
@@ -38,7 +38,7 @@ const SignInComponent = () => {
               className="mx-auto"
             />
           </div>
-          {isSignIn ? ( // Conditional rendering based on isSignIn state
+          {isSignIn ? ( 
             <div className="mt-12 flex flex-col items-center">
               <div className="w-full flex-1 mt-4">
                 <div className="mx-auto max-w-xs">
@@ -70,7 +70,7 @@ const SignInComponent = () => {
                   <p className="mt-6 text-xs text-gray-700 text-center">
                     Si vous n&apos;avez pas de compte:
                     <button
-                      onClick={handleToggleView} // Toggle view on button click
+                      onClick={handleToggleView} 
                       className="border-b ml-2 font-bold border-dotted"
                     >
                       Créer un compte
@@ -80,7 +80,7 @@ const SignInComponent = () => {
               </div>
             </div>
           ) : (
-            <SignUpComponent onBackToSignIn={handleToggleView} /> // Render SignUpComponent
+            <SignUpComponent onBackToSignIn={handleToggleView} /> 
           )}
         </div>
       </div>
