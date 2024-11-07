@@ -11,19 +11,15 @@ export default function ClientPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (!token) {
-      router.push('/login');  // Redirect if no token
-      return;
-    }
-
+      const token = localStorage.getItem('token');
+      if (!token) {
+        router.push('/login');  // Redirect if no token
+        return;
+      }
+  
     async function fetchClientData() {
       try {
-        const response = await fetch(`https://ocean-contra.vercel.app/api/Client/${clientId}`, {
-          headers: {
-            'Authorization': `Bearer ${token}`
-          }
-        });
+        const response = await fetch(`https://ocean-contra.vercel.app/api/Client/${clientId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch client data');
         }
@@ -36,7 +32,7 @@ export default function ClientPage() {
       }
     }
     if (clientId) fetchClientData();
-  }, [clientId, router]);
+  }, [clientId, router]);
 
   const handleLogout = async () => {
     try {
@@ -46,7 +42,7 @@ export default function ClientPage() {
       localStorage.removeItem('token');
       router.push('/login');
     } catch (error) {
-      console.log('Logout error:', error);
+      console.error('Logout error:', error);
     }
   };
 
