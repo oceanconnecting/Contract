@@ -13,7 +13,7 @@ export default function ClientPage() {
   useEffect(() => {
       const token = localStorage.getItem('token');
       if (!token) {
-        router.push('/login');  // Redirect if no token
+        router.push('/espace-client');  // Redirect if no token
         return;
       }
   
@@ -40,7 +40,7 @@ export default function ClientPage() {
         method: 'POST',
       });
       localStorage.removeItem('token');
-      router.push('/login');
+      router.push('/espace-client');
     } catch (error) {
       console.error('Logout error:', error);
     }
