@@ -107,7 +107,7 @@ const SignUpComponent = ({ onBackToSignIn }) => {
           </button>
         </form>
         {message && (
-          <p className={`mt-4 text-center ${message.includes("success") ? "text-green-600" : "text-red-600"}`}>
+          <p className={`mt-4 text-center ${message.includes("succès") ? "text-green-600" : "text-red-600"}`}>
             {message}
           </p>
         )}

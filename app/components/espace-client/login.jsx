@@ -145,7 +145,7 @@ const SignInComponent = () => {
                     {message && (
                       <div
                         className={`mb-4 ${
-                          message.includes("successful")
+                          message.includes("réussie")
                             ? "text-green-600"
                             : "text-red-600"
                         }`}
