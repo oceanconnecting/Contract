@@ -204,7 +204,7 @@ export const heroSectionContent = {
         "text": "Droit d'auteur © ",
         "company": "Ocean Connecting",
         "allRightsReserved": "Tous droits réservés.",
-        "message": "Nous vous remercions de votre visite sur notre site web et vous souhaitons la bienvenue à ",
+        "message": "Merci de votre visite et bienvenue à ",
 
     }
 }; 

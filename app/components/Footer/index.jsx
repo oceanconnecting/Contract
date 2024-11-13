@@ -97,14 +97,15 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-2">
-          <hr className="content-center my-4 border-t-2 border-gray-300" />
+          <hr className="content-center my-4 border-t-2 border-gray-700" />
           <div>
-            <div className="flex justify-between pb-4">
+            <div className="flex flex-col items-center space-y-2 lg:flex-row lg:items-center lg:justify-between lg:space-y-0 lg:space-x-4 pb-4">
               <p className="font-semibold text-md">
                 {footerCopyright.text} {new Date().getFullYear()}{" "}
                 <Link href="/#" className="text-blue-600 hover:text-white">
                   {footerCopyright.company}
-                </Link>. {footerCopyright.allRightsReserved}
+                </Link>
+                . {footerCopyright.allRightsReserved}
               </p>
               <p className="font-semibold text-md">
                 {footerCopyright.message}

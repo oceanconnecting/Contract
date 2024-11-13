@@ -17,7 +17,7 @@ export default function Home() {
     <main>
       <HeroSection />
       {/* <Banner /> */}
-      <Companies />
+      {/* <Companies /> */}
       <CardSection/>
       <Buyers />
       <Provide />

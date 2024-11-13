@@ -32,6 +32,7 @@ module.exports = {
       'blue-400': '#60a5fa',
       'blue-500': '#0075FF', // Duplicated - Remove one if necessary
       'blue-600': '#2563eb',
+      'blue-700': '#1d4ed8',
       'lightblue': '#DAEBFF',
       'babyblue': '#E2F3F9',
       'bluegray': "#7D82A1",
