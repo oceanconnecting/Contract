@@ -27,6 +27,8 @@ module.exports = {
 
       // Blues
       'blue': '#0075FF',
+      'blue-100': '#dbeafe',
+      'blue100': '#93C5FD',
       'blue-200': '#bfdbfe',
       'blue-300': '#93c5fd',
       'blue-400': '#60a5fa',

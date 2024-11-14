@@ -1,19 +1,31 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { Button } from "../ui/button"
-import { Card } from "../ui/card"
-import { ArrowRight, Briefcase, FileText, Home, LogOut, Menu, MessageCircleQuestion, User, X } from 'lucide-react'
+import { useState } from "react";
+import { Button } from "../ui/button";
+import { Card } from "../ui/card";
+import {
+  ArrowRight,
+  Briefcase,
+  FileText,
+  Home,
+  LogOut,
+  Menu,
+  MessageCircleQuestion,
+  User,
+  X,
+} from "lucide-react";
 
 export default function ProfileDashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex flex-1 mx-auto  "> {/* Flex layout for sidebar + main content */}
+    <div className="flex flex-1 mx-auto  ">
+      {" "}
+      {/* Flex layout for sidebar + main content */}
       {/* Sidebar */}
       <aside
         className={`flex flex-col bg-gradient-to-b from-blue-400 to-blue-600 transition-all duration-300 ease-in-out
-          ${sidebarOpen ? 'w-64' : 'w-16'} sm:w-16 md:w-64 lg:w-64`}
+          ${sidebarOpen ? "w-52" : "w-16"} sm:w-16 md:w-48 lg:w-52`}
       >
         <nav className="flex flex-col h-full py-8 px-4">
           <div className="space-y-4 mt-8">
@@ -21,13 +33,10 @@ export default function ProfileDashboard() {
             <SidebarItem icon={User} label="Profil" active />
             <SidebarItem icon={FileText} label="Documents" />
             <SidebarItem icon={MessageCircleQuestion} label="Q/A" />
-          </div>
-          <div className="mt-auto text-white">
             <SidebarItem icon={LogOut} label="Logout" />
           </div>
         </nav>
       </aside>
-
       {/* Main content area */}
       <div className="flex-1 p-8 overflow-y-auto">
         {/* Profile Section */}
@@ -37,7 +46,9 @@ export default function ProfileDashboard() {
               <FileText className="mr-2" />
               My profil
             </h2>
-            <Button className="bg-blue-600 rounded-lg text-white font-bold hover:bg-blue-700">Edit</Button>
+            <Button className="bg-blue-600  rounded-lg text-white font-bold hover:bg-blue-700 space-links custom-shadow">
+              Edit
+            </Button>
           </div>
           <Card className="bg-gradient-to-br from-blue-300 to-purple-200  p-6 rounded-lg relative">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -48,11 +59,13 @@ export default function ProfileDashboard() {
               <ProfileField label="Email" value="Something@gmail.com" />
               <ProfileField label="City" value="Agadir" />
               <ProfileField label="Zip code" value="80000" />
-              <ProfileField label="Address" value="2eme etage islan hay mohammadi" />
+              <ProfileField
+                label="Address"
+                value="2eme etage islan hay mohammadi"
+              />
             </div>
           </Card>
         </section>
-
         {/* Documents Section */}
         <section className="mb-8">
           <div className="flex items-center justify-between mb-4">
@@ -60,15 +73,20 @@ export default function ProfileDashboard() {
               <FileText className="mr-2" />
               My Documents
             </h2>
-            <Button className="bg-blue-600 hover:bg-blue-700 font-bold rounded-lg text-white">Edit</Button>
+            <Button className="bg-blue-600 hover:bg-blue-700 font-bold rounded-lg text-white space-links custom-shadow">
+              Edit
+            </Button>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <DocumentCard title="ID" />
-            <DocumentCard title="Driving Licence" />
-            <DocumentCard title="Diplomat" />
+          {/* Carousel Container */}
+          <div className="flex overflow-x-auto scroll-smooth gap-x-4 pb-4">
+            <DocumentCard title="IMAGE:" />
+            <DocumentCard title="CNI:" />
+            <DocumentCard title="Driving Licence:" />
+            <DocumentCard title="Diplome:" />
+            <DocumentCard title="CV:" />
+            <DocumentCard title="Passport" />
           </div>
         </section>
-
         {/* Applications Section */}
         <section>
           <h2 className="text-2xl font-bold mb-4 flex items-center">
@@ -76,8 +94,18 @@ export default function ProfileDashboard() {
             My Applications
           </h2>
           <div className="flex flex-wrap gap-4">
-            <ApplicationCard country="Germany" category="Health" status="Approved" date="12/03/2024" />
-            <ApplicationCard country="Italy" category="Health" status="Approved" date="12/03/2024" />
+            <ApplicationCard
+              country="Germany"
+              category="Health"
+              status="Approved"
+              date="12/03/2024"
+            />
+            <ApplicationCard
+              country="Italy"
+              category="Health"
+              status="Approved"
+              date="12/03/2024"
+            />
             <Button className="flex-shrink-0 w-full sm:w-48 h-48 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center text-gray-600 hover:border-gray-400 hover:text-gray-800 transition-colors">
               <span className="text-4xl mb-2">+</span>
               New request
@@ -86,7 +114,7 @@ export default function ProfileDashboard() {
         </section>
       </div>
     </div>
-  )
+  );
 }
 
 // Components for SidebarItem, ProfileField, DocumentCard, ApplicationCard
@@ -95,13 +123,17 @@ function SidebarItem({ icon: Icon, label, active = false }) {
     <a
       href="#"
       className={`flex items-center space-x-3 p-3 rounded-lg transition-colors ${
-        active ? 'bg-white bg-opacity-20 text-white' : 'text-blue-100 hover:bg-white hover:bg-opacity-10'
+        active
+          ? "bg-white bg-opacity-20 text-white"
+          : "text-blue-100 hover:bg-white hover:bg-opacity-10"
       }`}
     >
       <Icon className="h-6 w-6 flex-shrink-0" />
-      <span className="font-medium whitespace-nowrap overflow-hidden hidden sm:hidden md:inline">{label}</span>
+      <span className="font-medium whitespace-nowrap overflow-hidden hidden sm:hidden md:inline">
+        {label}
+      </span>
     </a>
-  )
+  );
 }
 
 function ProfileField({ label, value }) {
@@ -110,20 +142,27 @@ function ProfileField({ label, value }) {
       <dt className="text-sm font-medium text-blue-100">{label}</dt>
       <dd className="mt-1 text-sm font-semibold">{value}</dd>
     </div>
-  )
+  );
 }
 
 function DocumentCard({ title }) {
   return (
-    <Card className="bg-blue-100 p-4 rounded-lg relative">
+    <Card className="bg-blue100 p-4 rounded-lg relative w-64 flex-shrink-0">
       <h3 className="font-semibold mb-2">{title}</h3>
-      <div className="space-y-2">
-        <div className="bg-white p-2 rounded">RECTO</div>
-        <div className="bg-white p-2 rounded">VERSO</div>
+      <div className="space-y-4">
+        {/* Centered RECTO */}
+        <div className="bg-white h-40 p-4 rounded flex items-center justify-center font-bold text-gray-700">
+          RECTO
+        </div>
+        {/* Centered VERSO */}
+        <div className="bg-white h-40 p-4 rounded flex items-center justify-center font-bold text-gray-700">
+          VERSO
+        </div>
       </div>
     </Card>
-  )
+  );
 }
+
 
 function ApplicationCard({ country, category, status, date }) {
   return (
@@ -139,5 +178,5 @@ function ApplicationCard({ country, category, status, date }) {
         <div className="text-sm text-gray-600">{date}</div>
       </div>
     </Card>
-  )
+  );
 }
