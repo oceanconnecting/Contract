@@ -99,7 +99,7 @@ export default function ProfileDashboard() {
               <DialogContent className="bg-white sm:max-w-[425px] md:max-w-[600px] lg:max-w-[800px]">
                 <DialogHeader>
                   <DialogTitle>Edit Profile</DialogTitle>
-                  <Button
+                  {/* <Button
                     variant="ghost"
                     size="icon"
                     className="absolute right-4 top-4"
@@ -107,7 +107,7 @@ export default function ProfileDashboard() {
                   >
                     <X className="h-4 w-4" />
                     <span className="sr-only">Close</span>
-                  </Button>
+                  </Button> */}
                 </DialogHeader>
                 <div className="grid gap-4 py-4">
                   <div className="flex justify-center">
@@ -215,8 +215,8 @@ export default function ProfileDashboard() {
                     />
                   </div>
                 </div>
-                <div className="flex justify-end">
-                  <Button type="submit">Save changes</Button>
+                <div className="flex  justify-end">
+                  <Button type="submit" className="bg-gradient-to-r from-blue-600 to-red-600 text-white font-bold rounded-lg">Save changes</Button>
                 </div>
               </DialogContent>
             </Dialog>
@@ -234,7 +234,7 @@ export default function ProfileDashboard() {
             </div> 
           </Card>
         </section>
-        {/* Documents Section */}
+        {/* Documents 1 Section */}
         <section className="mb-8">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold flex items-center">
