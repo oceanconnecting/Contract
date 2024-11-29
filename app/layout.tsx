@@ -23,9 +23,14 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="MyWebSite" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body>
+      <body >
+        <div className="z-50">
         <Navbar />
+        </div>
+        <div className="z-40">
         {children}
+        </div>
+        
         <Footer />
       </body>
     </html>
