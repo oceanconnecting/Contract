@@ -57,7 +57,7 @@ const HeroSection = () => {
               </div>
               <div className="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 lg:mt-12">
                 <Link
-                  href="/"
+                  href="/profile"
                   title=""
                   className="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-red-600 border rounded-xl font-pj hover:bg-gray-600 hover:to-red-500 transform hover:scale-105 leafbutton"
                   type="button"
@@ -65,7 +65,7 @@ const HeroSection = () => {
                   Contact Us
                 </Link>
                 <Link
-                  href="#"
+                  href="/profile"
                   title=""
                   className="inline-flex items-center px-4 py-4 text-lg font-bold transition-all duration-200 bg-transparent  rounded-xl hover:bg-gradient-to-r from-blue-600 to-red-600 hover:text-white hover:to-red-500 transform hover:scale-105 leafbutton"
                   role="button"
