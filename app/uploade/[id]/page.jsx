@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation';
 
 export default function ClientPage() {
   const router = useRouter();
-  const { id: clientId } = useParams();
+  const { id: userId } = useParams();
   const [clientData, setClientData] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -19,7 +19,7 @@ export default function ClientPage() {
   
     async function fetchClientData() {
       try {
-        const response = await fetch(`https://ocean-contra.vercel.app/api/Client/${clientId}`);
+        const response = await fetch(`https://ocean-contra.vercel.app/api/Client/${userId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch client data');
         }
@@ -31,8 +31,8 @@ export default function ClientPage() {
         setLoading(false);
       }
     }
-    if (clientId) fetchClientData();
-  }, [clientId, router]);
+    if (userId) fetchClientData();
+  }, [userId, router]);
 
   const handleLogout = async () => {
     try {

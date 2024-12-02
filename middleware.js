@@ -8,7 +8,7 @@ export function middleware(request) {
 
   // Redirect to login if no token is found and user tries to access /uploade/*
   if (!token && url.pathname.startsWith('/uploade')) {
-    url.pathname = '/login';
+    url.pathname = '/espace-client';
     return NextResponse.redirect(url);
   }
 

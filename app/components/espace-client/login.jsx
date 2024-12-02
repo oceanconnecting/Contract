@@ -50,7 +50,8 @@ const SignInComponent = () => {
           },
           body: JSON.stringify({
             ...loginData,
-            idContra: contraId ? parseInt(contraId, 10) : null,
+            // idContra: contraId ? parseInt(contraId, 10) : null,
+            
           }),
         }
       );
@@ -60,13 +61,14 @@ const SignInComponent = () => {
       }
 
       const data = await response.json();
+      console.log(data)
       setMessage("Connexion réussie !");
       localStorage.setItem("token", data.token);
 
-      setClientInfo({ clientId: data.client.id, dossierId: data.dossierId });
+      setClientInfo({ userId: data.user.id });
 
-      if (data.client && data.client.id) {
-        router.push(`/uploade/${data.client.id}`);
+      if (data.user && data.user.id) {
+        router.push(`/uploade/${data.user.id}`);
       } else {
         throw new Error("L'identifiant du client n'a pas été trouvé.");
       }

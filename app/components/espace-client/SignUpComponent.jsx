@@ -21,7 +21,7 @@ const SignUpComponent = ({ onBackToSignIn }) => {
     };
 
     try {
-      const response = await fetch("https://ocean-contra.vercel.app/api/Client", {
+      const response = await fetch("https://ocean-contra.vercel.app/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ const SignUpComponent = ({ onBackToSignIn }) => {
 
       setTimeout(() => onBackToSignIn(), 1500);
     } catch (error) {
-      console.error("Error:", error);
+      console.log("Error:", error);
       setMessage("Erreur lors de la création du compte. Veuillez réessayer.");
     }
   };
