@@ -48,11 +48,7 @@ const SignInComponent = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({
-            ...loginData,
-            // idContra: contraId ? parseInt(contraId, 10) : null,
-            
-          }),
+          body: JSON.stringify(loginData),
         }
       );
 
@@ -61,9 +57,10 @@ const SignInComponent = () => {
       }
 
       const data = await response.json();
-      console.log(data)
       setMessage("Connexion réussie !");
-      localStorage.setItem("token", data.token);
+
+      // Set the token in a cookie
+      document.cookie = `token=${data.token}; path=/; secure; samesite=strict`;
 
       setClientInfo({ userId: data.user.id });
 
@@ -74,7 +71,9 @@ const SignInComponent = () => {
       }
     } catch (error) {
       console.log("Erreur de connexion :", error);
-      setMessage("Échec de la connexion. Veuillez vérifier votre e-mail ou votre mot de passe.");
+      setMessage(
+        "Échec de la connexion. Veuillez vérifier votre e-mail ou votre mot de passe."
+      );
     } finally {
       setIsLoading(false);
     }
@@ -135,7 +134,7 @@ const SignInComponent = () => {
                         required
                         disabled={isLoading}
                       />
-                      {loginData.password.length > 0 && (
+                      {loginData.password && (
                         <span
                           className="absolute inset-y-0 right-3 flex items-center cursor-pointer"
                           onClick={() => setShowPassword((prev) => !prev)}
