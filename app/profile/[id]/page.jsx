@@ -1,14 +1,13 @@
 "use client"; 
 
+import ClientPage from '../../components/espace-client/espace';
 
-import ProfileDashboard from '../../components/profile/profile';
 
 
-export default function profile() {
+export default function EspaceClient() {
   return (
     <div>
-      {/* <SignInComponent /> */}
-      <ProfileDashboard/>
+      <ClientPage />
     </div>
   );
 }

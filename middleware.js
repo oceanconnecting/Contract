@@ -7,7 +7,7 @@ export function middleware(request) {
   const url = request.nextUrl.clone();
 
   // Redirect to login if no token is found and user tries to access /uploade/*
-  if (!token && url.pathname.startsWith('/uploade')) {
+  if (!token && url.pathname.startsWith('/profile')) {
     url.pathname = '/espace-client';
     return NextResponse.redirect(url);
   }
@@ -17,5 +17,5 @@ export function middleware(request) {
 
 // Apply middleware only to /uploade/* routes
 export const config = {
-  matcher: '/uploade/:path*',
+  matcher: '/profile/:path*',
 };

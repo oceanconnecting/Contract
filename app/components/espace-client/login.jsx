@@ -65,7 +65,7 @@ const SignInComponent = () => {
       setClientInfo({ userId: data.user.id });
 
       if (data.user && data.user.id) {
-        router.push(`/uploade/${data.user.id}`);
+        router.push(`/profile/${data.user.id}`);
       } else {
         throw new Error("L'identifiant du client n'a pas été trouvé.");
       }

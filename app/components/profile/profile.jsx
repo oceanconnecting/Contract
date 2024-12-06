@@ -16,10 +16,38 @@ import {
   Menu,
 } from "lucide-react";
 
-export default function ProfileDashboard() {
+
+// const profileData = {
+//   Firstname: "Mustapha",
+//   Lastname: "Something",
+//   numero: "06.XX.XX.XX.XX",
+//   email: "Something@gmail.com",
+//   client :{
+//     CIN: "JXXXXXX",
+//     city: "Agadir",
+//     zipCode: "80000",
+//     address: "2eme etage islan hay mohammadi",
+//   },
+//   profileImage: "/placeholder.svg?height=128&width=128",
+// };
+
+export default function ProfileDashboard( {profileData}) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+
+  const handleLogout = async () => {
+    try {
+      await fetch('https://ocean-contra.vercel.app/api/logout', {
+        method: 'POST',
+      });
+      document.cookie = 'token=; Max-Age=0; path=/; secure; samesite=strict'; // Delete the token
+      router.push('/espace-client');
+    } catch (error) {
+      console.log('Logout error:', error);
+    }
+  };
 
   return (
     <div className="flex flex-1 mx-auto">
@@ -43,14 +71,14 @@ export default function ProfileDashboard() {
             <SidebarItem icon={User} label="Profil" active />
             <SidebarItem icon={FileText} label="Documents" />
             <SidebarItem icon={MessageCircleQuestion} label="Q/A" />
-            <SidebarItem icon={LogOut} label="Logout" />
+            <SidebarItem icon={LogOut} onclick={handleLogout} label="Logout" />
           </div>
         </nav>
       </aside>
 
       {/* Main content area */}
       <div className="flex-1 sm:mt-8  mt-10 p-8 overflow-y-auto">
-        <ProfileInfo  />
+        <ProfileInfo profileData={profileData} />
         <Document />
         <AoutreDocument />
         <Contract />
@@ -59,10 +87,10 @@ export default function ProfileDashboard() {
   );
 }
 
-function SidebarItem({ icon: Icon, label, active = false }) {
+function SidebarItem({ icon: Icon, label,onclick , active = false }) {
   return (
-    <a
-      href="#"
+    <button
+    onClick={onclick}
       className={`flex items-center space-x-3 p-3 rounded-lg transition-colors ${
         active
           ? "bg-white bg-opacity-20 text-white"
@@ -73,6 +101,6 @@ function SidebarItem({ icon: Icon, label, active = false }) {
       <span className="font-medium whitespace-nowrap overflow-hidden">
         {label}
       </span>
-    </a>
+    </button>
   );
 }
