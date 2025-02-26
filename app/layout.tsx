@@ -2,6 +2,10 @@ import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
 
+import 'primereact/resources/themes/lara-light-indigo/theme.css';  // Theme
+import 'primereact/resources/primereact.min.css'; // Core styles
+import 'primeicons/primeicons.css'; // Icons
+import 'primereact/resources/primereact.css'; // PrimeReact components
 
 export const metadata = {
   title: 'Contract Ocean',
