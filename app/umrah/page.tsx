@@ -8,7 +8,7 @@ import { Loader } from "lucide-react";
 const notifySuccess = () => toast.success("form submited Successfully!");
 const notifyError = () => toast.error("This is an error!");
 
-function page() {
+function Page() {
   const [formData, setFormData] = useState({
     nomPrenom: "",
     email: "",
@@ -162,4 +162,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
