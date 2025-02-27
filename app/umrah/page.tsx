@@ -77,7 +77,7 @@ function Page() {
       <div className="max-w-md w-full z-[2] space-y-8 bg-white p-6 rounded-xl shadow-md">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Inscription Hajj et Omra
+            Omra Registration
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             Veuillez remplir le formulaire ci-dessous
