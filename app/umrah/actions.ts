@@ -22,7 +22,7 @@ export async function sendMail({
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from:"oceanconnecting@gmail.com",
       to: process.env.EMAIL_RECEIVER,
       subject: "Nouvelle inscription Hajj et Omra",
       html: `
