@@ -16,11 +16,11 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: true },
-  { name: "Services", href: "/#services", current: false },
-  { name: "About", href: "/#about", current: false },
-  { name: "Project", href: "/#project", current: false },
-  { name: "Help", href: "/", current: false },
   { name: "umrah", href: "/umrah", current: false },
+  { name: "Travel", href: "/#services", current: false },
+  { name: "Project", href: "/#project", current: false },
+  { name: "About", href: "/#about", current: false },
+  { name: "Help", href: "/", current: false },
 ];
 
 function classNames(...classes: string[]) {
