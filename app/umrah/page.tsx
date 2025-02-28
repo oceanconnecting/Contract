@@ -42,6 +42,26 @@ function Page() {
       title: "UK",
       subitems: ["London", "Birmingham", "Manchester", "Glasgow", "Liverpool"],
     },
+    {
+      title: "Autriche",
+      subitems: ["Vienna"],
+    },
+    {
+      title: "Niederlande",
+      subitems: ["Amsterdam", "Rotterdam"],
+    },
+    {
+      title: "Belgique",
+      subitems: ["Brussels"],
+    },
+    {
+      title: "Swiss",
+      subitems: ["Basel", "Zurich"],
+    },
+    {
+      title: "Allemagne",
+      subitems: ["Düsseldorf", "Essen"],
+    },
   ];
 
   const [IsSubmitting, setIsSubmitting] = useState(false);
