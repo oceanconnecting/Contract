@@ -1,5 +1,4 @@
 {
-    "locales": ["en", "fr"],
-    "defaultLocale": "fr"
-  }
-  
+  "locales": ["en", "fr","ar"],
+  "defaultLocale": "fr"
+}
