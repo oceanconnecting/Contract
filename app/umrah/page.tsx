@@ -207,7 +207,7 @@ function Page() {
             <label htmlFor="numPeople">Nombre de personnes</label>
             <NumberStepper
               min={1}
-              max={10}
+              max={9}
               onChange={(value) => {
                 setFormData((prevData) => ({
                   ...prevData,

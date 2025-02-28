@@ -34,11 +34,11 @@ export async function sendMail({
           <body style="font-family: Arial, sans-serif; color: #333;">
             <h2 style="color: #4CAF50;">Nouvelle inscription Hajj et Omra</h2>
             <p><strong>Nom/Prénom:</strong> ${nomPrenom}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Téléphone:</strong> ${tel}</p>
-            <p><strong>Ville:</strong> ${country}</p>
-            <p><strong>Ville:</strong> ${ville}</p>
-            <p><strong>Ville:</strong> ${numPeople}</p>
+            <p><strong>Email :</strong> ${email}</p>
+            <p><strong>Téléphone :</strong> ${tel}</p>
+            <p><strong>Ville :</strong> ${country}</p>
+            <p><strong>country :</strong> ${ville}</p>
+            <p><strong>number of people :</strong> ${numPeople}</p>
           </body>
         </html>
       `,
