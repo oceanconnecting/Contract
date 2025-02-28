@@ -22,16 +22,31 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { locale } = params;
+  let { locale } = params;
 
-  // Charger les messages de traduction
-  const messages = await getMessages({ locale });
+  // Log the received locale for debugging
+  console.log("Received locale:", locale);
 
-  const validLocales = ["fr", "en"]; // Langues prises en charge
+  // Fallback to 'en' if locale is not defined or is invalid
+  if (!locale) {
+    locale = "en";  // Fallback to default locale
+    console.log(`Locale not found, defaulting to 'en'`);
+  }
 
-  // Vérifier si la locale est valide
+  // Ensure the locale is one of the supported locales
+  const validLocales = ["fr", "en", "ar"];  // List of valid locales
   if (!validLocales.includes(locale)) {
-    redirect("/fr"); // Rediriger vers 'fr' si la langue n'est pas supportée
+    console.log(`Invalid locale: ${locale}. Redirecting to 'fr'...`);
+    redirect("/fr");  // Redirect to 'fr' if the locale is not supported
+  }
+
+  // Load messages for the current locale
+  let messages;
+  try {
+    messages = await getMessages({ locale });
+  } catch (error) {
+    console.error(`Error loading messages for locale: ${locale}`, error);
+    messages = await getMessages({ locale: "en" });  // Fallback to English messages
   }
 
   return (
