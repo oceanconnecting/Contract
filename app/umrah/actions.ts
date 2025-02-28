@@ -5,11 +5,15 @@ export async function sendMail({
   nomPrenom,
   email,
   tel,
+  country,
   ville,
+  numPeople,
 }: {
   nomPrenom: string;
   email: string;
   tel: string;
+  country: string;
+  numPeople: number;
   ville: string;
 }) {
   try {
@@ -32,12 +36,16 @@ export async function sendMail({
             <p><strong>Nom/Prénom:</strong> ${nomPrenom}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Téléphone:</strong> ${tel}</p>
+            <p><strong>Ville:</strong> ${country}</p>
             <p><strong>Ville:</strong> ${ville}</p>
+            <p><strong>Ville:</strong> ${numPeople}</p>
           </body>
         </html>
       `,
     };
 
     const info = await transporter.sendMail(mailOptions);
-  } catch (error) {}
+  } catch (error) {
+    throw new Error("Erreur lors de l'envoi du mail");
+  }
 }
