@@ -1,29 +1,29 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import {routing} from '../../i18n/routing';
- 
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { routing } from '../../i18n/routing';
+
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }) {
-  // Ensure that the incoming `locale` is valid
-  const {locale} = await params;
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
+  const { locale } = await params;
+
+  const validLocale = locale as 'en' | 'fr' | 'ar';
+
+  if (!routing.locales.includes(validLocale)) {
+    notFound()
   }
- 
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages();
- 
+
+  const messages = await getMessages({ locale: validLocale });
+
   return (
-    <html lang={locale}>
+    <html lang={validLocale}>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={validLocale}>
           {children}
         </NextIntlClientProvider>
       </body>

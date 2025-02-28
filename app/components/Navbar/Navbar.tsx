@@ -7,7 +7,7 @@ import Image from "next/image";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import { MdAccountCircle } from "react-icons/md";
-import { usePathname } from "next/navigation";  // Use usePathname from next/navigation
+import { usePathname } from "next/navigation"; // Use usePathname from next/navigation
 
 interface NavigationItem {
   name: string;
@@ -17,8 +17,8 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: true },
-  { name: "umrah", href: "/umrah", current: true },
-  { name: "travel", href: "/#services", current: false },
+  { name: "umrah", href: "/umrah", current: false },
+  { name: "Travel", href: "/#services", current: false },
   { name: "Project", href: "/#project", current: false },
   { name: "About", href: "/#about", current: false },
   { name: "Help", href: "/", current: false },
@@ -30,7 +30,7 @@ function classNames(...classes: string[]) {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const pathname = usePathname();  // Get the current pathname using usePathname
+  const pathname = usePathname(); // Get the current pathname using usePathname
 
   // Determine if we're on the profile page
   const isProfilePage = pathname === "/profile";
@@ -38,7 +38,11 @@ const Navbar = () => {
   return (
     <Disclosure as="nav" className="navbar">
       <>
-        <div className={`mx-auto ${isProfilePage ? "" : "max-w-7xl"} px-6 lg:py-4 lg:px-8`}>
+        <div
+          className={`mx-auto ${
+            isProfilePage ? "" : "max-w-7xl"
+          } px-6 lg:py-4 lg:px-8`}
+        >
           <div className="relative flex h-24 lg:h-16 items-center justify-between">
             <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
               {/* LOGO */}
