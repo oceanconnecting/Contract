@@ -6,10 +6,19 @@ import { contractContent } from "../Data/data";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-
+import { useRouter } from "next/navigation";
 const LeafletMap = dynamic(() => import("./leaflet"), { ssr: false });
-
+import ContactPage from"@/app/Contact/page"
 const HeroSection = () => {
+
+
+const router=useRouter()
+ 
+  const handleClick = (e) => {
+    e.preventDefault(); // Prevent default Link behavior
+    router.push("/Contact");
+  };
+
   return (
     <div className="relative bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300 py-6 text-black">
       <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
@@ -57,19 +66,25 @@ const HeroSection = () => {
               </div>
               <div className="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 lg:mt-12">
                 <Link
-                  href="/profile"
+                  
                   title=""
                   className="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-red-600 border rounded-xl font-pj hover:bg-gray-600 hover:to-red-500 transform hover:scale-105 leafbutton"
                   type="button"
+                  href={"/Contact"}
+                  onClick={handleClick}
+            
                 >
                   Contact Us
                 </Link>
                 <Link
-                  href="/profile"
+                  
                   title=""
                   className="inline-flex items-center px-4 py-4 text-lg font-bold transition-all duration-200 bg-transparent  rounded-xl hover:bg-gradient-to-r from-blue-600 to-red-600 hover:text-white hover:to-red-500 transform hover:scale-105 leafbutton"
                   role="button"
-                  download="form"
+                 
+                  href="/form/Formulaire.pdf" // Path to the file in public folder
+                  download="Formulaire.pdf"
+          
                 >
                   <svg
                     className="w-5 h-5 mr-2"
@@ -85,7 +100,8 @@ const HeroSection = () => {
                       d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                     ></path>
                   </svg>
-                  Télécharger le formulaire
+                  Télécharger le formulair
+                 
                 </Link>
               </div>
             </div>
