@@ -1,3 +1,4 @@
+"use client";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -16,9 +17,10 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: true },
-  { name: "Services", href: "/#services", current: false },
-  { name: "About", href: "/#about", current: false },
+  { name: "umrah", href: "/umrah", current: true },
+  { name: "travel", href: "/#services", current: false },
   { name: "Project", href: "/#project", current: false },
+  { name: "About", href: "/#about", current: false },
   { name: "Help", href: "/", current: false },
 ];
 
