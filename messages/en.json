@@ -1,4 +1,10 @@
-{"welcome": "welcome",
-    "footer_text": "Ceci est le pied de page"
+
+  {"welcome": "welcome",
+    "footer_text": "Ceci est le pied de page",
+    "homepage":{
+            "contact":{
+                    "name":"Name"
+                  }
+    }
+    
   }
-  

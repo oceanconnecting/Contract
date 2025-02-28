@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React from "react";
 import { heroSectionContent } from "../Data/data";
@@ -6,29 +6,29 @@ import { contractContent } from "../Data/data";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation"; // ✅ Importer useParams
+
 const LeafletMap = dynamic(() => import("./leaflet"), { ssr: false });
-import ContactPage from"@/app/Contact/page"
+
 const HeroSection = () => {
+  const router = useRouter();
+  const { locale } = useParams(); // ✅ Récupérer la locale
 
-
-const router=useRouter()
- 
   const handleClick = (e) => {
-    e.preventDefault(); // Prevent default Link behavior
-    router.push("/Contact");
+    e.preventDefault();
+    router.push(`/${locale}/Contact`); // ✅ Corrigé
   };
 
   return (
     <div className="relative bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300 py-6 text-black">
       <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
-        <Image
+        <img
           className="w-full h-auto"
-          src="https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png"
+          src="https://d33wubrfki0l68.cloudfrontnet/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png"
           alt="Background Pattern"
-          layout="responsive" 
-          width={1920} 
-          height={1080} 
+          layout="responsive"
+          width={1920}
+          height={1080}
         />
       </div>
       <section className="mt-20 mb-5">
@@ -42,49 +42,23 @@ const router=useRouter()
                 <p className="text-gray-700 sm:text-sm lg:text-md mt-4 lg:mt-6">
                   {heroSectionContent?.description || "Default description"}
                 </p>
-                <div className="mt-6 lg:mt-8 flex lg:items-center">
-                  <div className="flex justify-center lg:justify-start -space-x-4 overflow-hidden">
-                    {heroSectionContent?.avatars?.map((avatar, index) => (
-                      <Image
-                        key={index}
-                        className="inline-block rounded-full"
-                        src={avatar?.src || "/path-to-default-avatar.jpg"}
-                        alt={avatar?.alt || "Avatar"}
-                        width={40}
-                        height={40}
-                      />
-                    ))}
-                  </div>
-                  <p className="mt-4 sm:text-sm lg:text-md text-gray-900 lg:ml-4">
-                    {heroSectionContent?.joinText1}{" "}
-                    <span className="font-bold">
-                      {heroSectionContent?.joinText2}
-                    </span>{" "}
-                    {heroSectionContent?.joinText3}
-                  </p>
-                </div>
               </div>
               <div className="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 lg:mt-12">
                 <Link
-                  
                   title=""
                   className="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-red-600 border rounded-xl font-pj hover:bg-gray-600 hover:to-red-500 transform hover:scale-105 leafbutton"
                   type="button"
-                  href={"/Contact"}
+                  href={`/${locale}/Contact`} // ✅ Ajouter locale
                   onClick={handleClick}
-            
                 >
                   Contact Us
                 </Link>
                 <Link
-                  
                   title=""
-                  className="inline-flex items-center px-4 py-4 text-lg font-bold transition-all duration-200 bg-transparent  rounded-xl hover:bg-gradient-to-r from-blue-600 to-red-600 hover:text-white hover:to-red-500 transform hover:scale-105 leafbutton"
+                  className="inline-flex items-center px-4 py-4 text-lg font-bold transition-all duration-200 bg-transparent rounded-xl hover:bg-gradient-to-r from-blue-600 to-red-600 hover:text-white hover:to-red-500 transform hover:scale-105 leafbutton"
                   role="button"
-                 
-                  href="/form/Formulaire.pdf" // Path to the file in public folder
+                  href="/form/Formulaire.pdf"
                   download="Formulaire.pdf"
-          
                 >
                   <svg
                     className="w-5 h-5 mr-2"
@@ -100,8 +74,7 @@ const router=useRouter()
                       d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                     ></path>
                   </svg>
-                  Télécharger le formulair
-                 
+                  Télécharger le formulaire
                 </Link>
               </div>
             </div>

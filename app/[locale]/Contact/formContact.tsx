@@ -8,7 +8,9 @@ import { FloatLabel } from "primereact/floatlabel";
 import { Button } from "primereact/button";
 import handleSubmit from "./action"
 import "react-toastify/dist/ReactToastify.css"; // Import Toastify styles
+import {useTranslations} from 'next-intl';
 const ContactForm = () => {
+  const t=useTranslations("homepage")
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -36,7 +38,7 @@ const ContactForm = () => {
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
               />
               <label htmlFor="name" className="text-gray-600">
-                Name
+               {t("contact.name")}
               </label>
             </FloatLabel>
           </div>
