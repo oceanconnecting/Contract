@@ -122,6 +122,7 @@ function Page() {
       ></Image>
       <div className="bg-navyblue bg-opacity-50 z-[1] absolute w-full h-full" />
       <div className="max-w-md w-full z-[2] space-y-8 bg-white p-6 rounded-xl shadow-md">
+      
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Omra Registration
@@ -133,47 +134,6 @@ function Page() {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-3">
             <div>
-              <label htmlFor="nomPrenom">Nom/Prénom</label>
-              <input
-                id="nomPrenom"
-                name="nomPrenom"
-                type="text"
-                ref={nameInput}
-                required
-                className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
-                placeholder="Nom/Prénom"
-                value={formData.nomPrenom}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                ref={emailInput}
-                required
-                className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="tel">Téléphone</label>
-              <input
-                id="tel"
-                name="tel"
-                type="tel"
-                ref={teleInput}
-                required
-                className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
-                placeholder="Téléphone"
-                value={formData.tel}
-                onChange={handleChange}
-              />
-            </div>
             <div>
               <label htmlFor="country">country</label>
               <select
@@ -222,6 +182,48 @@ function Page() {
                 </select>
               </div>
             )}
+              <label htmlFor="nomPrenom">Nom/Prénom</label>
+              <input
+                id="nomPrenom"
+                name="nomPrenom"
+                type="text"
+                ref={nameInput}
+                required
+                className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
+                placeholder="Nom/Prénom"
+                value={formData.nomPrenom}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                ref={emailInput}
+                required
+                className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="tel">Téléphone</label>
+              <input
+                id="tel"
+                name="tel"
+                type="tel"
+                ref={teleInput}
+                required
+                className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
+                placeholder="Téléphone"
+                value={formData.tel}
+                onChange={handleChange}
+              />
+            </div>
+           
           </div>
           <div className="flex justify-between items-center w-full">
             <label htmlFor="numPeople">Nombre de personnes</label>
