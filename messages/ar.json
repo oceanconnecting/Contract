@@ -1,3 +1,11 @@
-{"welcome": "marhaba",
-    "footer_text": "Ceci est le pied de page"
+{
+  "welcome":"welcome",
+  "homepage": {
+    "contact": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "message": "الرسالة",
+      "sendMail": "إرسال الرسالة"
+    }
   }
+}

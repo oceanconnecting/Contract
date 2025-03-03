@@ -8,25 +8,29 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string }; // ✅ Correction ici
+  params: { locale: string };
 }) {
-  const { locale } = params; // ✅ Plus besoin d'attendre une promesse
+  const { locale } = params;
 
-  const validLocale = locale as "en" | "fr" | "ar";
+  console.log("Locale detected:", locale);
+  console.log("Available locales:", routing.locales);
 
-  if (!routing.locales.includes(validLocale)) {
+  if (!locale || !routing.locales.includes(locale as "fr" | "en" )) {
+    console.warn(`Invalid locale: ${locale}, redirecting to notFound()`);
     notFound();
   }
 
-  const messages = await getMessages({ locale: validLocale });
+  let messages;
+  try {
+    messages = await getMessages({ locale });
+  } catch (error) {
+    console.error(`Error loading messages for locale: ${locale}`, error);
+    messages = {}; // Fallback pour éviter une erreur
+  }
 
   return (
-    <html lang={validLocale}>
-      <body>
-        <NextIntlClientProvider messages={messages} locale={validLocale}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages} locale={locale}>
+      {children}
+    </NextIntlClientProvider>
   );
 }

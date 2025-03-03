@@ -1,10 +1,27 @@
-
-  {"welcome": "welcome",
-    "footer_text": "Ceci est le pied de page",
-    "homepage":{
-            "contact":{
-                    "name":"Name"
+{
+  "welcome":"welcome",
+  "homepage": {
+              "contact": {
+                        "name": "Name",
+                        "email": "Email",
+                        "message": "Message",
+                        "sendMail": "Send Message"
+              },
+              "navbare": {
+                        "home": "Home",
+                        "umrah": "Umrah",
+                        "travel": "Travel",
+                        "about": "About",
+                        "project": "Project",
+                        "help": "Help",
+                         "espace":"Espace Member"
+          },
+          "HeroSection": {
+                        "banner": {
+                          "title1": "Get a work contract in Europe",
+                          "title2": "as soon as possible"
+                        }         
                   }
-    }
-    
+
   }
+}

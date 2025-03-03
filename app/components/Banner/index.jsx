@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { useRouter, useParams } from "next/navigation"; // ✅ Importer useParams
-
+import { FlipWordsDemo } from "./FlipWord";
 const LeafletMap = dynamic(() => import("./leaflet"), { ssr: false });
 
 const HeroSection = () => {
@@ -36,9 +36,10 @@ const HeroSection = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="w-full lg:w-1/2 lg:text-left mb-8 lg:mb-0">
               <div className="max-w-sm mx-auto sm:max-w-md md:max-w-full">
-                <p className="font-bold leading-tight text-gray-900 sm:text-3xl md:text-3xl lg:text-4xl">
-                  {heroSectionContent?.title || "Default Title"}
-                </p>
+               
+                <p>  
+  <FlipWordsDemo title1={heroSectionContent?.title1} title2={heroSectionContent?.title2} />
+</p>
                 <p className="text-gray-700 sm:text-sm lg:text-md mt-4 lg:mt-6">
                   {heroSectionContent?.description || "Default description"}
                 </p>

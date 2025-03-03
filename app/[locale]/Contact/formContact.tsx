@@ -53,7 +53,7 @@ const ContactForm = () => {
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
               />
               <label htmlFor="email" className="text-gray-600">
-                Email
+              {t("contact.email")}
               </label>
             </FloatLabel>
           </div>
@@ -69,7 +69,7 @@ const ContactForm = () => {
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
               />
               <label htmlFor="message" className="text-gray-600">
-                Message
+              {t("contact.message")}
               </label>
             </FloatLabel>
           </div>
@@ -77,7 +77,7 @@ const ContactForm = () => {
           {/* Submit Button */}
           <div className="flex justify-center">
             <Button
-              label="Send Message"
+              label=   {t("contact.sendMail")}
               icon="pi pi-send"
               className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold py-3 rounded-lg shadow-md hover:scale-105 transition-all"
             />

@@ -1,7 +1,7 @@
 "use client";
 import {useTranslations} from 'next-intl';
 import Link from 'next/link';
-import Banner from '../components/Banner/Banner';
+
 import Companies from '../components/Companies/Companies';
 import Buyers from '../components/Buyers/index';
 import Provide from '../components/Provide/index';
@@ -13,12 +13,15 @@ import HeroSection from '../components/Banner/index';
 import QuestionSection from '../components/question/question';
 import StepsSection from '../components/steps/steps';
 import CardSection from  '../components/card/card';
+import Navbar from 'app/components/Navbar';
+import Footer from 'app/components/Footer';
 
 export default function HomePage() {
   const t = useTranslations();
   return (
    
     <main>
+      <Navbar />
             <HeroSection />
       {/* <Banner /> */}
       {/* <Companies /> */}
@@ -31,6 +34,7 @@ export default function HomePage() {
       <QuestionSection/>
       <Clientsay />
       {/* <Newsletter /> */}
+      <Footer/>
     </main>
    
   );

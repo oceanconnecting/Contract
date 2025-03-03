@@ -8,27 +8,30 @@ import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import { MdAccountCircle } from "react-icons/md";
 import { usePathname } from "next/navigation"; // Use usePathname from next/navigation
-
+import DropdownMenuLanguages from "./dropdownLanguages";
+import { useTranslations } from "next-intl";
 interface NavigationItem {
   name: string;
   href: string;
   current: boolean;
 }
 
-const navigation: NavigationItem[] = [
-  { name: "Home", href: "/", current: true },
-  { name: "umrah", href: "/umrah", current: false },
-  { name: "Travel", href: "/#services", current: false },
-  { name: "Project", href: "/#project", current: false },
-  { name: "About", href: "/#about", current: false },
-  { name: "Help", href: "/", current: false },
-];
+
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = () => {
+  const tt=useTranslations("homepage")
+  const navigation: NavigationItem[] = [
+    { name: tt("navbare.home"), href: "/", current: true },
+    { name: tt("navbare.umrah"), href: "/umrah", current: false },
+    { name: tt("navbare.travel"), href: "/#services", current: false },
+    { name: tt("navbare.project"), href: "/#project", current: false },
+    { name: tt("navbare.about"), href: "/#about", current: false },
+    { name: tt("navbare.help"), href: "/", current: false },
+  ];
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname(); // Get the current pathname using usePathname
 
@@ -87,15 +90,24 @@ const Navbar = () => {
               </div>
             </div>
 
+            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0"></div>
+              <div className="hidden lg:block"></div>
+
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
               <div className="hidden lg:block">
                 <Link href="/espace-client" passHref>
                   <button className="text-white flex items-center space-links text-lg font-bold ml-9 py-2 px-6 transition duration-150 ease-in-out leafbutton bg-gradient-to-r from-blue-600 to-red-600 hover:opacity-75">
                     <MdAccountCircle className="mr-2 text-3xl" />
-                    <span>Espace membre</span>
+                    <span>{tt("navbare.espace")}</span>
                   </button>
                 </Link>
               </div>
+            </div>
+
+
+
+            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
+              <DropdownMenuLanguages/>
             </div>
 
             {/* DRAWER FOR MOBILE VIEW */}
