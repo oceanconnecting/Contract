@@ -6,11 +6,11 @@ import { routing } from "../../i18n/routing";
 export default async function LocaleLayout({
   children,
   params,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
-}) {
-  const { locale } = params;
+  params:Promise< { locale: string }>;
+}>) {
+  const { locale } = await params;
 
   console.log("Locale detected:", locale);
   console.log("Available locales:", routing.locales);

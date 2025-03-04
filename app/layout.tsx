@@ -20,9 +20,9 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  let { locale } = params;
+  let { locale } = await params;
 
   // Log the received locale for debugging
   console.log("Received locale:", locale);
