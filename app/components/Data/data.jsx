@@ -1,7 +1,8 @@
 
 
 export const heroSectionContent = {
-    title: 'Get a work contract in Europe as soon as possible',
+    title1: 'Get a work contract in Europe',
+    title2: 'as soon as possible',
     description: "Bienvenue à OceanConnecting ! Nous sommes là pour vous aider à trouver des opportunités d'emploi satisfaisantes en Europe, en vous fournissant des contrats de travail et en nous occupant de tous les documents nécessaires pour une transition en douceur. Laissez-nous vous guider vers un emploi intéressant à travers le continent.",
     avatars: [
       {

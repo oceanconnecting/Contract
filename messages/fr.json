@@ -1,0 +1,31 @@
+{
+    "welcome":"welcome",
+    "homepage":{
+            "contact":{
+                    "name":"Nom",
+                    "email":"Email",
+                    "message":"Message",
+                    "sendMail":"envoiyer message"
+
+                  },
+             "navbare": {
+                          "home": "Accueil",
+                          "umrah": "Omra",
+                          "travel": "Voyage",
+                          "about": "À propos",
+                          "project": "Projet",
+                          "help": "Aide",
+                          "espace":"espace Membre"
+                        },
+             "HeroSection": {
+                                  "banner": {
+                                    "title1": "Obtenez un contrat de travail en Europe",
+                                    "title2": "dès que possible"
+                                  }
+                    }
+                        }
+
+    }
+    
+  
+  
