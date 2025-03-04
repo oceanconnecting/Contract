@@ -25,7 +25,7 @@ export default function RootLayout({
       </head>
       <body >
         <div className="z-50">
-        <Navbar />
+        <Navbar/>
         </div>
         <div className="z-40">
         {children}
