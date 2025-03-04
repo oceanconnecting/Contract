@@ -19,7 +19,11 @@
           "HeroSection": {
                         "banner": {
                           "title1": "Get a work contract in Europe",
-                          "title2": "as soon as possible"
+                          "title2": "as soon as possible",
+                          "easily": "easily",
+                          "quickly": "quickly",
+                          "securely": "securely",
+                          "legally": "legally"
                         }         
                   }
 

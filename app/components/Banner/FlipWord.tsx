@@ -6,16 +6,16 @@ interface FlipWordsDemoProps {
   title2: string;
 }
 
-export function FlipWordsDemo({ title1, title2 }: FlipWordsDemoProps) {
-    const tt=useTranslations("homepage.Herosection")
-  const words = ["easily", "quickly", "securely", "legally"];
+export function FlipWordsDemo() {
+    const tt=useTranslations("homepage.HeroSection")
+  const words = [tt("banner.easily"), tt("banner.quickly"), tt("banner.securely"), tt("banner.legally")];
 
   return (
-    <div className="h-[3rem] flex justify-center items-center px-4">
-      <div className="text-2xl mx-auto font-normal text-neutral-400 dark:text-neutral-400 text-center">
-        {tt("title1")} 
+    <div className="h-[3rem] flex justify-center items-center ">
+      <div className="text-2xl mx-auto font-bold text-neutral-400 dark:text-neutral-400 text-start">
+        {tt("banner.title1")} 
         <FlipWords words={words} /> <br />
-        {title2}
+        {tt("banner.title2")} 
       </div>
     </div>
   );

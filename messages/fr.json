@@ -18,10 +18,19 @@
                           "espace":"espace Membre"
                         },
              "HeroSection": {
-                                  "banner": {
-                                    "title1": "Obtenez un contrat de travail en Europe",
-                                    "title2": "dès que possible"
-                                  }
+                               "banner": {
+                                          "title1": "Obtenez un contrat de travail en Europe",
+                                          "title2": "dès que possible",
+                                          "easily": "facilement",
+                                          "quickly": "rapidement",
+                                          "securely": "en toute sécurité",
+                                          "legally": "légalement",
+                                          "description":"Bienvenue chez OceanConnecting ! Nous facilitons votre accès à l'emploi en Europe en vous fournissant des contrats de travail et en gérant toute la documentation nécessaire pour une transition en douceur. Trouvez des opportunités intéressantes avec notre accompagnement !",
+                                          "contact" :"Contact" ,
+                                          "form":"Formulaire"
+                                        }
+                                        
+
                     }
                         }
 
