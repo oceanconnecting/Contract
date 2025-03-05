@@ -43,9 +43,9 @@ const HeroSection = () => {
             <div className="text-start lg:text-left">
                 <div className="text-center"> {/* Alignement global au centre */}
                     <div className="w-full max-w-full mx-auto"> {/* Conteneur avec une largeur maximale */}
-                      <p>  
+                      <div>  
                         <FlipWordsDemo />
-                      </p>
+                      </div>
                       <p className="text-gray-700 w-1/2 sm:text-sm lg:text-md mt-4 lg:mt-6 mx-auto text-center">
                         {tt("banner.description")}
                       </p>
@@ -64,19 +64,11 @@ const HeroSection = () => {
                 <a
                         href="/form/Formulaire.pdf"
                         download="Formulaire.pdf"
-                        className="inline-flex items-center px-4 py-4 text-lg font-bold transition-all duration-200 bg-transparent rounded-xl hover:bg-gradient-to-r from-blue-600 to-red-600 hover:text-white hover:to-red-500 transform hover:scale-105 leafbutton"
+                        className="inline-flex items-center px-4 py-4 text-lg font-bold transition-all duration-200 bg-transparent rounded-full hover:bg-gradient-to-r from-blue-400 to-red-400 hover:text-white hover:to-red-500 transform hover:scale-105 leafbutton"
                       >
                        {tt("banner.form")}
                       </a>
-                      <Link
-                  title=""
-                  className="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-red-600 border rounded-xl font-pj hover:bg-gray-600 hover:to-red-500 transform hover:scale-105 leafbutton"
-                  type="button"
-                  href={`/${locale}/Contact`} // ✅ Ajouter locale
-                  onClick={handleClick}
-                >
-                  {tt("banner.contact")} 
-                </Link>
+
               </div>
             </div>
             {/* <div className="flex justify-center lg:justify-center">

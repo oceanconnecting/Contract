@@ -9,17 +9,17 @@ interface ServiceItem {
 
 const serviceData: ServiceItem[] = [
   {
-    imgSrc: "/assets/provide/icon1.png",
+    imgSrc: "/assets/provide/icon1.jpg",
     title: "Contrats Travail",
     description: "Sécurisation et gestion de votre emploi.",
   },
   {
-    imgSrc: "/assets/provide/icon2.png",
+    imgSrc: "/assets/provide/icon2.jpg",
     title: "Visa Assistance",
     description: "Simplification complète du processus de visa.",
   },
   {
-    imgSrc: "/assets/provide/icon3.png",
+    imgSrc: "/assets/provide/icon3.jpg",
     title: "Intégration Aide",
     description: "Adaptation facile à votre nouvel environnement.",
   },
@@ -28,11 +28,7 @@ const serviceData: ServiceItem[] = [
     title: "Support Emploi",
     description: "Support continu pour votre croissance professionnelle.",
   },
-  {
-    imgSrc: "/assets/provide/icon4.jpg",
-    title: "Support Emploi",
-    description: "Support continu pour votre croissance professionnelle.",
-  },
+ 
 ];
 
 const Provide = () => {

@@ -15,7 +15,7 @@ import StepsSection from '../components/steps/steps';
 import CardSection from  '../components/card/card';
 import Navbar from 'app/components/Navbar';
 import Footer from 'app/components/Footer';
-
+import Map from '../components/Map/map'
 export default function HomePage() {
   const t = useTranslations();
   return (
@@ -23,7 +23,7 @@ export default function HomePage() {
     <main>
       <Navbar />
             <HeroSection />
-      {/* <Banner /> */}
+       <Map />
       {/* <Companies /> */}
       <CardSection/>
       <Buyers />

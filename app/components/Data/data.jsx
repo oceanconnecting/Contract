@@ -45,7 +45,7 @@ export const heroSectionContent = {
     contracts: [
       {
         id: 1,
-        imageUrl:'/assets/contract/paneau.jpg' ,
+        imageUrl:'../../../public/Contracts/croatia.jpg',
         country: 'Croatie',
         sector: 'Construction / Forge / Menuiserie / Peinture / Mécanique électrique / Climatisation / Permis de conduire D / Boucherie / Hôtellerie',
         language: 'Langue non requise',
@@ -62,7 +62,7 @@ export const heroSectionContent = {
       },
       {
         id: 2,
-        imageUrl:'/assets/contract/paneau.jpg' ,
+        imageUrl:'/Contracts/germany.jpeg' ,
         country: 'Allemagne',
         sector: 'Santé et soins infirmiers / Hôtels / Programmation',
         language: 'Langue requise B1',
@@ -80,7 +80,7 @@ export const heroSectionContent = {
       },
       {
         id: 3,
-        imageUrl:'/assets/contract/paneau.jpg' ,
+        imageUrl:'/Contracts/Belgique.jpg' ,
         country: 'Belgique',
         sector: 'Santé et soins infirmiers / Hôtels / Programmation',
         language: 'Langue requise B1',
@@ -98,7 +98,7 @@ export const heroSectionContent = {
       },
       {
         id: 4,
-        imageUrl:'/assets/contract/paneau.jpg' ,
+        imageUrl:'/Contracts/Italie.jpg' ,
         country: 'Italie',
         sector: 'Santé et soins infirmiers / Hôtellerie / Agriculture',
         language: 'Langue requise B1',
@@ -116,7 +116,7 @@ export const heroSectionContent = {
       },
       {
         id: 5,
-        imageUrl:'/assets/contract/paneau.jpg' ,
+        imageUrl:'/Contracts/spanish.jpg' ,
         country: 'Espagne',
         sector: 'Santé et soins infirmiers / Hôtellerie / Agriculture',
         language: 'Langue requise B1',
