@@ -147,16 +147,7 @@ const ourServices = [
               links={pageElements}
               className="items-center"
             />
-            <FooterLinkSection
-              title="Nettoyage et Réparation"
-              links={ourFormation}
-              className="items-center"
-            />
-            <FooterLinkSection
-              title="Nos services"
-              links={ourServices}
-              className="items-center"
-            />
+        
           </div>
         </div>
         <div className="mt-2">
