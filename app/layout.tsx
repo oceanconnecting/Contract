@@ -20,9 +20,9 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  let { locale } = params;
+  let { locale } = await params;
 
   // Log the received locale for debugging
   console.log("Received locale:", locale);
@@ -37,7 +37,7 @@ export default async function RootLayout({
   const validLocales = ["fr", "en", "ar"];  // List of valid locales
   if (!validLocales.includes(locale)) {
     console.log(`Invalid locale: ${locale}. Redirecting to 'fr'...`);
-    redirect("/fr");  // Redirect to 'fr' if the locale is not supported
+    redirect("/en");  // Redirect to 'fr' if the locale is not supported
   }
 
   // Load messages for the current locale
@@ -62,12 +62,13 @@ export default async function RootLayout({
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="z-50">
-            <Navbar />
+           
           </div>
           <div className="z-40">{children}</div>
-          <Footer />
+       
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
+
