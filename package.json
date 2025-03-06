@@ -33,6 +33,7 @@
     "lucide-react": "^0.456.0",
     "next": "^15.0.2",
     "next-sitemap": "^4.2.3",
+    "nextjs-google-analytics": "^2.3.7",
     "nodemailer": "^6.10.0",
     "postcss": "8.4.47",
     "react": "18.3.1",

@@ -1,7 +1,7 @@
 import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: 'Contract Ocean',
@@ -25,6 +25,7 @@ export default function RootLayout({
       </head>
       <body >
         <div className="z-50">
+        <GoogleAnalytics gaId="G-YZWBR602ET" />
         <Navbar/>
         </div>
         <div className="z-40">
