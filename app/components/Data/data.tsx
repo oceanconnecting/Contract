@@ -1,4 +1,4 @@
-
+import img from '@public/Contracts/Croatia.jpg';
 
 export const heroSectionContent = {
     title1: 'Get a work contract in Europe',
@@ -45,7 +45,7 @@ export const heroSectionContent = {
     contracts: [
       {
         id: 1,
-        imageUrl:'../../../public/Contracts/croatia.jpg',
+        imageUrl:img,
         country: 'Croatie',
         sector: 'Construction / Forge / Menuiserie / Peinture / Mécanique électrique / Climatisation / Permis de conduire D / Boucherie / Hôtellerie',
         language: 'Langue non requise',

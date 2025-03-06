@@ -22,7 +22,7 @@ export default async function LocaleLayout({
 
   let messages;
   try {
-    messages = await getMessages({ locale });
+    messages = await getMessages({locale});
   } catch (error) {
     console.error(`Error loading messages for locale: ${locale}`, error);
     messages = {}; // Fallback pour éviter une erreur

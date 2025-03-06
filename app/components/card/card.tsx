@@ -22,16 +22,9 @@ const CardSection = () => {
           {contractContent?.description || "Default description"}
         </p>
         <div>
-        <img
-          src="../../../public/assets/default-image.jpg"
-          alt="Pays inconnu"
-          width={400}
-          height={192}
-          className="w-full h-48 object-cover rounded-t-lg"
-          // onError={(e) => (e.currentTarget.src = "/assets/default-image.jpg")} // Utilisation de l'image par défaut en cas d'erreur
-        />
+        
         </div>
-        <ul className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {contractContent?.contracts?.length > 0 &&
   contractContent.contracts.map((contract, index) =>
     
@@ -74,7 +67,7 @@ const CardSection = () => {
               // </li>
               contract ? <ContractCard key={index} contract={contract} /> : null
             )}
-        </ul>
+        </div>
       </div>
     </section>
   );

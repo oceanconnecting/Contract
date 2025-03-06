@@ -12,10 +12,11 @@ import Newsletter from '../components/Newsletter/Newsletter';
 import HeroSection from '../components/Banner/index';
 import QuestionSection from '../components/question/question';
 import StepsSection from '../components/steps/steps';
-import CardSection from  '../components/card/card';
+import CardSection from '../components/card/card';
 import Navbar from 'app/components/Navbar';
 import Footer from 'app/components/Footer';
-import Map from '../components/Map/map'
+import Map from '../components/Map/map';
+import { contractContent } from '../components/Data/data';
 export default function HomePage() {
   const t = useTranslations();
   return (
@@ -24,8 +25,8 @@ export default function HomePage() {
       <Navbar />
             <HeroSection />
        <Map />
-      {/* <Companies /> */}
-      <CardSection/>
+      
+      <CardSection />
       <Buyers />
       <Provide />
       <Why />
@@ -33,7 +34,7 @@ export default function HomePage() {
       <StepsSection/>
       <QuestionSection/>
       <Clientsay />
-      {/* <Newsletter /> */}
+     
       <Footer/>
     </main>
    

@@ -3,7 +3,7 @@ import { routing } from './routing';
 export default async function handleLocale({ requestLocale }: { requestLocale: string }) {
   let locale: string | undefined = await requestLocale;
 
-  if (!locale || !routing.locales.includes(locale as "fr" | "en" | "ar")) {
+  if (!locale || !routing.locales.includes(locale as "fr" | "en")) {
     console.warn(`Invalid or undefined locale: ${locale}. Falling back to default.`);
     locale = routing.defaultLocale;
   }

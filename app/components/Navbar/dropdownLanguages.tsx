@@ -10,7 +10,7 @@ import { GrLanguage } from "react-icons/gr";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect, startTransition } from "react";
 import { useLocale } from "next-intl";
-
+import Image from "next/image"; 
 const availableLocales = ["en", "fr"]; // Définition des langues disponibles
 
 const DropdownMenuLanguages = () => {
@@ -38,7 +38,7 @@ const DropdownMenuLanguages = () => {
     <div className="relative">
       <DropdownMenu>
         <DropdownMenuTrigger className="p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition">
-          <GrLanguage size={25} className="text-gray-700" />
+          {/* <GrLanguage size={25} className="text-gray-700" /> */}
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-32 bg-white rounded-lg shadow-lg mt-2 border">
           {[
@@ -53,7 +53,7 @@ const DropdownMenuLanguages = () => {
               }`}
               onClick={() => changeLanguage(lang)}
             >
-              <img src={flag} alt={`${label} Flag`} width="20" height="20" />
+              <Image src={flag} alt={`${label} Flag`} width="20" height="20" />
               <span className="ml-2">{label}</span>
             </DropdownMenuItem>
           ))}
