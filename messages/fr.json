@@ -34,81 +34,100 @@
                                        "title": "Pays disponibles pour la recherche d'emploi à l'étranger",
                                        "description": "Trouvez des opportunités d'emploi en Europe avec OceanConnecting. Nous facilitons l'accès aux marchés du travail européens et aidons à obtenir les contrats et documents nécessaires. Rejoignez-nous pour démarrer facilement votre carrière en Europe.",
                                        "button":"To Apply",
+                                       "country":"Ville",
+                                       "language":"Langue",
+                                       "visaDuration":"Durée du visa",
+                                       "contractDuration":"Durée du contrat",
+                                       "contractPrice":"Prix du contrat",
+                                       "additionalInfo":"Informations supplémentaires",
+                                       "international":"International",
+                                       "sector":"Secteur",
+
+
+
+
+
                                          "contract1": {
-                                           "country": "Croatie",
-                                           "sector": {
-                                             "Construction": "Construction",
-                                             "Forge": "Forge",
-                                             "Menuiserie": "Menuiserie",
-                                             "Peinture": "Peinture",
-                                             "Mécanique électrique": "Mécanique électrique",
-                                             "Climatisation": "Climatisation",
-                                             "Permis de conduire D": "Permis de conduire D",
-                                             "Boucherie": "Boucherie",
-                                             "Hôtellerie": "Hôtellerie"
-                                           },
-                                           "language": "Langue non requise",
-                                           "visaDuration": "La durée du visa est de 5 mois.",
-                                           "contractDuration": "Contrat de travail d'un 1 an",
-                                           "contractPrice": "Le prix du contrat est de 60 000 DH.",
-                                           "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                           "international": "International"
+                                                        "country": "Croatie",
+                                                        "sector": {
+                                                          "Construction": "Construction",
+                                                          "Forge": "Forge",
+                                                          "Menuiserie": "Menuiserie",
+                                                          "Peinture": "Peinture",
+                                                          "Mecanique": "Mécanique électrique",
+                                                          "electrique" :"Électrique",
+                                                          "Climatisation": "Climatisation",
+                                                          "Permis": "Permis de conduire D",
+                                                          "Boucherie": "Boucherie",
+                                                          "Hotellerie": "Hôtellerie"
+                                                        },
+                                                        
+                                                        "language": "Langue non requise",
+                                                        "visaDuration": "La durée du visa est de 5 mois.",
+                                                        "contractDuration": "Contrat de travail d'un 1 an",
+                                                        "contractPrice": "Le prix du contrat est de 60 000 DH.",
+                                                        "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
+                                                        "international": "International"
                                          },
                                               "contract2": {
-                                                "country": "Allemagne",
-                                                "sector": {
-                                                  "Sante": "Santé et soins infirmiers",
-                                                  "Hôtels": "Hôtels",
-                                                  "Programmation": "Programmation"
-                                                },
-                                                "language": "Langue requise B1",
-                                                "visaDuration": "La durée du visa est de 8 mois.",
-                                                "contractDuration": "Contrat de travail d'un 1 an",
-                                                "contractPrice": "Le prix du contrat est de 80 000 DH.",
-                                                "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                                "international": "International"
+                                                        "country": "Allemagne",
+                                                        "sector": {
+                                                          "Sante": "Santé ",
+                                                          "Soins_infirmiers":"soins infirmiers",
+                                                          "Hotels": "Hôtels",
+                                                          "Programmation": "Programmation"
+                                                        },
+                                                        "language": "Langue requise B1",
+                                                        "visaDuration": "La durée du visa est de 8 mois.",
+                                                        "contractDuration": "Contrat de travail d'un 1 an",
+                                                        "contractPrice": "Le prix du contrat est de 80 000 DH.",
+                                                        "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
+                                                        "international": "International"
                                               },
                                               "contract3": {
-                                                "country": "Belgique",
-                                                "sector": {
-                                                  "Sante": "",
-                                                  "Hôtels": "Hôtels",
-                                                  "Programmation": "Programmation"
-                                                },
-                                                "language": "Langue requise B1",
-                                                "visaDuration": "La durée du visa est de 8 mois.",
-                                                "contractDuration": "Contrat de travail d'un 1 an",
-                                                "contractPrice": "Le prix du contrat est de 60 000 DH.",
-                                                "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                                "international": "International"
+                                                            "country": "Belgique",
+                                                            "sector": {
+                                                              "Sante": "Santé",
+                                                              "Soins_infirmiers": "Soins infirmiers",
+                                                              "Hotels": "Hôtels",
+                                                              "Programmation": "Programmation"
+                                                            }, 
+                                                            "language": "Langue requise B1",
+                                                            "visaDuration": "La durée du visa est de 8 mois.",
+                                                            "contractDuration": "Contrat de travail d'un 1 an",
+                                                            "contractPrice": "Le prix du contrat est de 60 000 DH.",
+                                                            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
+                                                            "international": "International"
                                               },
                                               "contract4": {
-                                                "country": "Italie",
-                                                "sector": {
-                                                  "Sante": "",
-                                                  "Hôtellerie": "Hôtellerie",
-                                                  "Agriculture": "Agriculture"
-                                                },
-                                                "language": "Langue requise B1",
-                                                "visaDuration": "La durée du visa est de 8 mois.",
-                                                "contractDuration": "Contrat de travail d'un 1 an",
-                                                "contractPrice": "Le prix du contrat est de 60 000 DH.",
-                                                "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                                "international": "International"
+                                                          "country": "Italie",
+                                                          "sector": {
+                                                            "Sante": "Santé",
+                                                            "Soins_infirmiers": "Soins infirmiers",
+                                                            "Hotellerie": "Hôtellerie",
+                                                            "Agriculture": "Agriculture"
+                                                          },        
+                                                          "language": "Langue requise B1",
+                                                          "visaDuration": "La durée du visa est de 8 mois.",
+                                                          "contractDuration": "Contrat de travail d'un 1 an",
+                                                          "contractPrice": "Le prix du contrat est de 60 000 DH.",
+                                                          "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
+                                                          "international": "International"
                                               },
                                               "contract5": {
-                                                "country": "Espagne",
-                                                "sector": {
-                                                  "Sante": "",
-                                                  "Hôtellerie": "Hôtellerie",
-                                                  "Agriculture": "Agriculture"
-                                                },
-                                                "language": "Langue requise B1",
-                                                "visaDuration": "La durée du visa est de 8 mois.",
-                                                "contractDuration": "Contrat de travail d'un 1 an",
-                                                "contractPrice": "Le prix du contrat est de 60 000 DH.",
-                                                "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                                "international": "International"
+                                                          "country": "Espagne",
+                                                          "sector": {
+                                                            "Sante": "Santé",
+                                                            "Soins_infirmiers": "Soins infirmiers",
+                                                            "Hotellerie": "Hôtellerie",
+                                                            "Agriculture": "Agriculture"
+                                                      },
+                                                          "language": "Langue requise B1",
+                                                          "visaDuration": "La durée du visa est de 8 mois.",
+                                                          "contractDuration": "Contrat de travail d'un 1 an",
+                                                          "contractPrice": "Le prix du contrat est de 60 000 DH.",
+                                                          "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
+                                                          "international": "International"
                                               }
                                             
                                           }

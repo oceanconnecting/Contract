@@ -1,8 +1,14 @@
+import { StaticImageData } from "next/image";
+
 export interface Contract {
     id: number;
-    imageUrl?: string;
+    imageUrl: string | StaticImageData;
     country?: string;
-    sector?: string;
+    sector: {
+
+      [key: string]: string | undefined;
+  
+    };
     language?: string;
     visaDuration?: string;
     contractDuration?: string;

@@ -38,7 +38,7 @@ const DropdownMenuLanguages = () => {
     <div className="relative">
       <DropdownMenu>
         <DropdownMenuTrigger className="p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition">
-          {/* <GrLanguage size={25} className="text-gray-700" /> */}
+          <GrLanguage size={25} className="text-gray-700" />
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-32 bg-white rounded-lg shadow-lg mt-2 border">
           {[

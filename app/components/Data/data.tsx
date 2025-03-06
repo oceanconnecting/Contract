@@ -1,4 +1,10 @@
-import img from '@public/Contracts/Croatia.jpg';
+// import img from '@public/Contracts/Croatia.jpg';
+import croatia from 'public/Contracts/croatia.jpg';
+import germany from 'public/Contracts/germany.jpeg'; 
+import belgique from 'public/Contracts/Belgique.jpg';
+import italie from 'public/Contracts/Italie.jpg';
+import spanish from 'public/Contracts/spanish.jpg';
+
 
 export const heroSectionContent = {
     title1: 'Get a work contract in Europe',
@@ -45,9 +51,20 @@ export const heroSectionContent = {
     contracts: [
       {
         id: 1,
-        imageUrl:img,
+        imageUrl: croatia,
         country: 'Croatie',
-        sector: 'Construction / Forge / Menuiserie / Peinture / Mécanique électrique / Climatisation / Permis de conduire D / Boucherie / Hôtellerie',
+        sector: {
+                      Construction :"Construction ",
+                      Forge :"Forge",
+                      Menuiserie :"Menuiserie",
+                      Peinture :"Peinture",
+                      Mecanique:"Mécanique",
+                      electrique :"Électrique",
+                      Climatisation :"Climatisation",
+                      Permis:"Permis de conduire D",
+                      Boucherie :"Boucherie",
+                      Hotellerie:"Hôtellerie",
+                },
         language: 'Langue non requise',
         visaDuration: 'La durée du visa est de 5 mois.',
         contractDuration: "Contrat de travail d'un 1 an",
@@ -62,9 +79,14 @@ export const heroSectionContent = {
       },
       {
         id: 2,
-        imageUrl:'/Contracts/germany.jpeg' ,
+        imageUrl: germany,
         country: 'Allemagne',
-        sector: 'Santé et soins infirmiers / Hôtels / Programmation',
+        sector: {
+          Sante: "Santé",
+          Soins_infirmiers: "Soins infirmiers",
+          Hotels: "Hôtels",
+          Programmation: "Programmation",
+        },
         language: 'Langue requise B1',
         visaDuration: 'La durée du visa est de 8 mois.',
         contractDuration: "Contrat de travail d'un 1 an",
@@ -80,10 +102,15 @@ export const heroSectionContent = {
       },
       {
         id: 3,
-        imageUrl:'/Contracts/Belgique.jpg' ,
+        imageUrl: belgique,
         country: 'Belgique',
-        sector: 'Santé et soins infirmiers / Hôtels / Programmation',
-        language: 'Langue requise B1',
+        sector: {
+          Sante: "Santé",
+          Soins_infirmiers: "Soins infirmiers",
+          Hotels: "Hôtels",
+          Programmation: "Programmation",
+        },  
+          language: 'Langue requise B1',
         visaDuration: 'La durée du visa est de 8 mois.',
         contractDuration: "Contrat de travail d'un 1 an",
         contractPrice: 'Le prix du contrat est de 60 000 DH.',
@@ -98,10 +125,14 @@ export const heroSectionContent = {
       },
       {
         id: 4,
-        imageUrl:'/Contracts/Italie.jpg' ,
+        imageUrl: italie,
         country: 'Italie',
-        sector: 'Santé et soins infirmiers / Hôtellerie / Agriculture',
-        language: 'Langue requise B1',
+        sector: {
+          Sante: "Santé",
+          Soins_infirmiers: "Soins infirmiers",
+          Hotellerie: "Hôtellerie",
+          Agriculture: "Agriculture",
+        },        language: 'Langue requise B1',
         visaDuration: 'La durée du visa est de 8 mois.',
         contractDuration: "Contrat de travail d'un 1 an",
         contractPrice: 'Le prix du contrat est de 60 000 DH.',
@@ -116,10 +147,15 @@ export const heroSectionContent = {
       },
       {
         id: 5,
-        imageUrl:'/Contracts/spanish.jpg' ,
+        imageUrl: spanish ,
         country: 'Espagne',
-        sector: 'Santé et soins infirmiers / Hôtellerie / Agriculture',
-        language: 'Langue requise B1',
+        sector: {
+                    Sante: "Santé",
+                    Soins_infirmiers: "Soins infirmiers",
+                    Hotellerie: "Hôtellerie",
+                    Agriculture: "Agriculture",
+              },
+            language: 'Langue requise B1',
         visaDuration: 'La durée du visa est de 8 mois.',
         contractDuration: "Contrat de travail d'un 1 an",
         contractPrice: 'Le prix du contrat est de 60 000 DH.',

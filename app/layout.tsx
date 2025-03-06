@@ -29,15 +29,15 @@ export default async function RootLayout({
 
   // Fallback to 'en' if locale is not defined or is invalid
   if (!locale) {
-    locale = "en";  // Fallback to default locale
-    console.log(`Locale not found, defaulting to 'en'`);
+    locale = "fr";  // Fallback to default locale
+    console.log(`Locale not found, defaulting to ${locale}...`);
   }
 
   // Ensure the locale is one of the supported locales
-  const validLocales = ["fr", "en", "ar"];  // List of valid locales
+  const validLocales = ["fr", "en"];  // List of valid locales
   if (!validLocales.includes(locale)) {
     console.log(`Invalid locale: ${locale}. Redirecting to 'fr'...`);
-    redirect("/en");  // Redirect to 'fr' if the locale is not supported
+    redirect("/fr");  // Redirect to 'fr' if the locale is not supported
   }
 
   // Load messages for the current locale

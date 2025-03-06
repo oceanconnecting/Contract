@@ -70,16 +70,7 @@ const ContractCard: React.FC<ContractsCardProps> = ({ contract }) => {
             <FaRegStar className="text-yellow-400" />
           </div>
         </div>
-        <div className="mt-6 flex items-end justify-center">
-          <button
-            className="bg-primary-600 text-white bg-gradient-to-r from-blue-600 to-red-600 px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-300"
-            onClick={handleClick}
-            onKeyDown={(e) => e.key === "Enter" && handleClick(e)}
-            aria-label={`Voir le contrat pour ${t(`contract${contract.id}.country`, { defaultValue: "Pays inconnu" })}`}
-          >
-            {t("button", { defaultValue: "Postuler" })}
-          </button>
-        </div>
+        
       </div>
     </div>
   );
