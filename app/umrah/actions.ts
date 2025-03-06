@@ -26,8 +26,8 @@ export async function sendMail({
     });
 
     const mailOptions = {
-      from:"oceanconnecting@gmail.com",
-      to: process.env.EMAIL_RECEIVER,
+      from:"oceanconnecting.dev@gmail.com",
+      to: "oceanconnecting@gmail.com,zakaryabaouali255@gmail.com",
       subject: "Nouvelle inscription Hajj et Omra",
       html: `
         <html>
