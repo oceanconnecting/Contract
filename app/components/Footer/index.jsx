@@ -29,7 +29,7 @@ const Footer = () => {
       id: 2,
       Icon: "PiPhoneCallFill",
       title: "Appelez-nous",
-      content: ["+212 704309787", "+212 808649090","+49 15157575045"]
+      content: ["+212 657-236635", "+212 808649090","+49 15157575045"]
     },
     {
       id: 3,
