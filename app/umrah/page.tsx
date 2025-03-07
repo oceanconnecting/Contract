@@ -23,6 +23,10 @@ function Page() {
 
   const countries = [
     {
+      title: "Maroc",
+      subitems: ["Agadir","Ouejda", "Marrakech", "Casablanca", "Tanger", "Meknes","Dakhla","Aiyoun"],
+    },
+    {
       title: "Italia",
       subitems: ["Rome", "Milan", "Naples", "Turin", "Florence"],
     },
