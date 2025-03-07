@@ -8,6 +8,7 @@ export async function sendMail({
   country,
   ville,
   numPeople,
+  month
 }: {
   nomPrenom: string;
   email: string;
@@ -15,6 +16,7 @@ export async function sendMail({
   country: string;
   numPeople: number;
   ville: string;
+  month:string
 }) {
   try {
     const transporter = nodemailer.createTransport({
@@ -38,6 +40,7 @@ export async function sendMail({
             <p><strong>Téléphone :</strong> ${tel}</p>
             <p><strong>Ville :</strong> ${country}</p>
             <p><strong>country :</strong> ${ville}</p>
+            <p><strong>Month :</strong> ${month}</p>
             <p><strong>number of people :</strong> ${numPeople}</p>
           </body>
         </html>

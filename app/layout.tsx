@@ -4,7 +4,7 @@ import Footer from './components/Footer/index';
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
-  title: 'Contract Ocean',
+  title: 'Contract OceanConnecting',
   description: "Ocean Connecting vous donne la possibilité d'obtenir un contrat de travail en Europe",
 }
 

@@ -6,6 +6,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { Loader, Users } from "lucide-react";
 import NumberStepper from "../components/ui/numberStepper";
 
+
 const notifySuccess = () => toast.success("form submited Successfully!");
 const notifyError = () => toast.error("This is an error!");
 
@@ -17,6 +18,7 @@ function Page() {
     country: "",
     ville: "",
     numPeople: NaN,
+    month:""
   });
 
   const [onCountrySelect, setOnCountryselect] = useState<string>("");
@@ -67,7 +69,10 @@ function Page() {
       subitems: ["Düsseldorf", "Essen"],
     },
   ];
-
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
   const [IsSubmitting, setIsSubmitting] = useState(false);
 
   const nameInput = useRef<HTMLInputElement>(null);
@@ -105,6 +110,7 @@ function Page() {
         country: "",
         ville: "",
         numPeople: 1,
+        month:""
       });
       setOnCountryselect("");
     } catch (error) {
@@ -227,8 +233,27 @@ function Page() {
                 onChange={handleChange}
               />
             </div>
-           
           </div>
+          <div>
+              <label htmlFor="month">Month</label>
+              <select
+                id="month"
+                name="month"
+                required
+                className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
+                value={formData.month}
+                onChange={handleChange}
+              >
+                <option value="">--Select Month--</option>
+                {months.map((month, idx) => (
+                  <option key={idx} value={month}>
+                    {month}
+                  </option>
+                ))}
+              </select>
+            </div>
+          
+          
           <div className="flex justify-between items-center w-full">
             <label htmlFor="numPeople">Nombre de personnes</label>
             <NumberStepper
