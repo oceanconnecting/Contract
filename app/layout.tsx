@@ -2,7 +2,7 @@ import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
 import { GoogleAnalytics } from '@next/third-parties/google'
-
+import { Analytics } from "@vercel/analytics/react"
 export const metadata = {
   title: 'Contract OceanConnecting',
   description: "Ocean Connecting vous donne la possibilité d'obtenir un contrat de travail en Europe",
@@ -26,6 +26,7 @@ export default function RootLayout({
       <body >
         <div className="z-50">
         <GoogleAnalytics gaId="G-YZWBR602ET" />
+        <Analytics/>
         <Navbar/>
         </div>
         <div className="z-40">
