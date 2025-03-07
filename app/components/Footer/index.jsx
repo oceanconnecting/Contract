@@ -29,7 +29,7 @@ const Footer = () => {
       id: 2,
       Icon: "PiPhoneCallFill",
       title: "Appelez-nous",
-      content: ["+212 704-309787", "+212 80-8649090"]
+      content: ["+212 704309787", "+212 808649090","+49 15157575045"]
     },
     {
       id: 3,
@@ -84,7 +84,13 @@ const Footer = () => {
               <div>
                 <p className="text-sm font-bold">{title}</p>
                 <p className="text-sm font-semibold" style={{ direction: "ltr", unicodeBidi: "plaintext" }}>
-                  {Array.isArray(content) ? content.join(", ") : content}
+                {Array.isArray(content) ? (
+                    content.map((number, index) => (
+                      <div key={index}>{number}</div>
+                    ))
+                  ) : (
+                    content
+                  )}
                 </p>
               </div>
             </div>
