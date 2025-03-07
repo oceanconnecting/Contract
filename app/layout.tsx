@@ -26,11 +26,12 @@ export default function RootLayout({
       <body >
         <div className="z-50">
         <GoogleAnalytics gaId="G-YZWBR602ET" />
-        <Analytics/>
+        
         <Navbar/>
         </div>
         <div className="z-40">
         {children}
+        <Analytics/>
         </div>
         
         <Footer />
