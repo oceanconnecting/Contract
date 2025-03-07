@@ -10,6 +10,7 @@ import { MdAccountCircle } from "react-icons/md";
 import { usePathname } from "next/navigation"; // Use usePathname from next/navigation
 import DropdownMenuLanguages from "./dropdownLanguages";
 import { useTranslations } from "next-intl";
+import ocean1 from "../../../public/assets/logo/ocean1.svg";
 interface NavigationItem {
   name: string;
   href: string;
@@ -60,7 +61,7 @@ const Navbar = () => {
                   />
                   <Image
                     className="hidden h-20 w-full lg:block"
-                    src="/assets/logo/ocean1.svg"
+                    src={ocean1}
                     alt="dsign-logo"
                     width={250}
                     height={160}
@@ -106,7 +107,7 @@ const Navbar = () => {
 
 
 
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
+            <div className="absolute inset-y-0 right-0 flex items-center pr-10 sm:static sm:inset-auto sm:pr-0">
               <DropdownMenuLanguages/>
             </div>
 

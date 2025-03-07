@@ -1,143 +1,133 @@
 {
-    "welcome":"welcome",
-    "homepage":{
-            "contact":{
-                    "name":"Nom",
-                    "email":"Email",
-                    "message":"Message",
-                    "sendMail":"envoiyer message"
+  "welcome": "welcome",
+  "homepage": {
+    "contact": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "sendMail": "envoiyer message"
+    },
+    "navbare": {
+      "home": "Accueil",
+      "umrah": "Omra",
+      "travel": "Voyage",
+      "about": "À propos",
+      "project": "Projet",
+      "help": "Aide",
+      "espace": "espace Membre"
+    },
+    "HeroSection": {
+      "banner": {
+        "title1": "Obtenez un contrat de travail en Europe",
+        "title2": "dès que possible",
+        "easily": "facilement",
+        "quickly": "rapidement",
+        "securely": "en toute sécurité",
+        "legally": "légalement",
+        "description": "Bienvenue chez OceanConnecting ! Nous facilitons votre accès à l'emploi en Europe en vous fournissant des contrats de travail et en gérant toute la documentation nécessaire pour une transition en douceur. Trouvez des opportunités intéressantes avec notre accompagnement !",
+        "contact": "Contact",
+        "form": "Formulaire"
+      }
+    },
+    "CardSection": {
+      "contracts": {
+        "title": "Pays disponibles pour la recherche d'emploi à l'étranger",
+        "description": "Trouvez des opportunités d'emploi en Europe avec OceanConnecting. Nous facilitons l'accès aux marchés du travail européens et aidons à obtenir les contrats et documents nécessaires. Rejoignez-nous pour démarrer facilement votre carrière en Europe.",
+        "button": "Postuler",
+          "country": "Pays",
+          "city": "Ville",
+          "language": "Langue",
+          "levelLanguage": "Niveau de langue",
+          "level":"Niveau d'études requis",
+          "experience": "Expérience",
+          "visaDuration": "Durée du visa",
+          "contractDuration": "Durée du contrat",
+          "contractPrice": "Prix du contrat",
+          "additionalInfo": "Informations supplémentaires",
+          "international": "International",
+          "yes": "Oui", 
+          "more": "Plus",
+          "no": "Non",
+          "sector": "Secteur",
+          
+          
+          "contract1": {
+            "country": "Croatie",
+            "city": "Zagreb",
+            "sector": {
+              "Construction": "Construction",
+              "Forge": "Forge",
+              "Menuiserie": "Menuiserie",
+              "Peinture": "Peinture",
+              "Mecanique": "Mécanique électrique",
+              "electrique": "Électrique",
+              "Climatisation": "Climatisation",
+              "Permis": "Permis de conduire D",
+              "Boucherie": "Boucherie",
+              "Hotellerie": "Hôtellerie"
+            },
+            "language": "Langue non requise",
+            "label": "Un contrat en Croatie ",
 
-                  },
-             "navbare": {
-                          "home": "Accueil",
-                          "umrah": "Omra",
-                          "travel": "Voyage",
-                          "about": "À propos",
-                          "project": "Projet",
-                          "help": "Aide",
-                          "espace":"espace Membre"
-                        },
-                        "HeroSection": {
-                          "banner": {
-                                     "title1": "Obtenez un contrat de travail en Europe",
-                                     "title2": "dès que possible",
-                                     "easily": "facilement",
-                                     "quickly": "rapidement",
-                                     "securely": "en toute sécurité",
-                                     "legally": "légalement",
-                                     "description":"Bienvenue chez OceanConnecting ! Nous facilitons votre accès à l'emploi en Europe en vous fournissant des contrats de travail et en gérant toute la documentation nécessaire pour une transition en douceur. Trouvez des opportunités intéressantes avec notre accompagnement !",
-                                     "contact" :"Contact" ,
-                                     "form":"Formulaire"
-                                   }},
-        "CardSection":{
-                          "contracts":{
-                                       "title": "Pays disponibles pour la recherche d'emploi à l'étranger",
-                                       "description": "Trouvez des opportunités d'emploi en Europe avec OceanConnecting. Nous facilitons l'accès aux marchés du travail européens et aidons à obtenir les contrats et documents nécessaires. Rejoignez-nous pour démarrer facilement votre carrière en Europe.",
-                                       "button":"To Apply",
-                                       "country":"Ville",
-                                       "language":"Langue",
-                                       "visaDuration":"Durée du visa",
-                                       "contractDuration":"Durée du contrat",
-                                       "contractPrice":"Prix du contrat",
-                                       "additionalInfo":"Informations supplémentaires",
-                                       "international":"International",
-                                       "sector":"Secteur",
-
-
-
-
-
-                                         "contract1": {
-                                                        "country": "Croatie",
-                                                        "sector": {
-                                                          "Construction": "Construction",
-                                                          "Forge": "Forge",
-                                                          "Menuiserie": "Menuiserie",
-                                                          "Peinture": "Peinture",
-                                                          "Mecanique": "Mécanique électrique",
-                                                          "electrique" :"Électrique",
-                                                          "Climatisation": "Climatisation",
-                                                          "Permis": "Permis de conduire D",
-                                                          "Boucherie": "Boucherie",
-                                                          "Hotellerie": "Hôtellerie"
-                                                        },
-                                                        
-                                                        "language": "Langue non requise",
-                                                        "visaDuration": "La durée du visa est de 5 mois.",
-                                                        "contractDuration": "Contrat de travail d'un 1 an",
-                                                        "contractPrice": "Le prix du contrat est de 60 000 DH.",
-                                                        "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                                        "international": "International"
-                                         },
-                                              "contract2": {
-                                                        "country": "Allemagne",
-                                                        "sector": {
-                                                          "Sante": "Santé ",
-                                                          "Soins_infirmiers":"soins infirmiers",
-                                                          "Hotels": "Hôtels",
-                                                          "Programmation": "Programmation"
-                                                        },
-                                                        "language": "Langue requise B1",
-                                                        "visaDuration": "La durée du visa est de 8 mois.",
-                                                        "contractDuration": "Contrat de travail d'un 1 an",
-                                                        "contractPrice": "Le prix du contrat est de 80 000 DH.",
-                                                        "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                                        "international": "International"
-                                              },
-                                              "contract3": {
-                                                            "country": "Belgique",
-                                                            "sector": {
-                                                              "Sante": "Santé",
-                                                              "Soins_infirmiers": "Soins infirmiers",
-                                                              "Hotels": "Hôtels",
-                                                              "Programmation": "Programmation"
-                                                            }, 
-                                                            "language": "Langue requise B1",
-                                                            "visaDuration": "La durée du visa est de 8 mois.",
-                                                            "contractDuration": "Contrat de travail d'un 1 an",
-                                                            "contractPrice": "Le prix du contrat est de 60 000 DH.",
-                                                            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                                            "international": "International"
-                                              },
-                                              "contract4": {
-                                                          "country": "Italie",
-                                                          "sector": {
-                                                            "Sante": "Santé",
-                                                            "Soins_infirmiers": "Soins infirmiers",
-                                                            "Hotellerie": "Hôtellerie",
-                                                            "Agriculture": "Agriculture"
-                                                          },        
-                                                          "language": "Langue requise B1",
-                                                          "visaDuration": "La durée du visa est de 8 mois.",
-                                                          "contractDuration": "Contrat de travail d'un 1 an",
-                                                          "contractPrice": "Le prix du contrat est de 60 000 DH.",
-                                                          "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                                          "international": "International"
-                                              },
-                                              "contract5": {
-                                                          "country": "Espagne",
-                                                          "sector": {
-                                                            "Sante": "Santé",
-                                                            "Soins_infirmiers": "Soins infirmiers",
-                                                            "Hotellerie": "Hôtellerie",
-                                                            "Agriculture": "Agriculture"
-                                                      },
-                                                          "language": "Langue requise B1",
-                                                          "visaDuration": "La durée du visa est de 8 mois.",
-                                                          "contractDuration": "Contrat de travail d'un 1 an",
-                                                          "contractPrice": "Le prix du contrat est de 60 000 DH.",
-                                                          "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-                                                          "international": "International"
-                                              }
-                                            
-                                          }
-                                        }
-                                        
-
-                    }
-                        }
-
-    
-    
+            
+            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté."
+          },
+          "contract2": {
+            "country": "Allemagne",
+            "city": "Berlin",
+            "sector": {
+              "Sante": "Santé ",
+              "Soins_infirmiers": "soins infirmiers",
+              "Hotels": "Hôtels",
+              "Programmation": "Programmation"
+            },
+            "language": "Langue requise B1",
+            "label": "Un contrat en Allemagne ",
   
+            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté."
+          },
+          "contract3": {
+            "country": "Belgique",
+            "city": "Bruxelles",
+            "sector": {
+              "Sante": "Santé",
+              "Soins_infirmiers": "Soins infirmiers",
+              "Hotels": "Hôtels",
+              "Programmation": "Programmation"
+            },
+            "language": "Langue requise B1",
+            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
+            "label": "Un contrat en Belgique  ."
   
+          },
+          "contract4": {
+            "country": "Italie",
+            "city": "Rome",
+            "sector": {
+              "Sante": "Santé",
+              "Soins_infirmiers": "Soins infirmiers",
+              "Hotellerie": "Hôtellerie",
+              "Agriculture": "Agriculture"
+            },
+            "label": "Un contrat en Italie .",
+  
+            "language": "Langue requise B1",
+            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté."
+          },
+          "contract5": {
+            "country": "Espagne",
+            "city": "Madrid",
+            "sector": {
+              "Sante": "Santé",
+              "Soins_infirmiers": "Soins infirmiers",
+              "Hotellerie": "Hôtellerie",
+              "Agriculture": "Agriculture"
+            },
+            "language": "Langue requise B1",
+            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
+            "label": "Un contrat en Espagne ."
+         
+        }
+      }
+    }}
+  }

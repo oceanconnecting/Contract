@@ -11,6 +11,8 @@ import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect, startTransition } from "react";
 import { useLocale } from "next-intl";
 import Image from "next/image"; 
+import fr from "../../../public/lang/fr.jpg"
+import en from "../../../public/lang/en.png"
 const availableLocales = ["en", "fr"]; // Définition des langues disponibles
 
 const DropdownMenuLanguages = () => {
@@ -35,16 +37,16 @@ const DropdownMenuLanguages = () => {
   
 
   return (
-    <div className="relative">
+    <div className="relative m-10">
       <DropdownMenu>
-        <DropdownMenuTrigger className="p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition">
-          <GrLanguage size={25} className="text-gray-700" />
+        <DropdownMenuTrigger className="p-2  rounded-lg hover:bg-gray-200 transition">
+          <GrLanguage size={25} className="text-gray-700 text-lg " />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-32 bg-white rounded-lg shadow-lg mt-2 border">
+        <DropdownMenuContent className="w-25 bg-white rounded-lg shadow-lg mt-2 border">
           {[
-            { lang: "fr", flag: "https://img.icons8.com/emoji/48/france-emoji.png", label: "Fr" },
+            { lang: "fr", flag:fr, label: "Fr" },
             // { lang: "ar", flag: "https://img.icons8.com/emoji/48/saudi-arabia-emoji.png", label: "Ar" },
-            { lang: "en", flag: "https://img.icons8.com/emoji/48/united-kingdom-emoji.png", label: "EN" },
+            { lang: "en", flag:en, label: "EN" },
           ].map(({ lang, flag, label }) => (
             <DropdownMenuItem
               key={lang}
