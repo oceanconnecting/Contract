@@ -10,12 +10,13 @@ import HeroSection from './components/Banner/index';
 import QuestionSection from './components/question/question';
 import StepsSection from './components/steps/steps';
 import CardSection from  './components/card/card';
-
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
+      <Analytics />
       {/* <Banner /> */}
       {/* <Companies /> */}
       <CardSection/>
