@@ -1,35 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Services from "./services";
+import { FaArrowRight } from "react-icons/fa";
 interface ServiceItem {
   imgSrc: string;
   title: string;
   description: string;
 }
 
-const serviceData: ServiceItem[] = [
-  {
-    imgSrc: "/assets/provide/icon1.jpg",
-    title: "Contrats Travail",
-    description: "Sécurisation et gestion de votre emploi.",
-  },
-  {
-    imgSrc: "/assets/provide/icon2.jpg",
-    title: "Visa Assistance",
-    description: "Simplification complète du processus de visa.",
-  },
-  {
-    imgSrc: "/assets/provide/icon3.jpg",
-    title: "Intégration Aide",
-    description: "Adaptation facile à votre nouvel environnement.",
-  },
-  {
-    imgSrc: "/assets/provide/icon4.jpg",
-    title: "Support Emploi",
-    description: "Support continu pour votre croissance professionnelle.",
-  },
- 
-];
+
 
 const Provide = () => {
   return (
@@ -37,43 +16,41 @@ const Provide = () => {
       id="services"
       className="py-24 bg-gradient-to-br from-blue-50 to-red-100"
     >
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-              Nous fournissons{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600">
-                ce service
-              </span>
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Chez OceanConnecting, nous sommes spécialisés dans la mise en
-              relation de personnes avec des contrats de travail dans toute
-              l&apos;Europe. Notre soutien complet comprend l&apos;obtention de
-              postes de travail et la gestion des documents nécessaires pour
-              assurer une transition en douceur pour nos clients.
-            </p>
-            <Link
-              href="/"
-              className="inline-flex items-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full hover:from-blue-700 hover:to-red-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              En savoir plus
-              <Image
-                src="/assets/provide/arrow.svg"
-                alt="Arrow"
-                width={20}
-                height={20}
-                className="ml-2"
-              />
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {serviceData.map((service, index) => (
-              <ServiceCard key={index} {...service} />
-            ))}
-          </div>
-        </div>
+      <div className="container grid lg:grid-cols-3 md:grid-cols-1  sm:grid-cols-1  gap-10 mx-auto px-4">
+
+      <div className="max-w-6xl mx-auto px-6 py-12">
+  <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight text-center">
+    Nous fournissons{" "}
+    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600">
+      ce service
+    </span>
+  </h2>
+  
+  <p className="mt-6 text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed text-center md:text-left">
+    Chez OceanConnecting, nous sommes spécialisés dans la mise en
+    relation de personnes avec des contrats de travail dans toute
+    l&apos;Europe. Notre soutien complet comprend l&apos;obtention de
+    postes de travail et la gestion des documents nécessaires pour
+    assurer une transition en douceur pour nos clients.
+  </p>
+  
+  <div className="mt-8 flex justify-center  text-center items-center md:justify-start">
+    <Link
+      href="/"
+      className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full hover:from-blue-700 hover:to-red-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      En savoir plus
+      <FaArrowRight className="ml-2"/>
+    </Link>
+  </div>
+</div>
+
+        <div className="col-span-2">
+          <Services /></div>
+
       </div>
+
+     
     </section>
   );
 };

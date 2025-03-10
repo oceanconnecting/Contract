@@ -71,12 +71,14 @@ const ContractCard: React.FC<ContractsCardProps> = ({ contract }) => {
           </div>
         </div>
         <div className="flex items-center justify-between mt-4">
-          <button
-            onClick={handleClick}
-            className="px-4 py-2 bg-primary-600 text-white rounded-lg font-semibold text-sm uppercase hover:bg-primary-700 transition-colors duration-300">
-            {t("more", { defaultValue: "more" })}
-            <MdArrowForwardIos />
-            </button>
+        <button
+  onClick={handleClick}
+  className="px-4 py-2 bg-primary-600 flex items-center justify-center text-center text-black rounded-lg font-semibold text-sm uppercase hover:bg-primary-700 transition-colors duration-300"
+  aria-label="More"
+>        
+  <span>{t("more", { defaultValue: "more" })}</span>
+  <MdArrowForwardIos size={15} />
+</button>
         </div>
       </div>
     </div>
