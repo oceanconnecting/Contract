@@ -1,27 +1,27 @@
 import React from "react";
 import Link from "next/link";
 import { MdAccountCircle } from "react-icons/md";
-
+import { useTranslations } from "next-intl";
 interface NavigationItem {
   name: string;
   href: string;
   current: boolean;
 }
 
-const navigation: NavigationItem[] = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'Services', href: '#services', current: false },
-  { name: 'About', href: '#about', current: false },
-  { name: 'Project', href: '#project', current: false },
-  { name: 'Help', href: '/', current: false },
-  { name: "umrah", href: "/umrah", current: false },
-]
-
 function classNames(...classes: string[]) {
+  
   return classes.filter(Boolean).join(' ')
 }
 
 const Data = () => {
+  const tt = useTranslations("homepage");
+    const navigation: NavigationItem[] = [
+      { name: tt("navbare.home"), href: "/", current: true },
+      { name: tt("navbare.umrah"), href: "/umrah", current: false },
+      { name: tt("navbare.travel"), href: "/#services", current: false },
+      { name: tt("navbare.project"), href: "/#project", current: false },
+      { name: tt("navbare.about"), href: "/#about", current: false },
+      { name: tt("navbare.help"), href: "/", current: false },]
   return (
     <div className="rounded-md max-w-sm w-full mx-auto">
       <div className="flex-1 space-y-4 py-1">

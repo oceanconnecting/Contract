@@ -1,0 +1,138 @@
+{
+  "welcome": "welcome",
+  "homepage": {
+    "contact": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "sendMail": "Send message"
+    },
+    "navbare": {
+      "home": "Home",
+      "umrah": "Umrah",
+      "travel": "Travel",
+      "about": "About",
+      "project": "Project",
+      "help": "Help",
+      "espace": "Member space"
+    },
+    "HeroSection": {
+      "banner": {
+        "title1": "Get a work contract in Europe",
+        "title2": "as soon as possible",
+        "easily": "easily",
+        "quickly": "quickly",
+        "securely": "securely",
+        "legally": "legally",
+        "description": "Welcome to OceanConnecting! We make it easier for you to access jobs in Europe by providing work contracts and managing all the necessary documentation for a smooth transition. Find exciting opportunities with our support!",
+        "contact": "Contact",
+        "form": "Form"
+      }
+    },
+    "CardSection": {
+      "contracts": {
+        "title": "Countries available for job search abroad",
+        "description": "Find job opportunities in Europe with OceanConnecting. We facilitate access to European job markets and help obtain the necessary contracts and documents. Join us to easily start your career in Europe.",
+        "button": "Apply",
+        "country": "Country",
+        "city": "City",
+        "language": "Language",
+        "levelLanguage": "Language level",
+        "level": "Required education level",
+        "experience": "Experience",
+        "visaDuration": "Visa duration",
+        "contractDuration": "Contract duration",
+        "contractPrice": "Contract price",
+        "additionalInfo": "Additional information",
+        "international": "International",
+        "yes": "Yes",
+        "more": "More",
+        "no": "No",
+        "sector": "Sector",
+        "contract1": {
+          "country": "Croatia",
+          "city": "Zagreb",
+          "sector": {
+            "Construction": "Construction",
+            "Forge": "Forge",
+            "Menuiserie": "Menuiserie",
+            "Carpentry": "Carpentry",
+            "Peinture": "Painting",
+            "Mecanique": "Mechanical",
+            "electrique": "Electrical",
+            "Climatisation": "Air Conditioning",
+            "Permis": "Driving License D",
+            "Boucherie": "Butchery",
+            "Hotellerie": "Hospitality"
+
+
+
+
+           
+
+
+              
+          },
+          "language": "Language not required",
+          "label": "A contract in Croatia",
+          "additionalInfo": "Accommodation, medical care, renewable for 5 years, and help with citizenship."
+        },
+        "contract2": {
+          "country": "Germany",
+          "city": "Berlin",
+          "sector": {
+            "Sante": "Health",
+            "Soins_infirmiers": "Nursing",
+            "Hotels": "Hotels",
+            "Programmation": "Programming"
+
+
+
+          },
+          "language": "Required language B1",
+          "label": "A contract in Germany",
+          "additionalInfo": "Accommodation, medical care, renewable for 5 years, and help with citizenship."
+        },
+        "contract3": {
+          "country": "Belgium",
+          "city": "Brussels",
+          "sector": {
+            "Sante": "Health",
+            "Soins_infirmiers": "Nursing",
+            "Hotels": "Hotels",
+            "Programmation": "Programming"
+          },
+          "language": "Required language B1",
+          "additionalInfo": "Accommodation, medical care, renewable for 5 years, and help with citizenship.",
+          "label": "A contract in Belgium"
+        },
+        "contract4": {
+          "country": "Italy",
+          "city": "Rome",
+          "sector": {
+            "Sante": "Health",
+            "Soins_infirmiers": "Nursing",
+            "Hotellerie": "Hotels",
+            "Agriculture": "Agriculture"
+          },
+          "label": "A contract in Italy",
+          "language": "Required language B1",
+          "additionalInfo": "Accommodation, medical care, renewable for 5 years, and help with citizenship."
+        },
+        "contract5": {
+          "country": "Spain",
+          "city": "Madrid",
+          "sector": {
+            "Sante": "Health",
+            "Soins_infirmiers": "Nursing",
+            "Hotellerie": "Hospitality",
+            "Agriculture": "Agriculture"
+          },
+          "language": "Required language B1",
+          "additionalInfo": "Accommodation, medical care, renewable for 5 years, and help with citizenship.",
+          "label": "A contract in Spain"
+        }
+      }
+    }
+  }
+}

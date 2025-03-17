@@ -1,3 +1,4 @@
+"use client";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -6,7 +7,10 @@ import Image from "next/image";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import { MdAccountCircle } from "react-icons/md";
-import { usePathname } from "next/navigation"; // Use usePathname from next/navigation
+import { usePathname } from "next/navigation";
+import DropdownMenuLanguages from "./dropdownLanguages";
+import { useTranslations } from "next-intl";
+import ocean1 from "../../../public/assets/logo/ocean1.svg";
 
 interface NavigationItem {
   name: string;
@@ -14,104 +18,79 @@ interface NavigationItem {
   current: boolean;
 }
 
-const navigation: NavigationItem[] = [
-  { name: "Home", href: "/", current: true },
-  { name: "umrah", href: "/umrah", current: false },
-  { name: "Travel", href: "/#services", current: false },
-  { name: "Project", href: "/#project", current: false },
-  { name: "About", href: "/#about", current: false },
-  { name: "Help", href: "/", current: false },
-];
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
 const Navbar = () => {
+  const tt = useTranslations("homepage");
+  const navigation: NavigationItem[] = [
+    { name: tt("navbare.home"), href: "/", current: true },
+    { name: tt("navbare.umrah"), href: "/umrah", current: false },
+    { name: tt("navbare.travel"), href: "/#services", current: false },
+    { name: tt("navbare.project"), href: "/#project", current: false },
+    { name: tt("navbare.about"), href: "/#about", current: false },
+    { name: tt("navbare.help"), href: "/", current: false },
+  ];
   const [isOpen, setIsOpen] = React.useState(false);
-  const pathname = usePathname(); // Get the current pathname using usePathname
-
-  // Determine if we're on the profile page
+  const pathname = usePathname();
   const isProfilePage = pathname === "/profile";
 
   return (
-    <Disclosure as="nav" className="navbar">
+    <Disclosure as="nav" className="bg-white shadow-md sticky top-0 rounded-full z-50">
       <>
-        <div
-          className={`mx-auto ${
-            isProfilePage ? "" : "max-w-7xl"
-          } px-6 lg:py-4 lg:px-8`}
-        >
-          <div className="relative flex h-24 lg:h-16 items-center justify-between">
-            <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
-              {/* LOGO */}
-              <Link href="/" passHref>
-                <div className="flex flex-shrink-0 items-center">
-                  <Image
-                    className="block h-20 w-full lg:hidden"
-                    src="/assets/logo/ocean1.svg"
-                    alt="dsign-logo"
-                    width={160}
-                    height={112}
-                  />
-                  <Image
-                    className="hidden h-20 w-full lg:block"
-                    src="/assets/logo/ocean1.svg"
-                    alt="dsign-logo"
-                    width={250}
-                    height={160}
-                  />
-                </div>
+        <div className={`mx-auto px-6 lg:px-8 ${isProfilePage ? "" : "max-w-7xl"}`}>
+          <div className="flex h-16 lg:h-20 items-center justify-between">
+            {/* LOGO */}
+            <Link href="/" passHref>
+              <div className="flex items-center">
+                <Image
+                  className="h-12 w-auto lg:hidden"
+                  src={ocean1}
+                  alt="logo"
+                  width={160}
+                  height={112}
+                />
+                
+              </div>
+            </Link>
+
+            {/* MENU NAVIGATION */}
+            <div className="hidden lg:flex space-x-6">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`text-lg font-semibold transition-opacity duration-200 ${
+                    item.current ? "text-gray-900" : "text-gray-600 hover:text-gray-900"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+
+            {/* OPTIONS UTILISATEUR */}
+            <div className="flex items-center space-x-4">
+              {/* Sélecteur de langue */}
+              <DropdownMenuLanguages />
+
+              {/* Bouton Espace Client */}
+              <Link href="/espace-client" passHref>
+                <button className="hidden lg:flex items-center bg-gradient-to-r from-blue-600 to-red-600 text-white font-bold text-lg px-6 py-2 rounded-lg transition hover:opacity-80">
+                  <MdAccountCircle className="mr-2 text-2xl" />
+                  {tt("navbare.espace")}
+                </button>
               </Link>
 
-              {/* LINKS */}
-              <div className="hidden lg:block m-auto">
-                <div className="flex space-x-4">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className={classNames(
-                        item.current
-                          ? " text-gray-700 hover:opacity-100"
-                          : "hover:text-black  hover:opacity-100",
-                        "px-3 py-4 text-lg text-gray-700 font-bold opacity-75 space-links"
-                      )}
-                      aria-current={item.href ? "page" : undefined}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
+              {/* Bouton Menu Mobile */}
+              <button onClick={() => setIsOpen(true)} className="lg:hidden">
+                <Bars3Icon className="h-6 w-6 text-gray-700" />
+              </button>
             </div>
-
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
-              <div className="hidden lg:block">
-                <Link href="/espace-client" passHref>
-                  <button className="text-white flex items-center space-links text-lg font-bold ml-9 py-2 px-6 transition duration-150 ease-in-out leafbutton bg-gradient-to-r from-blue-600 to-red-600 hover:opacity-75">
-                    <MdAccountCircle className="mr-2 text-3xl" />
-                    <span>Espace membre</span>
-                  </button>
-                </Link>
-              </div>
-            </div>
-
-            {/* DRAWER FOR MOBILE VIEW */}
-            <div className="block lg:hidden">
-              <Bars3Icon
-                className="block h-6 w-6"
-                aria-hidden="true"
-                onClick={() => setIsOpen(true)}
-              />
-            </div>
-
-            {/* DRAWER LINKS DATA */}
-            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-              <Drawerdata />
-            </Drawer>
           </div>
         </div>
+
+        {/* DRAWER POUR MOBILE */}
+        <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+          <Drawerdata />
+        </Drawer>
       </>
     </Disclosure>
   );

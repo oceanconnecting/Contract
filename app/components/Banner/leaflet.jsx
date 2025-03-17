@@ -4,8 +4,8 @@ import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css'; 
 
-
 const LeafletMap = ({ contracts }) => {
+  
   const mapRef = useRef(null);
   const mapContainerRef = useRef(null);
 
@@ -31,7 +31,7 @@ const LeafletMap = ({ contracts }) => {
             <div style="position: relative; display: flex; align-items: center;">
               <img src="${contract.icon}" alt="icon" style="width: 25px; height: 41px;" />
               <span style="background-image: linear-gradient(to right, #2563EB, #DC2626); padding: 2px 5px; border-radius: 3px; margin-left: 2px; font-size: 12px; font-weight: bold; color: white;">
-                ${contract.label}
+                ${contract.country}
               </span>
             </div>`,
           iconSize: [50, 50],

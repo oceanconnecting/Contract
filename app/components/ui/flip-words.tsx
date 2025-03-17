@@ -1,10 +1,14 @@
 "use client";
 import React, { useCallback, useEffect, useRef, useState } from "react";
+<<<<<<< HEAD
 // import { , LayoutGroup } from "motion/react";
 
 import { AnimatePresence } from "motion/react"
 import * as motion from "motion/react-client"
  
+=======
+import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
+>>>>>>> Fatima
 import { cn } from "../../lib/utils";
 
 export const FlipWords = ({

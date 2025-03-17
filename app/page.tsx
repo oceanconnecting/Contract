@@ -1,5 +1,5 @@
-import Banner from './components/Banner/Banner';
-import Companies from './components/Companies/Companies';
+"use client";
+
 import Buyers from './components/Buyers/index';
 import Provide from './components/Provide/index';
 import Why from './components/Why/index';

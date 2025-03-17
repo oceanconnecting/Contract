@@ -13,7 +13,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-
+      customGray: '#e7ecef',
       // Basic Colors
       white: "#ffffff",
       black: "#000000",

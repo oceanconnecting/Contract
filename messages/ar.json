@@ -1,0 +1,11 @@
+{
+  "welcome":"welcome",
+  "homepage": {
+    "contact": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "message": "الرسالة",
+      "sendMail": "إرسال الرسالة"
+    }
+  }
+}
