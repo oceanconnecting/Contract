@@ -13,9 +13,8 @@ const Services = () => {
   const services = [
     {
       icon: icon1,
-      title: "Gestion de Projets et Suivi Personnalisé",
-      description:
-        "Le suivi tout au long de notre projet a été exceptionnel. Grâce à leur gestion, nous avons atteint tous nos objectifs dans les délais.",
+      title: "Gestion de Projets et Conseil en Stratégie",
+      description:"",
       area: "md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]",
       color: "bg-blue-50 dark:bg-blue-950/30",
       borderColor: "group-hover:border-blue-300 dark:group-hover:border-blue-700",
@@ -24,43 +23,39 @@ const Services = () => {
     },
     {
       icon: icon2,
-      title: "Partenariats et Collaboration Internationale",
-      description:
-        "Collaborer avec eux a été une expérience incroyable. Grâce à leurs partenaires européens, notre expansion à l'international a été un succès.",
-        area: "md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]",
+      title: "Partenariat et Collaboration d'Affaires",
+      description:"",
+       area: "md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]",
         color: "bg-purple-50 dark:bg-purple-950/30",
-        borderColor: "group-hover:border-purple-300 dark:group-hover:border-purple-700",
-        iconBg: "bg-purple-100 dark:bg-purple-900/30",
+        borderColor: "group-hover:border-red-300 dark:group-hover:border-red-700",
+        iconBg: "bg-red-100 dark:bg-purple-900/30",
         iconBorder: "border-purple-200 dark:border-purple-800",
       },
       {
         icon: icon3,
-        title: "Recrutement et Placement de Talents",
+        title: "Recrutement et Placement de Personnel",
         area: "md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]",
-      description:
-        "Grâce à leur réseau, nous avons trouvé des candidats qualifiés pour nos projets en seulement deux semaines. Leur service est rapide et efficace !",
-      color: "bg-emerald-50 dark:bg-emerald-950/30",
-      borderColor: "group-hover:border-emerald-300 dark:group-hover:border-emerald-700",
-      iconBg: "bg-emerald-100 dark:bg-emerald-900/30",
+        description:"",
+         color: "bg-emerald-50 dark:bg-emerald-950/30",
+      borderColor: "group-hover:border-green-300 dark:group-hover:border-green-700",
+      iconBg: "bg-green-100 dark:bg-emerald-900/30",
       iconBorder: "border-emerald-200 dark:border-emerald-800",
     },
     {
       icon: icon4,
-      title: "Consultation en Transformation Digitale",
-      description:
-        "Leurs conseils en transformation digitale ont été cruciaux pour moderniser notre entreprise. Grâce à leurs solutions, nous avons optimisé nos opérations.",
-      area: "md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]",
+      title: "Marketing et Communication Digitale",
+      description:"",
+       area: "md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]",
       color: "bg-amber-50 dark:bg-amber-950/30",
-      borderColor: "group-hover:border-amber-300 dark:group-hover:border-amber-700",
+      borderColor: "group-hover:border-yellow-300 dark:group-hover:border-yellow-700",
       iconBg: "bg-amber-100 dark:bg-amber-900/30",
-      iconBorder: "border-amber-200 dark:border-amber-800",
+      iconBorder: "border-yellow-200 dark:border-amber-800",
     },
     {
       icon: icon1,
       title: "Formation et Développement des Compétences",
-      description:
-        "Les formations que nous avons suivies ont grandement amélioré la gestion de nos projets. Nos équipes sont maintenant plus efficaces et motivées.",
-      area: "md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]",
+      description:"",
+       area: "md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]",
       color: "bg-rose-50 dark:bg-rose-950/30",
       borderColor: "group-hover:border-rose-300 dark:group-hover:border-rose-700",
       iconBg: "bg-rose-100 dark:bg-rose-900/30",
@@ -69,7 +64,7 @@ const Services = () => {
   ]
 
   return (
-    <ul className="grid grid-cols-1 grid-rows-none gap-6 md:grid-cols-12 md:grid-rows-3 lg:gap-6 xl:max-h-[38rem] xl:grid-rows-2">
+    <ul className="grid grid-cols-1 grid-rows-none gap-6 md:grid-cols-12 md:grid-rows-3 lg:gap-6 xl:max-h-[20rem] xl:grid-rows-2">
       {services.map((service, index) => (
         <GridItem
           key={index}
@@ -106,7 +101,7 @@ const GridItem = ({ area, icon, title, description, color, borderColor, iconBg, 
   const cardRef = useRef<HTMLDivElement>(null)
 
   return (
-    <li className={`min-h-[16rem] list-none ${area}`}>
+    <li className={`min-h-[10rem] list-none ${area}`}>
       <div
         className="group relative h-full w-full transition-all duration-500 ease-out"
         onMouseEnter={() => setIsHovered(true)}
