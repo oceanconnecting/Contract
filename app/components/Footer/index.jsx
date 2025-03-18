@@ -120,7 +120,7 @@ const contactInfo = [
               </div>
               <div>
                 <p className="text-sm font-bold">{title}</p>
-                <p
+                <div
                   className="text-sm font-semibold"
                   style={{ direction: "ltr", unicodeBidi: "plaintext" }}
                 >
@@ -129,7 +129,7 @@ const contactInfo = [
                         <div key={index}>{number}</div>
                       ))
                     : content}
-                </p>
+                </div>
               </div>
             </div>
           ))}

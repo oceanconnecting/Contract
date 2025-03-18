@@ -4,7 +4,7 @@ import { sendMail } from "./actions";
 import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 import { Loader, Users } from "lucide-react";
-import NumberStepper from "../components/ui/numberStepper";
+import NumberStepper from "../../components/ui/numberStepper";
 
 
 const notifySuccess = () => toast.success("form submited Successfully!");

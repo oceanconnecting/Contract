@@ -11,6 +11,7 @@ import { usePathname } from "next/navigation";
 import DropdownMenuLanguages from "./dropdownLanguages";
 import { useTranslations } from "next-intl";
 import ocean1 from "../../../public/assets/logo/ocean1.svg";
+import { useLocale } from "use-intl";
 
 interface NavigationItem {
   name: string;
@@ -19,15 +20,18 @@ interface NavigationItem {
 }
 
 const Navbar = () => {
+  const locale = useLocale(); // Récupère la langue actuelle
   const tt = useTranslations("homepage");
+
   const navigation: NavigationItem[] = [
     { name: tt("navbare.home"), href: "/", current: true },
-    { name: tt("navbare.umrah"), href: "/umrah", current: false },
+    { name: tt("navbare.umrah"), href: `/${locale}/umrah`, current: false },
     { name: tt("navbare.travel"), href: "/#services", current: false },
     { name: tt("navbare.project"), href: "/#project", current: false },
     { name: tt("navbare.about"), href: "/#about", current: false },
     { name: tt("navbare.help"), href: "/", current: false },
   ];
+
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname();
   const isProfilePage = pathname === "/profile";
@@ -47,7 +51,6 @@ const Navbar = () => {
                   width={160}
                   height={112}
                 />
-                
               </div>
             </Link>
 
