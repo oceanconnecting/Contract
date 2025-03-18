@@ -23,8 +23,8 @@ module.exports = {
       "green-100": "#dcfce7",
       "green-600": "#16a34a",
       "green-500": "#22c55e",
-
-      // Blues
+// purple
+purple: '#800080',      // Blues
       blue: "#0075FF",
       "blue-100": "#dbeafe",
       blue100: "#93C5FD",
