@@ -4,7 +4,7 @@ import  { IconArrowRight,  IconArrowLeft } from "@tabler/icons-react";
 // import   from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { StaticImageData } from "next/image";
 type Testimonial = {
     percent: string
@@ -22,24 +22,39 @@ export const AnimatedTestimonials = ({
 }) => {
   const [active, setActive] = useState(0);
 
-  const handleNext = () => {
-    setActive((prev) => (prev + 1) % testimonials.length);
-  };
 
-  const handlePrev = () => {
-    setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
+
+
 
   const isActive = (index: number) => {
     return index === active;
   };
+
+
+
+
+
+
+ // Memoize handleNext function
+ const handleNext = useCallback(() => {
+  setActive((prev) => (prev + 1) % testimonials.length);
+}, [testimonials.length]);
+
+const handlePrev = () => {
+  setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+};
+
+
+
+
 
   useEffect(() => {
     if (autoplay) {
       const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
-  }, [autoplay]);
+  }, [autoplay, handleNext]); // Add handleNext to the dependencies array
+  
 
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;
