@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 import { Card } from "../ui/card";
 import {
   ArrowRight,
@@ -8,9 +8,7 @@ import {
 } from "lucide-react";
 
 export default function Contract() {
-
   return (
-
     <section>
       <h2 className="text-2xl font-bold mb-4 flex items-center">
         <Briefcase className="mr-2" />

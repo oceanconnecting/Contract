@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 import { Card } from "../ui/card";
 import { FileText, Camera } from "lucide-react";
 import { Input } from "../ui/input";

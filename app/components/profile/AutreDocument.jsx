@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import {Button} from "../ui/button"
+import { Button } from "../ui/Button";
 import { Card } from "../ui/card";
 import { FileText, } from "lucide-react";
 
