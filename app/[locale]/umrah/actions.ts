@@ -51,6 +51,6 @@ export async function sendMail({
 
     const info = await transporter.sendMail(mailOptions);
   } catch (error) {
-    throw new Error("Erreur lors de l'envoi du mail");
+    throw new Error("      Erreur lors de l'envoi du mail");
   }
 }
