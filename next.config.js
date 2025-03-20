@@ -1,9 +1,6 @@
 const createNextIntlPlugin = require('next-intl/plugin');
 
-const withNextIntl = createNextIntlPlugin({
-  locales: ['en', 'fr'], // Liste des langues supportées
-  defaultLocale: 'fr', // Langue par défaut
-});
+const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

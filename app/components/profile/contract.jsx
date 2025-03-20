@@ -11,30 +11,30 @@ export default function Contract() {
 
   return (
 
-        <section>
-          <h2 className="text-2xl font-bold mb-4 flex items-center">
-            <Briefcase className="mr-2" />
-            My Applications
-          </h2>
-          <div className="flex flex-wrap gap-4">
-            <ApplicationCard
-              country="Germany"
-              category="Health"
-              status="Approved"
-              date="12/03/2024"
-            />
-            <ApplicationCard
-              country="Italy"
-              category="Health"
-              status="Approved"
-              date="12/03/2024"
-            />
-            <Button className="flex-shrink-0 w-full sm:w-48 h-48 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center text-gray-600 hover:border-gray-400 hover:text-gray-800 transition-colors">
-              <span className="text-4xl mb-2">+</span>
-              New request
-            </Button>
-          </div>
-        </section>
+    <section>
+      <h2 className="text-2xl font-bold mb-4 flex items-center">
+        <Briefcase className="mr-2" />
+        My Applications
+      </h2>
+      <div className="flex flex-wrap gap-4">
+        <ApplicationCard
+          country="Germany"
+          category="Health"
+          status="Approved"
+          date="12/03/2024"
+        />
+        <ApplicationCard
+          country="Italy"
+          category="Health"
+          status="Approved"
+          date="12/03/2024"
+        />
+        <Button className="flex-shrink-0 w-full sm:w-48 h-48 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center text-gray-600 hover:border-gray-400 hover:text-gray-800 transition-colors">
+          <span className="text-4xl mb-2">+</span>
+          New request
+        </Button>
+      </div>
+    </section>
   );
 }
 
