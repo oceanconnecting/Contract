@@ -15,9 +15,9 @@ export default function AoutreDocument() {
               <FileText className="mr-2" />
               My Documents
             </h2>
-            <Button className="bg-blue-600 hover:bg-blue-700 font-bold rounded-lg text-white space-links custom-shadow">
+            <button className="bg-blue-600 hover:bg-blue-700 font-bold rounded-lg text-white space-links custom-shadow">
               Edit
-            </Button>
+            </button>
           </div>
           {/* Carousel Container */}
           <div className="flex overflow-x-auto scroll-smooth gap-x-4 pb-4">
