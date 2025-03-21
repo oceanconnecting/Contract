@@ -2,8 +2,11 @@ import { NextRequest } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 
 export function middleware(request: NextRequest) {
+  console.log('Incoming request URL:', request.nextUrl.pathname); // Debugging
+  console.log('Detected locale:', request.nextUrl.locale); // Debugging
+
   return createMiddleware({
-    locales: ['en', 'fr'],
+    locales: ['fr', 'en'],
     defaultLocale: 'fr',
   })(request);
 }

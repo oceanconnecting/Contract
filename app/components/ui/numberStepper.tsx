@@ -21,8 +21,8 @@ export default function NumberStepper({
 
   useEffect(() => {
     onChange(value);
-  }, [value]);
-
+  }, [value, onChange]);  // Add onChange to the dependency array
+  
   const updateValue = (newValue: number) => {
     const clampedValue = Math.max(min, Math.min(max, newValue));
     setValue(clampedValue);

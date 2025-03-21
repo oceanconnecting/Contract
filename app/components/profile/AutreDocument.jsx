@@ -1,34 +1,35 @@
 "use client";
 
-import { Button } from "../ui/button";
+import React from "react";
+import { Button } from "../ui/Button";
 import { Card } from "../ui/card";
-import {FileText,} from "lucide-react";
+import { FileText, } from "lucide-react";
 
 
 
 export default function AoutreDocument() {
 
   return (
-        <section className="mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold flex items-center">
-              <FileText className="mr-2" />
-              My Documents
-            </h2>
-            <Button className="bg-blue-600 hover:bg-blue-700 font-bold rounded-lg text-white space-links custom-shadow">
-              Edit
-            </Button>
-          </div>
-          {/* Carousel Container */}
-          <div className="flex overflow-x-auto scroll-smooth gap-x-4 pb-4">
-            <DocumentCard title="IMAGE:" />
-            <DocumentCard title="CNI:" />
-            <DocumentCard title="Driving Licence:" />
-            <DocumentCard title="Diplome:" />
-            <DocumentCard title="CV:" />
-            <DocumentCard title="Passport" />
-          </div>
-        </section>
+    <section className="mb-8">
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-2xl font-bold flex items-center">
+          <FileText className="mr-2" />
+          My Documents
+        </h2>
+        <Button className="bg-blue-600 hover:bg-blue-700 font-bold rounded-lg text-white space-links custom-shadow">
+          Edit
+        </Button>
+      </div>
+      {/* Carousel Container */}
+      <div className="flex overflow-x-auto scroll-smooth gap-x-4 pb-4">
+        <DocumentCard title="IMAGE:" />
+        <DocumentCard title="CNI:" />
+        <DocumentCard title="Driving Licence:" />
+        <DocumentCard title="Diplome:" />
+        <DocumentCard title="CV:" />
+        <DocumentCard title="Passport" />
+      </div>
+    </section>
   );
 }
 

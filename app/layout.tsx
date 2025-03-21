@@ -46,7 +46,7 @@ export default async function RootLayout({
     messages = await getMessages({ locale });
   } catch (error) {
     console.error(`Error loading messages for locale: ${locale}`, error);
-    messages = await getMessages({ locale: "en" });  // Fallback to English messages
+    messages = await getMessages({ locale: "fr" });  // Fallback to English messages
   }
 
   return (
@@ -57,7 +57,8 @@ export default async function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-        <link rel="manifest" href="/site.webmanifest" />
+        
+        <link rel="manifest" href={`/${locale}/site.webmanifest`} />
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>

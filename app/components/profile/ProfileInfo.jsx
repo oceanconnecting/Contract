@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 import { Card } from "../ui/card";
 import { FileText, Camera } from "lucide-react";
 import { Input } from "../ui/input";
@@ -19,7 +19,7 @@ import {
 export default function ProfileInfo({ profileData: initialProfileData }) {
   const [profileData, setProfileData] = useState(initialProfileData);
   const fileInputRef = useRef(null);
-  
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -100,49 +100,49 @@ export default function ProfileInfo({ profileData: initialProfileData }) {
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
-              <ProfileFieldEditor
-                label="Email"
-                name="email"
-                value={profileData.email}
-                onChange={handleInputChange}
-              />
-              
-              <ProfileFieldEditor
-                label="Phone Number"
-                name="phoneNumber"
-                value={profileData.numero}
-                onChange={handleInputChange}
-              />
+                <ProfileFieldEditor
+                  label="Email"
+                  name="email"
+                  value={profileData.email}
+                  onChange={handleInputChange}
+                />
+
+                <ProfileFieldEditor
+                  label="Phone Number"
+                  name="phoneNumber"
+                  value={profileData.numero}
+                  onChange={handleInputChange}
+                />
               </div>
               <div className="grid grid-cols-2 gap-4">
-              <ProfileFieldEditor
-                label="CIN"
-                name="cin"
-                value={profileData.client.CIN}
-                onChange={handleInputChange}
-              />
-              <ProfileFieldEditor
-                label="Zip Code"
-                name="zipCode"
-                value={profileData.client.zipCode}
-                onChange={handleInputChange}
-              />
-              
+                <ProfileFieldEditor
+                  label="CIN"
+                  name="cin"
+                  value={profileData.client.CIN}
+                  onChange={handleInputChange}
+                />
+                <ProfileFieldEditor
+                  label="Zip Code"
+                  name="zipCode"
+                  value={profileData.client.zipCode}
+                  onChange={handleInputChange}
+                />
+
               </div>
               <div className="grid grid-cols-2 gap-4">
-              <ProfileFieldEditor
-                label="City"
-                name="city"
-                value={profileData.client.city}
-                onChange={handleInputChange}
-              />
-              <ProfileFieldEditor
-                label="Address"
-                name="address"
-                value={profileData.client.address}
-                onChange={handleInputChange}
-              />
-              </div>             
+                <ProfileFieldEditor
+                  label="City"
+                  name="city"
+                  value={profileData.client.city}
+                  onChange={handleInputChange}
+                />
+                <ProfileFieldEditor
+                  label="Address"
+                  name="address"
+                  value={profileData.client.address}
+                  onChange={handleInputChange}
+                />
+              </div>
             </div>
             <div className="flex justify-end">
               <Button
