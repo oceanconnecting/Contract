@@ -1,0 +1,200 @@
+{
+    "welcome": "Willkommen",
+    "homepage": {
+      "contact": {
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "sendMail": "Nachricht senden"
+      },
+      "navbare": {
+        "home": "Startseite",
+        "umrah": "Umrah",
+        "travel": "Reisen",
+        "about": "Über uns",
+        "project": "Projekt",
+        "help": "Hilfe",
+        "espace": "Mitgliederbereich"
+      },
+      "HeroSection": {
+        "banner": {
+          "title1": "Erhalten Sie einen Arbeitsvertrag in Europa",
+          "title2": "so schnell wie möglich",
+          "easily": "einfach",
+          "quickly": "schnell",
+          "securely": "sicher",
+          "legally": "legal",
+          "description": "Willkommen bei OceanConnecting! Wir machen es Ihnen leichter, Jobs in Europa zu finden, indem wir Arbeitsverträge bereitstellen und alle notwendigen Dokumente für einen reibungslosen Übergang verwalten. Finden Sie spannende Möglichkeiten mit unserer Unterstützung!",
+          "contact": "Kontakt",
+          "form": "Formular"
+        }
+      },
+      "CardSection": {
+        "contracts": {
+          "title": "Länder verfügbar für die Jobsuche im Ausland",
+          "description": "Finden Sie Jobmöglichkeiten in Europa mit OceanConnecting. Wir erleichtern den Zugang zu europäischen Arbeitsmärkten und helfen bei der Beschaffung der notwendigen Verträge und Dokumente. Begleiten Sie uns, um Ihre Karriere in Europa einfach zu starten.",
+          "button": "Bewerben",
+          "country": "Land",
+          "city": "Stadt",
+          "language": "Sprache",
+          "levelLanguage": "Sprachniveau",
+          "level": "Erforderliches Bildungsniveau",
+          "experience": "Erfahrung",
+          "visaDuration": "Visumdauer",
+          "contractDuration": "Vertragsdauer",
+          "contractPrice": "Vertragspreis",
+          "additionalInfo": "Zusätzliche Informationen",
+          "international": "International",
+          "yes": "Ja",
+          "more": "Mehr",
+          "no": "Nein",
+          "sector": "Sektor",
+          "contract1": {
+            "country": "Kroatien",
+            "city": "Zagreb",
+            "sector": {
+              "Construction": "Bau",
+              "Forge": "Schmiede",
+              "Menuiserie": "Schreinerei",
+              "Carpentry": "Tischlerei",
+              "Peinture": "Malen",
+              "Mecanique": "Mechanik",
+              "electrique": "Elektrik",
+              "Climatisation": "Klimaanlage",
+              "Permis": "Führerschein D",
+              "Boucherie": "Metzgerei",
+              "Hotellerie": "Gastgewerbe"
+            },
+            "language": "Sprache nicht erforderlich",
+            "label": "Ein Vertrag in Kroatien",
+            "additionalInfo": "Unterkunft, medizinische Versorgung, Verlängerung für 5 Jahre und Hilfe bei der Staatsbürgerschaft."
+          },
+          "contract2": {
+            "country": "Deutschland",
+            "city": "Berlin",
+            "sector": {
+              "Sante": "Gesundheit",
+              "Soins_infirmiers": "Pflege",
+              "Hotels": "Hotels",
+              "Programmation": "Programmierung"
+            },
+            "language": "Erforderliche Sprache B1",
+            "label": "Ein Vertrag in Deutschland",
+            "additionalInfo": "Unterkunft, medizinische Versorgung, Verlängerung für 5 Jahre und Hilfe bei der Staatsbürgerschaft."
+          },
+          "contract3": {
+            "country": "Belgien",
+            "city": "Brüssel",
+            "sector": {
+              "Sante": "Gesundheit",
+              "Soins_infirmiers": "Pflege",
+              "Hotels": "Hotels",
+              "Programmation": "Programmierung"
+            },
+            "language": "Erforderliche Sprache B1",
+            "additionalInfo": "Unterkunft, medizinische Versorgung, Verlängerung für 5 Jahre und Hilfe bei der Staatsbürgerschaft.",
+            "label": "Ein Vertrag in Belgien"
+          },
+          "contract4": {
+            "country": "Italien",
+            "city": "Rom",
+            "sector": {
+              "Sante": "Gesundheit",
+              "Soins_infirmiers": "Pflege",
+              "Hotellerie": "Hotels",
+              "Agriculture": "Landwirtschaft"
+            },
+            "label": "Ein Vertrag in Italien",
+            "language": "Erforderliche Sprache B1",
+            "additionalInfo": "Unterkunft, medizinische Versorgung, Verlängerung für 5 Jahre und Hilfe bei der Staatsbürgerschaft."
+          },
+          "contract5": {
+            "country": "Spanien",
+            "city": "Madrid",
+            "sector": {
+              "Sante": "Gesundheit",
+              "Soins_infirmiers": "Pflege",
+              "Hotellerie": "Gastgewerbe",
+              "Agriculture": "Landwirtschaft"
+            },
+            "language": "Erforderliche Sprache B1",
+            "additionalInfo": "Unterkunft, medizinische Versorgung, Verlängerung für 5 Jahre und Hilfe bei der Staatsbürgerschaft.",
+            "label": "Ein Vertrag in Spanien"
+          }
+        }
+      },
+      "chatOffline": {
+        "title": "Online-Chat",
+        "description": "Haben Sie Fragen? Kontaktieren Sie uns über unseren Online-Chat für weitere Informationen.",
+        "serv": "diesen Dienst",
+        "select": "Wählen Sie eine Frage",
+        "offline": "Offline",
+        "data": {
+          "q1": "Vertragsdauer?",
+          "r1": "Die Vertragsdauer variiert je nach Land und Sektor. In der Regel sind die Verträge für einen Zeitraum von 5 Jahren verlängerbar.",
+          "q2": "Welche Sektoren sind für Arbeitsverträge verfügbar?",
+          "r2": "Wir bieten Verträge in verschiedenen Sektoren an, darunter Gesundheitswesen, Gastgewerbe, Landwirtschaft, Programmierung, Pflege, Bauwesen, Schmiede, Tischlerei, Malerei, Elektromechanik, Elektrik, Klimaanlage, Metzgerei usw.",
+          "q3": "Welche Vorteile bieten Arbeitsverträge in Europa?",
+          "r3": "Arbeitsverträge in Europa bieten zahlreiche Vorteile, darunter attraktive Gehälter, günstige Arbeitsbedingungen, Karrieremöglichkeiten, medizinische Versorgung, Unterkunft, Hilfe bei der Staatsbürgerschaft usw.",
+          "q4": "Welche Sprachniveaus sind für Arbeitsverträge in Europa erforderlich?",
+          "r4": "Die erforderlichen Sprachniveaus variieren je nach Land und Sektor. In der Regel ist ein B1-Niveau für die meisten Verträge erforderlich.",
+          "q5": "Welche Dokumente werden für die Bewerbung auf einen Arbeitsvertrag in Europa benötigt?",
+          "r5": "Die für die Bewerbung auf einen Arbeitsvertrag in Europa benötigten Dokumente umfassen einen Lebenslauf, ein Anschreiben, Schulungszertifikate, berufliche Referenzen, einen Reisepass usw.",
+          "q6": "In welchen Ländern kann man im Ausland nach Jobs suchen?",
+          "r6": "Wir bieten Arbeitsverträge in verschiedenen europäischen Ländern an, darunter Kroatien, Deutschland, Belgien, Italien, Spanien usw.",
+          "q7": "Welche Gebühren sind mit Arbeitsverträgen in Europa verbunden?",
+          "r7": "Die mit Arbeitsverträgen in Europa verbundenen Gebühren variieren je nach Land und Sektor. In der Regel umfassen die Gebühren den Vertragspreis, Visagebühren, Unterkunftskosten, medizinische Gebühren usw."
+        }
+      },
+      "services": {
+        "title": "Unsere Dienstleistungen",
+        "description": "Wir bieten eine Reihe von Dienstleistungen an, um Sie bei Ihrer Jobsuche und Umsiedlung nach Europa zu unterstützen. Unser Team ist darauf spezialisiert, Ihnen die richtigen Möglichkeiten zu finden und den Prozess einfach zu gestalten.",
+        "btnServices": "Dienstleistungen anzeigen",
+        "service1": {
+          "title": "Vertragsmanagement",
+          "description": "Wir verwalten alle Aspekte Ihres Arbeitsvertrags, von der Beschaffung der notwendigen Dokumente bis zur Einhaltung der lokalen Vorschriften. Unser Team steht Ihnen während des gesamten Prozesses zur Seite."
+        },
+        "service2": {
+          "title": "Visumassistenz",
+          "description": "Wir bieten Unterstützung bei der Beantragung und Bearbeitung von Visa, um Ihnen die notwendigen Arbeitserlaubnisse in Europa zu beschaffen. Unser Team begleitet Sie durch den gesamten Visumprozess."
+        },
+        "service3": {
+          "title": "Jobsuche-Unterstützung",
+          "description": "Wir bieten Unterstützung bei der Jobsuche, um Ihnen die richtigen Möglichkeiten in Europa zu finden. Unser Team hilft Ihnen bei der Identifizierung geeigneter Stellenangebote und der Vorbereitung Ihrer Bewerbung."
+        },
+        "service4": {
+          "title": "Sprachschulung",
+          "description": "Wir bieten Sprachschulungen an, um Ihre Sprachkenntnisse zu verbessern und die Anforderungen für Arbeitsverträge in Europa zu erfüllen. Unser Team hilft Ihnen, die erforderlichen Sprachkenntnisse zu entwickeln."
+        },
+        "service5": {
+          "title": "Kulturelle Integration",
+          "description": "Wir bieten Unterstützung bei der kulturellen Integration, um Ihnen die Anpassung an Ihre neue Umgebung in Europa zu erleichtern. Unser Team stellt Ihnen die Informationen und Ressourcen zur Verfügung, die Sie benötigen, um in Ihrem neuen Zuhause erfolgreich zu sein."
+        }
+      },
+      "whay": {
+  "whyData": {
+    "heading1": "Qualität",
+    "subheading1": "Unsere Verträge garantieren die besten Möglichkeiten und fördern Ihre Karriere mit Zuversicht.",
+    "heading2": "Sicherheit",
+    "subheading2": "Wir bieten sichere und legale Arbeitsverträge für einen reibungslosen Übergang.",
+    "heading3": "Einfachheit",
+    "subheading3": "Unser Service vereinfacht den Jobsuchprozess in Europa und spart Ihnen Zeit und Energie."
+  },
+  "title": "Warum uns wählen?",
+  "description": "Wir sind ein Team von Fachleuten, die Ihnen dabei helfen, einen Job in Europa zu finden. Entdecken Sie, warum wir die beste Wahl sind, um Sie bei Ihrer Jobsuche zu unterstützen.",
+  "sec": "Verschwenden Sie keine Zeit mit komplizierten Verfahren. Unser Service für die Bereitstellung von Arbeitsverträgen in Europa automatisiert und vereinfacht den Prozess für Sie. Sichern Sie Ihren Job, minimieren Sie administrative Fehler und sparen Sie wertvolle Zeit."
+},"bayer": {
+  "heading1": "Unterzeichnete Verträge",
+  "subheading1": "Tausende gesicherte Arbeitsplätze in Europa.",
+  "review1": "Dank ihnen habe ich in nur 2 Wochen einen Job gefunden!",
+  "heading2": "Partner in Europa",
+  "subheading2": "Zusammenarbeit mit mehr als fünfzig Partnern.",
+  "review2": "Eine ausgezeichnete Zusammenarbeit mit renommierten Unternehmen.",
+  "heading3": "Zufriedene Kunden",
+  "subheading3": "Die Mehrheit unserer Kunden schätzt unseren Service.",
+  "review3": "Hervorragender Kundenservice, ich kann es nur empfehlen!"
+}
+
+
+    }
+  }

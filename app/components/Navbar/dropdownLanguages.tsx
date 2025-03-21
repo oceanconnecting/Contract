@@ -13,7 +13,9 @@ import { useLocale } from "next-intl";
 import Image from "next/image"; 
 import fr from "../../../public/lang/fr.jpg"
 import en from "../../../public/lang/en.png"
-const availableLocales = ["en", "fr"]; // Définition des langues disponibles
+import de from "../../../public/lang/de.png";
+import es from "../../../public/lang/es.png";
+const availableLocales = ["en", "fr", "de", "es"]; // Définition des langues disponibles
 
 const DropdownMenuLanguages = () => {
   const router = useRouter();
@@ -44,9 +46,11 @@ const DropdownMenuLanguages = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-25 bg-white rounded-lg shadow-lg mt-2 border">
           {[
-            { lang: "fr", flag:fr, label: "Fr" },
             // { lang: "ar", flag: "https://img.icons8.com/emoji/48/saudi-arabia-emoji.png", label: "Ar" },
+            { lang: "fr", flag:fr, label: "Fr" },
             { lang: "en", flag:en, label: "EN" },
+            { lang: "de", flag:de, label: "DE" },
+            { lang: "es", flag:es, label: "ES" },
           ].map(({ lang, flag, label }) => (
             <DropdownMenuItem
               key={lang}

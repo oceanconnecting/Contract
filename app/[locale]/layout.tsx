@@ -15,7 +15,7 @@ export default async function LocaleLayout({
   console.log("Locale detected:", locale);
   console.log("Available locales:", routing.locales);
 
-  if (!locale || !routing.locales.includes(locale as "fr" | "en" )) {
+  if (!locale || !routing.locales.includes(locale as "fr" | "en" | "de" | "es")) {
     console.warn(`Invalid locale: ${locale}, redirecting to notFound()`);
     notFound();
   }

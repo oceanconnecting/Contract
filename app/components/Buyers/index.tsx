@@ -75,29 +75,30 @@ import { AnimatedTestimonials } from '../ui/animated-testimonials';
 import exp from 'constants';
 
 const Buyers=()=> {
+const tt =useTranslations("homepage.bayer")
     const testimonials = [
         {
           percent: "80+",
-          heading: "Contrats signés",
-          subheading: "Des milliers d'emplois sécurisés en Europe.",
-          review: "Grâce à eux, j'ai trouvé un emploi en seulement 2 semaines !",
+          heading: tt("heading1"),
+          subheading: tt("subheading"),
+          review:tt("review1"),
 
           src: contract, // ✅ Chemin absolu
         },
         {
           percent: "70+",
-          heading: "Partenaires en Europe",
-          subheading: "Collaboration avec plus de cinquante partenaires.",
-          review: "Une excellente collaboration avec des entreprises de renom.",
+          heading: tt("heading2"),
+          subheading:tt("subheading2"),
+          review:tt("review2"),
 
           src: colaboration , // ✅ Correct
         },
         {
           percent: "290",
-          heading: "Clients satisfaits",
-          subheading: "La majorité de nos clients apprécient nos services.",
+          heading:tt("heading3"),
+          subheading:tt("subheading3"),
           
-          review: "Service client exceptionnel, je recommande vivement !",
+          review:tt("review3"),
 
           src: clientSatisfier, // ✅ Correct
         },

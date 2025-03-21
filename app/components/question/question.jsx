@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Question from "../../../public/assets/icon/question-mark-round-icon.svg"
 
 const content = {
   title: 'Questions & réponses',
@@ -53,7 +54,7 @@ const QuestionSection = () => {
             <div key={index} className="flex items-start">
               <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-full">
                 <Image
-                  src="/assets/icon/question-mark-round-icon.svg"
+                  src={Question}
                   alt="Question mark"
                   width={32}
                   height={32}

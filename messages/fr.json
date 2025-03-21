@@ -32,8 +32,8 @@
     "CardSection": {
       "contracts": {
         "title": "Pays disponibles pour la recherche d'emploi à l'étranger",
-        "description": "Trouvez des opportunités d'emploi en Europe avec OceanConnecting. Nous facilitons l'accès aux marchés du travail européens et aidons à obtenir les contrats et documents nécessaires. Rejoignez-nous pour démarrer facilement votre carrière en Europe.",
-        "button": "Postuler",
+        "description": "Bonjour ! Laissez-nous un message, nous vous répondrons dès que possible.",
+        "select": "Sélectionnez une question",
           "country": "Pays",
           "city": "Ville",
           "language": "Langue",
@@ -129,5 +129,92 @@
          
         }
       }
-    }}
-  }
+    },
+    "chatOffline": {
+      "title": "Chat en ligne",
+      "description": "Notre équipe est disponible pour répondre à vos questions. N'hésitez pas à nous contacter pour obtenir de l'aide ou des informations supplémentaires.",
+      "button": "Chat en ligne",
+      "offline": "Hors ligne",
+      "select":"selectionner un question",
+      "data":{
+        "q1":"Durée du contrat  ?",
+        "r1":"La durée du contrat varie en fonction du pays et du secteur. En général, les contrats sont renouvelables pour une période de 5 ans.",
+        "q2":"Quels sont les secteurs disponibles pour les contrats de travail ?",
+        "r2":"Nous proposons des contrats dans divers secteurs, notamment la santé, l'hôtellerie, l'agriculture, la programmation, les soins infirmiers, la construction, la forge, la menuiserie, la peinture, la mécanique électrique, l'électricité, la climatisation, la boucherie, etc.",
+        "q3":"Quels sont les avantages des contrats de travail en Europe ?",
+        "r3":"Les contrats de travail en Europe offrent de nombreux avantages, notamment un salaire attractif, des conditions de travail favorables, des opportunités de carrière, des soins médicaux, un logement, une aide à la citoyenneté, etc.",
+        "q4":"Quels sont les niveaux de langue requis pour les contrats de travail en Europe ?",
+        "r4":"Les niveaux de langue requis varient en fonction du pays et du secteur. En général, un niveau B1 est requis pour la plupart des contrats.",
+        "q5":"Quels sont les documents nécessaires pour postuler à un contrat de travail en Europe ?",
+        "r5":"Les documents nécessaires pour postuler à un contrat de travail en Europe comprennent un CV, une lettre de motivation, des certificats de formation, des références professionnelles, un passeport, etc.",
+        "q6":"Quels sont les pays disponibles pour la recherche d'emploi à l'étranger ?",
+        "r6":"Nous proposons des contrats de travail dans divers pays européens, notamment la Croatie, l'Allemagne, la Belgique, l'Italie, l'Espagne, etc.",
+        "q7":"Quels sont les frais associés aux contrats de travail en Europe ?",
+        "r7":"Les frais associés aux contrats de travail en Europe varient en fonction du pays et du secteur. En général, les frais comprennent le prix du contrat, les frais de visa, les frais de logement, les frais médicaux, etc."
+      }
+    },
+    "services": {
+      "title": "Nos services",
+      "description": "Nous proposons une gamme de services pour vous accompagner dans votre recherche d'emploi en Europe. Découvrez nos offres et trouvez celle qui vous convient le mieux.",
+      "serv":"ce service",
+      "btnServices": "Voir tous les services",
+      "service1": {
+        "title": "Contrats de travail",
+        "description": ""
+  },
+      "service2": {
+        "title": "Recrutement et Placement",
+        "description": ""
+      },
+      "service3": {
+        "title": "Formation et Développement",
+        "description": ""
+      },
+      "service4": {
+        "title": "Gestion des Ressources Humaines",
+        "description": ""
+      },
+      "service5": {
+        "title": "Conseil et Accompagnement",
+        "description": ""
+      }
+    },
+    "whay": {
+      "whyData": {
+       "heading1":"Qualité",
+       "subheading1": "Nos contrats garantissent les meilleures opportunités, développant ainsi votre carrière avec confiance.",
+        "heading2":"Sécurité",
+        "subheading2": "Nous vous offrons des contrats de travail sécurisés et légaux pour une transition en douceur.",
+        "heading3":"Simplicité",
+        "subheading3": "Notre service simplifie le processus de recherche d'emploi en Europe pour vous faire gagner du temps et de l'énergie."
+       
+
+ 
+      
+      },
+      "title": "Pourquoi nous choisir",
+      "description": "Nous sommes une équipe de professionnels dévoués à vous aider à trouver un emploi en Europe. Découvrez pourquoi nous sommes le meilleur choix pour vous accompagner dans votre recherche d'emploi.",
+      "sec":"Ne perdez plus de temps dans des démarches compliquées. Notre service de fourniture de contrats de travail en Europe automatise et simplifie le processus pour vous. Sécurisez votre emploi, minimisez les erreurs administratives et gagnez du temps précieux."
+    },
+    "bayer":{
+      "heading1":"Contrats signés",
+      "subheading1": "Des milliers d'emplois sécurisés en Europe.",
+      "review1": "Grâce à eux, j'ai trouvé un emploi en seulement 2 semaines !",
+      "heading2": "Partenaires en Europe",
+      "subheading2": "Collaboration avec plus de cinquante partenaires.",
+      "review2": "Une excellente collaboration avec des entreprises de renom.",
+
+
+
+      "heading3": "Clients satisfaits",
+      "subheading3": "La majorité de nos clients apprécient nos services.",
+      
+      "review3": "Service client exceptionnel, je recommande vivement !"
+
+    }
+
+
+    } }
+  
+  
+  

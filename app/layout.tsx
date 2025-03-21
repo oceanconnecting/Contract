@@ -34,7 +34,7 @@ export default async function RootLayout({
   }
 
   // Ensure the locale is one of the supported locales
-  const validLocales = ["fr", "en"];  // List of valid locales
+  const validLocales = ["fr", "en" ,"de","es"];  // List of valid locales
   if (!validLocales.includes(locale)) {
     console.log(`Invalid locale: ${locale}. Redirecting to 'fr'...`);
     redirect("/fr");  // Redirect to 'fr' if the locale is not supported

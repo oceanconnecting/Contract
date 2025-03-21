@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { MessageSquare, Send, X } from "lucide-react";
-import OfflineChatbotData from "./offlineChatData";
 import Select from "react-select";
-
+import { useTranslations } from "next-intl";
 import { styled } from '@mui/material/styles';
+
 interface Message {
   id: number;
   text: string;
@@ -17,8 +17,56 @@ interface OfflineChatbotProps {
   followUp: number[];
 }
 
+
 const OfflineChat: React.FC = () => {
-  const offlineChatbotData: OfflineChatbotProps[] = OfflineChatbotData(); // Import static data
+  const tt=useTranslations("homepage.chatOffline");
+  const offlineChatbotData:OfflineChatbotProps[]= [
+    {
+      id: 1,
+      question: tt("data.q1"),
+      answer: tt("data.r1"),
+        followUp: [2, 3, 4],
+    },
+    {
+      id: 2,
+      question:tt("data.q2"),
+      answer: tt("data.r2"),
+      followUp: [5, 6],
+    },
+    {
+      id: 3,
+      question: tt("data.q3"),
+      answer: tt("data.r3"),
+      followUp: [7, 8],
+    },
+    {
+      id: 4,
+      question: tt("data.q4"),
+      answer: tt("data.r4"),
+      followUp: [9],
+    },
+    {
+      id: 6,
+      question:tt("data.q6"),
+      answer: tt("data.r6"),
+      
+      followUp: [12],
+    },
+    {
+      id: 7,
+      question: tt("data.q7"),
+      answer: tt("data.r7"),
+      followUp: [13, 14],
+    },
+    {
+      id: 8,
+      question: tt("data.q5"),
+      answer: tt("data.r5"),
+      followUp: [15],
+    },
+    
+    
+  ];
 
   // Mapping data to react-select options format
   const questionOptions = offlineChatbotData.map((data) => ({
@@ -26,7 +74,7 @@ const OfflineChat: React.FC = () => {
     label: data.question,
   }));
   const [messages, setMessages] = useState<Message[]>([
-    { id: 1, text: "Bonjour ! Laissez-nous un message, nous vous répondrons dès que possible.", sender: "bot" },
+    { id: 1, text: tt("description"), sender: "bot" },
   ]);
   const [selectedQuestionId, setSelectedQuestionId] = useState<number>(0); // ID of the selected question
   const [isOpen, setIsOpen] = useState(false); // State to open/close the chat
@@ -70,7 +118,7 @@ const OfflineChat: React.FC = () => {
           isOpen ? "opacity-100 visible scale-100" : "opacity-0 invisible scale-95"  }`}>
           {/* 🔴 Close button */}
           <div className="flex justify-between items-center mb-3">
-            <span className="font-semibold">Offline Chat</span>
+            <span className="font-semibold">{tt("title")}</span>
             <button onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-gray-700">
               <X size={20} />
             </button>
@@ -97,7 +145,7 @@ const OfflineChat: React.FC = () => {
               sendMessage(selected?.value); // Send message as soon as a question is selected
             }}
             isSearchable
-            placeholder="Sélectionnez une question"
+            placeholder={tt("select")}
           />
 
 

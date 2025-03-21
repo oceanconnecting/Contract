@@ -133,6 +133,80 @@
           "label": "A contract in Spain"
         }
       }
-    }
+    },
+    "chatOffline": {
+  "title": "Online Chat",
+  "description": "Do you have any questions? Contact us via our online chat for more information.",
+  "select": "Select a question",
+  "offline": "Offline",
+  "data": {
+    "q1": "Contract duration?",
+    "r1": "The contract duration varies depending on the country and sector. Generally, contracts are renewable for a period of 5 years.",
+    "q2": "What are the available sectors for work contracts?",
+    "r2": "We offer contracts in various sectors, including healthcare, hospitality, agriculture, programming, nursing, construction, forging, carpentry, painting, electrical mechanics, electricity, air conditioning, butchery, etc.",
+    "q3": "What are the benefits of work contracts in Europe?",
+    "r3": "Work contracts in Europe offer numerous benefits, including attractive salaries, favorable working conditions, career opportunities, medical care, housing, citizenship assistance, etc.",
+    "q4": "What are the language levels required for work contracts in Europe?",
+    "r4": "The required language levels vary depending on the country and sector. Generally, a B1 level is required for most contracts.",
+    "q5": "What documents are needed to apply for a work contract in Europe?",
+    "r5": "The documents needed to apply for a work contract in Europe include a CV, a cover letter, training certificates, professional references, a passport, etc.",
+    "q6": "Which countries are available for job searches abroad?",
+    "r6": "We offer work contracts in various European countries, including Croatia, Germany, Belgium, Italy, Spain, etc.",
+    "q7": "What are the fees associated with work contracts in Europe?",
+    "r7": "The fees associated with work contracts in Europe vary depending on the country and sector. Generally, the fees include the contract price, visa fees, housing fees, medical fees, etc."
   }
+},
+ "services": {
+    "title": "Our Services",
+    "serv":"this service",
+    "description": "We offer a range of services to support you in your job search and relocation to Europe. Our team is dedicated to helping you find the right opportunities and navigate the process with ease.",
+    "btnServices": "View Services",
+    "service1": {
+      "title": "Contract Management",
+      "description": "We manage all aspects of your work contract, from obtaining the necessary documents to ensuring compliance with local regulations. Our team is here to support you throughout the process."
+    },
+    "service2": {
+      "title": "Visa Assistance",
+      "description": "We provide assistance with visa applications and processing to help you obtain the necessary permits to work in Europe. Our team will guide you through the entire visa process."
+    },
+    "service3": {
+      "title": "Job Search Support",
+      "description": "We offer job search support to help you find the right opportunities in Europe. Our team will assist you in identifying suitable job openings and preparing your application."
+    },
+    "service4": {
+      "title": "Language Training",
+      "description": "We provide language training to help you improve your language skills and meet the requirements for work contracts in Europe. Our team will help you develop the language skills you need to succeed."
+    },
+    "service5": {
+      "title": "Cultural Integration",
+      "description": "We offer cultural integration support to help you adapt to your new environment in Europe. Our team will provide you with the information and resources you need to thrive in your new home."
 }
+
+   },
+   "whay": {
+  "whyData": {
+    "heading1": "Quality",
+    "subheading1": "Our contracts guarantee the best opportunities, developing your career with confidence.",
+    "heading2": "Security",
+    "subheading2": "We provide secure and legal work contracts for a smooth transition.",
+    "heading3": "Simplicity",
+    "subheading3": "Our service simplifies the job search process in Europe, saving you time and energy."
+  },
+  "title": "Why Choose Us",
+  "description": "We are a team of professionals dedicated to helping you find a job in Europe. Discover why we are the best choice to support you in your job search.",
+  "sec": "Don’t waste time with complicated procedures. Our service for providing work contracts in Europe automates and simplifies the process for you. Secure your job, minimize administrative errors, and save valuable time."
+},
+"bayer": {
+  "heading1": "Signed Contracts",
+  "subheading1": "Thousands of jobs secured in Europe.",
+  "review1": "Thanks to them, I found a job in just 2 weeks!",
+  "heading2": "Partners in Europe",
+  "subheading2": "Collaboration with more than fifty partners.",
+  "review2": "An excellent collaboration with renowned companies.",
+  "heading3": "Satisfied Clients",
+  "subheading3": "The majority of our clients appreciate our services.",
+  "review3": "Exceptional customer service, I highly recommend it!"
+}
+
+ } }
+

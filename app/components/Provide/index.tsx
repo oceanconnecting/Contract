@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Services from "./services";
 import { FaArrowRight } from "react-icons/fa";
+import { useTranslations } from "next-intl";
+
 interface ServiceItem {
   imgSrc: string;
   title: string;
@@ -11,27 +13,24 @@ interface ServiceItem {
 
 
 const Provide = () => {
+  const tt=useTranslations("homepage.services");
   return (
     <section
       id="services"
       className="py-24 bg-gradient-to-br from-blue-50 to-red-100"
     >
-      <div className="container grid lg:grid-cols-3 md:grid-cols-1  sm:grid-cols-1  gap-10 mx-auto px-4">
+      <div className="container grid lg:grid-cols-2 md:grid-cols-1  sm:grid-cols-1  gap-10 mx-auto px-4">
 
       <div className="max-w-6xl mx-auto px-6 py-12">
-  <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight text-center">
-    Nous fournissons{" "}
+  <h6 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight text-center">
+    {tt("title")}{" "}
     <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600">
-      ce service
+    {tt("serv")}
     </span>
-  </h2>
+  </h6>
   
-  <p className="mt-6 text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed text-center md:text-left">
-    Chez OceanConnecting, nous sommes spécialisés dans la mise en
-    relation de personnes avec des contrats de travail dans toute
-    l&apos;Europe. Notre soutien complet comprend l&apos;obtention de
-    postes de travail et la gestion des documents nécessaires pour
-    assurer une transition en douceur pour nos clients.
+  <p className="mt-6 text-sm  font-light sm:text-lg md:text-sm text-gray-700 leading-relaxed text-center md:text-left">
+    {tt("description")}
   </p>
   
   <div className="mt-8 flex justify-center  text-center items-center md:justify-start">
@@ -39,13 +38,14 @@ const Provide = () => {
       href="/"
       className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full hover:from-blue-700 hover:to-red-700 transition-all duration-300 shadow-lg hover:shadow-xl"
     >
-      En savoir plus
+     {tt("btnServices")}
+
       <FaArrowRight className="ml-2"/>
     </Link>
   </div>
 </div>
 
-        <div className="col-span-2">
+        <div className="">
           <Services /></div>
 
       </div>

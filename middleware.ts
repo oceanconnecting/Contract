@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
   console.log('Detected locale:', request.nextUrl.locale); // Debugging
 
   return createMiddleware({
-    locales: ['fr', 'en'],
+    locales: ['fr', 'en','de','es'],
     defaultLocale: 'fr',
   })(request);
 }

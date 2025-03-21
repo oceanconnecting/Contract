@@ -1,4 +1,6 @@
 import Image from "next/image";
+import avatar from "../../../public/assets/clientsay/avatars.png"
+import user from "../../../public/assets/clientsay/user.png"
 
 const Clientsay = () => {
     return (
@@ -8,10 +10,10 @@ const Clientsay = () => {
                 <h4 className="text-lg font-normal text-darkgray text-center mt-4">Event madness gathering innoies,& tech enthusiasts in Speced. <br /> do more informations.</h4>
 
                 <div className="lg:relative">
-                    <Image src={'/assets/clientsay/avatars.png'} alt="avatar-image" width={1061} height={733} className="hidden lg:block" />
+                    <Image src={avatar} alt="avatar-image" width={1061} height={733} className="hidden lg:block" />
 
                     <span className="lg:absolute lg:bottom-40 lg:left-80">
-                        <Image src={'/assets/clientsay/user.png'} alt="user-image" width={168} height={168} className="mx-auto pt-10 lg:pb-10" />
+                        <Image src={user} alt="user-image" width={168} height={168} className="mx-auto pt-10 lg:pb-10" />
                         <div className="lg:inline-block bg-white rounded-2xl p-5 shadow-sm">
                             <p className="text-base font-normal text-center text-darkgray">Build your financial literacy within a transparent <br /> community. Follow other investors, share people from <br /> different professional backgrounds, and never be alone.</p>
                             <h3 className="text-2xl font-medium text-center py-2">Jony Scotty</h3>
