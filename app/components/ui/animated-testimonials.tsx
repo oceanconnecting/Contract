@@ -26,12 +26,19 @@ export const AnimatedTestimonials = ({
 
   // Generate random rotations only on the client side
   useEffect(() => {
+    const getRandomInt = (min: number, max: number) => {
+      const array = new Uint32Array(1);
+      window.crypto.getRandomValues(array);
+      return Math.floor((array[0] / (0xffffffff + 1)) * (max - min + 1)) + min;
+    };
+  
     setRandomRotations(
       Array(testimonials.length)
         .fill(0)
-        .map(() => Math.floor(Math.random() * 21) - 10)
+        .map(() => getRandomInt(-10, 10))
     );
   }, [testimonials.length]);
+  
 
   const isActive = (index: number) => {
     return index === active;
