@@ -38,7 +38,7 @@ module.exports = {
       "blue-100": "#dbeafe",
       "blue-200": "#bfdbfe",
       "blue-300": "#93c5fd",
-      "blue-300": "#93c5fd",
+     
       "blue-400": "#60a5fa",
       "blue-500": "#0075FF",
       "blue-600": "#2563eb",
