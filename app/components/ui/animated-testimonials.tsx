@@ -118,7 +118,7 @@ export const AnimatedTestimonials = ({
                   className="inline-block"
                 >
                   <p className=" text-gray-600 dark:text-gray-300 mt-4">
-                    "{testimonials[active].review}"
+                  &quot;  {testimonials[active].review}&quot;
                   </p>
                 </motion.div>
               ))}
