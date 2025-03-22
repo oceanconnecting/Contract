@@ -16,7 +16,7 @@ type Testimonial = {
 
 export const AnimatedTestimonials = ({
   testimonials,
-  autoplay = false,
+  autoplay = true,
 }: {
   testimonials: Testimonial[];
   autoplay?: boolean;
@@ -75,7 +75,7 @@ export const AnimatedTestimonials = ({
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
                     rotate: isActive(index) ? 0 : randomRotations[index] || 0,
-                    zIndex: isActive(index) ? 999 : testimonials.length + 2 - index,
+                    zIndex: isActive(index) ?5 : testimonials.length + 0 - index,
                     y: isActive(index) ? [0, -80, 0] : 0,
                   }}
                   exit={{ opacity: 0, scale: 0.9, z: 100, rotate: randomRotations[index] || 0 }}
@@ -117,8 +117,8 @@ export const AnimatedTestimonials = ({
                   transition={{ duration: 0.2, ease: "easeInOut", delay: 0.02 * index }}
                   className="inline-block"
                 >
-                  <p className="italic text-gray-600 dark:text-gray-300 mt-4">
-                    {testimonials[active].review}
+                  <p className=" text-gray-600 dark:text-gray-300 mt-4">
+                    "{testimonials[active].review}"
                   </p>
                 </motion.div>
               ))}

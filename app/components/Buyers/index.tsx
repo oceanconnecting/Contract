@@ -80,7 +80,7 @@ const tt =useTranslations("homepage.bayer")
         {
           percent: "80+",
           heading: tt("heading1"),
-          subheading: tt("subheading"),
+          subheading: tt("subheading1"),
           review:tt("review1"),
 
           src: contract, // ✅ Chemin absolu
