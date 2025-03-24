@@ -1,5 +1,4 @@
 {
-    "welcome": "Bienvenido",
     "homepage": {
       "contact": {
         "name": "Nombre",
@@ -195,6 +194,61 @@
   "heading3": "Clientes satisfechos",
   "subheading3": "La mayoría de nuestros clientes valoran nuestros servicios.",
   "review3": "Atención al cliente excepcional, ¡lo recomiendo mucho!"
+},
+"network": {
+    "p1": "Nuestra red & mundo",
+  "p2": "Detalles del trabajo.",
+  "dataNetwork": {
+    "network1": {  
+      "country": "Bangladés",
+      "paragraph": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced."
+    }, 
+    "network2": {
+      "country": "Estados Unidos",
+      "paragraph": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced."
+    },
+    "network3": {
+      "country": "Australia",
+      "paragraph": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced."
+    },
+    "network4": {
+      "country": "China",
+      "paragraph": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced."
+    }
+  }
+},
+"stepsContent": {
+  "heading": "Cómo funciona",
+  "title": "Pasos para proporcionar un contrato offshore a nuestros clientes",
+  "description": "Obtenga su contrato con las mejores empresas de Europa en solo 4 sencillos pasos",
+  "steps": {
+    "step1": {
+      "title": "Contáctenos",
+      "description": "Utilice sus propias bases de datos de Notion o reproduzca las nuestras."
+    },
+    "step2": {
+      "title": "Recibir el expediente con los documentos",
+      "description": "Empareje sus campos de Notion con los campos de Plume."
+    },
+    "step3": {
+      "title": "Contrato y visa",
+      "description": "Elija un dominio o subdominio para su blog."
+    },
+    "step4": {
+      "title": "Viaje",
+      "description": "¡Eso es todo! Obtendrá un blog profesional."
+    }
+  }
+},
+"Clientsay": {
+  "title": "Qué dicen nuestros clientes sobre nosotros",
+  "description1": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced.",
+  "description2": "Obtén más información.",
+  "p": "Desarrolle su educación financiera con total transparencia",
+  "p1": "Únase a una comunidad. Siga a otros inversores, comparta con",
+  "p2": "personas de diferentes ámbitos profesionales y nunca esté solo.",
+  "h3": "Jony Scotty",
+  "h4": "Diseñador UI"
 }
 
     }

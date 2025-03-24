@@ -15,8 +15,162 @@ interface OfflineChatbotProps {
   question: string;
   answer: string;
   followUp: number[];
-}
+}const customStyles = {
+  // Contrôle de la zone de sélection
+  control: (base: any) => ({
+    ...base,
+    borderRadius: '12px', // Bords arrondis
+    padding: '8px 16px', // Espacement intérieur
+    backgroundColor: 'bg-gray-50', // Couleur de fond
+    borderColor: 'border-gray-300', // Couleur de bordure
+    '&:hover': {
+      borderColor: 'border-green-500', // Bordure verte au survol
+    },
+  }),
 
+  // Menu déroulant
+  menu: (base: any) => ({
+    ...base,
+    backgroundColor: 'bg-white', // Fond blanc pour le menu
+    borderRadius: '8px', // Bords arrondis
+    boxShadow: 'shadow-lg', // Ombre portée pour le menu
+    
+  }),
+
+  // Options du menu
+  // option: (base: any, state: any) => ({
+  //   ...base,
+  //   backgroundColor: state.isSelected
+  //     ? 'bg-green-500' // Fond vert quand sélectionné
+  //     : state.isFocused
+  //     ? 'bg-gray-200' // Fond gris clair au survol
+  //     : 'bg-white', // Fond blanc pour les options non sélectionnées
+  //   color: state.isSelected ?'text-white' : 'text-gray-800', // Texte blanc si sélectionné
+  //   padding: '12px', // Espacement des options
+  //   cursor: 'pointer', // Curseur en main
+  //   '&:hover': {
+  //     backgroundColor: 'bg-green-500', // Couleur au survol des options
+  //     color: 'text-white', // Texte en blanc au survol
+  //   },
+  // }),
+
+  // Options du menu
+  option: (base: any, state: any) => ({
+    ...base,
+    rounded: '20px',
+    backgroundColor: state.isSelected
+      ? '#d5dbdb' // Fond vert quand sélectionné
+      : state.isFocused
+      ? '#e5e7eb' // Fond gris clair au survol
+      : '#ffffff', // Fond blanc pour les options non sélectionnées
+    color: state.isSelected ? '#ffffff' : '#333333', // Texte blanc si sélectionné
+    padding: '12px', // Espacement des options
+    cursor: 'pointer', // Curseur en main
+    '&:hover': {
+      backgroundColor: '#ccd5ae', // Couleur au survol des options
+      color: '#ffffff', // Texte en blanc au survol
+    },
+  }),
+
+
+
+
+  
+  // Texte du placeholder
+  placeholder: (base: any) => ({
+    ...base,
+    color: 'text-gray-400', // Couleur du placeholder (gris clair)
+  }),
+
+  // Valeur sélectionnée
+  singleValue: (base: any) => ({
+    ...base,
+    color: 'text-gray-800', // Couleur du texte sélectionné
+  }),
+
+  // Flèche pour ouvrir le menu
+  indicatorSeparator: (base: any) => ({
+    ...base,
+    display: 'none', // Supprime la séparation entre la flèche et le texte
+  }),
+
+  // Flèche
+  dropdownIndicator: (base: any) => ({
+    ...base,
+    color: 'text-green-500', // Couleur de la flèche
+    '&:hover': {
+      color: 'text-green-600', // Couleur de la flèche au survol
+    },
+  }),
+};
+const customStyles1 = {
+
+  // Contrôle de la zone de sélection
+  control: (base: any) => ({
+    ...base,
+    borderRadius: '12px', // Bords arrondis
+    padding: '8px 16px', // Espacement intérieur
+    backgroundColor: 'bg-gray-50', // Couleur de fond Tailwind (gris clair)
+    borderColor: 'border-gray-300', // Couleur de bordure (gris)
+    '&:hover': {
+      borderColor: 'border-green-500', // Bordure verte au survol
+    },
+  }),
+
+  // Menu déroulant
+  menu: (base: any) => ({
+    ...base,
+    backgroundColor: 'bg-white', // Fond blanc pour le menu
+    borderRadius: '8px', // Bords arrondis
+    boxShadow: 'shadow-lg', // Ombre portée pour le menu
+  }),
+
+  // Options du menu
+  option: (base: any, state: any) => ({
+    ...base,
+    backgroundColor: state.isSelected
+      ? 'bg-green-500' // Fond vert quand sélectionné
+      : state.isFocused
+      ? 'bg-gray-200' // Fond gris clair au survol
+      : 'bg-white', // Fond blanc pour les options non sélectionnées
+    color: state.isSelected ? 'text-white' : 'text-gray-800', // Texte blanc si sélectionné, sinon gris foncé
+    padding: '12px', // Espacement des options
+    cursor: 'pointer', // Curseur en main
+    '&:hover': {
+      backgroundColor: 'bg-green-500', // Couleur au survol des options
+      color: 'text-white', // Texte en blanc au survol
+    },
+  }),
+
+  // Texte du placeholder
+  placeholder: (base: any) => ({
+    ...base,
+    color: 'text-gray-400', // Couleur du placeholder (gris clair)
+  }),
+
+  // Valeur sélectionnée
+  singleValue: (base: any) => ({
+    ...base,
+    color: 'text-gray-800', // Couleur du texte sélectionné (gris foncé)
+  }),
+
+  // Flèche pour ouvrir le menu
+  indicatorSeparator: (base: any) => ({
+    ...base,
+    display: 'none', // Supprime la séparation entre la flèche et le texte
+  }),
+
+  // Flèche
+  dropdownIndicator: (base: any) => ({
+    ...base,
+    color: 'text-green-500', // Couleur de la flèche (vert)
+    '&:hover': {
+      color: 'text-green-600', // Couleur de la flèche au survol (vert plus foncé)
+    },
+  }),
+};
+
+ 
 
 const OfflineChat: React.FC = () => {
   const tt=useTranslations("homepage.chatOffline");
@@ -98,10 +252,11 @@ const OfflineChat: React.FC = () => {
         ]);
       }, 2000);
     }
+    
   };
 
   return (
-    <div className="fixed bottom-5 right-5">
+    <div className="fixed bottom-5  z-50 right-5">
       {/* 🔵 Button to open the chat */}
       {!isOpen && (
         <button
@@ -114,8 +269,8 @@ const OfflineChat: React.FC = () => {
 
       {/* 🟢 Chat window */}
       {isOpen && (
-        <div className={`w-[460px] bg-white border shadow-lg rounded-3xl p-4 bottom-36 right-5 fixed transition-all duration-300 ${
-          isOpen ? "opacity-100 visible scale-100" : "opacity-0 invisible scale-95"  }`}>
+        <div className={ ` w-[460px] bg-white border shadow-lg rounded-3xl p-4 bottom-36 right-5 fixed transition-all duration-300 ${
+          isOpen ? "opacity-100 visible  scale-100" : "opacity-0 invisible scale-95"  }`}>
           {/* 🔴 Close button */}
           <div className="flex justify-between items-center mb-3">
             <span className="font-semibold">{tt("title")}</span>
@@ -138,15 +293,19 @@ const OfflineChat: React.FC = () => {
 
                {/* Select Dropdown for Questions */}
                <Select
-            className="w-full h-full text-sm rounded-full "
-            options={questionOptions}
-            onChange={(selected: any) => {
-              setSelectedQuestionId(selected?.value || null);
-              sendMessage(selected?.value); // Send message as soon as a question is selected
-            }}
-            isSearchable
-            placeholder={tt("select")}
-          />
+      className="w-full h-full text-sm"
+      options={questionOptions}
+    
+      onChange={(selected: any) => {
+        setSelectedQuestionId(selected?.value); // Update selectedQuestionId
+      }}
+      
+      isSearchable
+      placeholder="Sélectionner une question"
+      menuPlacement="top" // Affiche les options vers le haut
+      styles={customStyles} // Applique les styles personnalisés
+    />
+
 
 
 

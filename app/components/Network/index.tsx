@@ -4,44 +4,43 @@ import bangladesh from "../../../public/assets/network/bangladesh.svg";
 import america from "../../../public/assets/network/america.svg"
 import australia from "../../../public/assets/network/australia.svg"
 import china from "../../../public/assets/network/china.svg"
+import { useTranslations } from "next-intl";
 interface datatype {
     imgSrc: string;
     country: string;
     paragraph: string;
 }
 
-const Aboutdata: datatype[] = [
-    {
-        imgSrc: bangladesh,
-        country: "Bangladesh",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
 
-    },
-    {
-        imgSrc: america,
-        country: "United States",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
-
-    },
-    {
-        imgSrc: australia,
-        country: "Australia",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
-
-    },
-    {
-        imgSrc: china,
-        country: "China",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
-
-    },
-]
 
 const Network = () => {
+    const t=useTranslations("homepage.network")
+    const Aboutdata: datatype[] = [
+        {
+            imgSrc: bangladesh,
+            country: t("dataNetwork.network1.country"),
+            paragraph: t("dataNetwork.network1.paragraph"),
+    
+        },
+        {
+            imgSrc: america,
+            country: t("dataNetwork.network2.country"),
+            paragraph: t("dataNetwork.network2.paragraph"),  },
+        {
+            imgSrc: australia,
+            country: t("dataNetwork.network3.country"),
+            paragraph: t("dataNetwork.network3.paragraph"),
+        },
+        {
+            imgSrc: china,
+            country: t("dataNetwork.network4.country"),
+            paragraph: t("dataNetwork.network4.paragraph"),
+        },
+    ]
     return (
         <div className="bg-babyblue" id="project">
             <div className="mx-auto max-w-2xl py-20 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h3 className="text-4xl sm:text-6xl font-semibold text-center my-10 lh-81">Our network & world <br /> work details.</h3>
+                <h3 className="text-4xl sm:text-6xl font-semibold text-center my-10 lh-81">{t("p1")} <br />{t("p2")} </h3>
 
                 <Image src={map} alt={"map-image"} width={1400} height={800} />
 

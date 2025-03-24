@@ -2,37 +2,37 @@ import React from 'react';
 import { MdOutlineConnectWithoutContact } from "react-icons/md";
 import { GrDocumentUser } from "react-icons/gr";
 import { FaPlaneDeparture ,FaPassport  } from "react-icons/fa6";
-
-export const stepsContent = {
-    heading: 'Comment ça marche',
-    title: "Étapes de la fourniture d'un contrat offshore à nos clients",
-    description: "Obtenez votre contrat avec les meilleures entreprises d'Europe en seulement 4 étapes simples",
-    steps: [
-      {
-        icon: MdOutlineConnectWithoutContact,
-        title: 'Contactez nous',
-        description: 'Utilisez vos propres bases de données Notion ou reproduisez les nôtres.',
-      },
-      {
-        icon: GrDocumentUser,
-        title: 'Recevoir le dossier avec les documents',
-        description: 'Mettez en correspondance vos champs Notion avec les champs Plume.',
-      },
-      {
-        icon: FaPassport,
-        title: 'Contrat et visa',
-        description: 'Choisissez un domaine ou un sous-domaine pour votre blog.',
-      },
-      {
-        icon: FaPlaneDeparture,
-        title: 'Voyage',
-        description: "C'est tout. Vous obtiendrez un blog professionnel.",
-      },
-    ],
-  };
-
+import { useTranslations } from 'next-intl';
+ 
 
 const StepsSection = () => {
+
+
+    const t=useTranslations("homepage.stepsContent")
+    const stepsContent = {
+      heading:t("heading"),
+      title:t("title"),
+      description:t("description"),
+      steps: [
+        {
+          icon: MdOutlineConnectWithoutContact,
+          title:t("steps.step1.title"),
+          description:t("steps.step1.description")
+        },
+        {
+          icon: GrDocumentUser,
+          title:t("steps.step2.title"),
+          description:t("steps.step2.description") },
+        {
+          icon: FaPassport,
+          title:t("steps.step3.title"),
+          description:t("steps.step3.description")  },
+        {
+          icon: FaPlaneDeparture,
+          title:t("steps.step4.title"),
+          description:t("steps.step4.description") }
+      ],
+    };
   
 
   return (

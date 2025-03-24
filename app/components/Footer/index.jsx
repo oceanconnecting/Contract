@@ -170,7 +170,7 @@ const contactInfo = [
                 height={50}
               />
             </div>
-            <p className="text-sm"> {t("welcome")} NOUS SOMMES PROFESSIONNELS</p>
+            <p className="text-sm">  NOUS SOMMES PROFESSIONNELS</p>
             <p className="text-sm">Ocean Connecting offre des services de nettoyage de façades vitrées, plomberie, électricité et extermination des nuisibles, avec une équipe experte pour garantir votre satisfaction. </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:col-span-4">
