@@ -248,6 +248,62 @@
     "p2": "Menschen aus verschiedenen beruflichen Bereichen und seien Sie nie allein.",
     "h3": "Jony Scotty",
     "h4": "UI-Designer"
+  },
+  "footer": {
+    "contactInfo": {
+      "contact1": {
+        "title": "Adresse"
+      },
+      "contact2": {
+        "title": "Rufen Sie uns an"
+      },
+      "contact3": {
+        "title": "Senden Sie uns eine E-Mail"
+      }
+    },
+    "pageElements": {
+      "page1": {
+        "label": "Angebotsanfrage"
+      },
+      "page2": {
+        "label": "Dienstleistungen"
+      },
+      "page3": {
+        "label": "Galerie"
+      },
+      "page4": {
+        "label": "Über uns"
+      },
+      "page5": {
+        "label": "Kontaktieren Sie uns"
+      }
+    },
+    "ourFormation": {
+      "formation1": {
+        "label": "Fassadenreinigung"
+      },
+      "formation2": {
+        "label": "Solarpanelreinigung"
+      },
+      "formation3": {
+        "label": "Haushalts-Elektrowartung"
+      },
+      "formation4": {
+        "label": "Haushaltsinstallationen und Rohrleitungen"
+      },
+      "formation5": {
+        "label": "Schädlingsbekämpfung"
+      }
+    },
+    "ourServices": {
+      "service1": { "label": "IT-Entwicklung" },
+      "service2": { "label": "Sprachzentrum" },
+      "service3": { "label": "Schulung" },
+      "service4": { "label": "Reinigung und Reparatur" },
+      "service5": { "label": "Rekrutierung" }
+    },
+    "droit": "Alle Rechte vorbehalten",
+    "merci": "Vielen Dank für Ihren Besuch und willkommen bei"
   }
 
 

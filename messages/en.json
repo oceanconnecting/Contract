@@ -269,7 +269,63 @@
   "h4":"UI Designer"
 
 
-}
+},
+"footer": {
+    "contactInfo": {
+      "contact1": {
+        "title": "Address"
+      },
+      "contact2": {
+        "title": "Call Us"
+      },
+      "contact3": {
+        "title": "Send Us an Email"
+      }
+    },
+    "pageElements": {
+      "page1": {
+        "label": "Quote Request"
+      },
+      "page2": {
+        "label": "Services"
+      },
+      "page3": {
+        "label": "Gallery"
+      },
+      "page4": {
+        "label": "About Us"
+      },
+      "page5": {
+        "label": "Contact Us"
+      }
+    },
+    "ourFormation": {
+      "formation1": {
+        "label": "Facade Cleaning"
+      },
+      "formation2": {
+        "label": "Solar Panel Cleaning"
+      },
+      "formation3": {
+        "label": "Home Electrical Maintenance"
+      },
+      "formation4": {
+        "label": "Home Plumbing and Piping"
+      },
+      "formation5": {
+        "label": "Pest Control"
+      }
+    },
+    "ourServices": {
+      "service1": { "label": "IT Development" },
+      "service2": { "label": "Language Center" },
+      "service3": { "label": "Training" },
+      "service4": { "label": "Cleaning and Repair" },
+      "service5": { "label": "Recruitment" }
+    },
+    "droit": "All rights reserved",
+    "merci": "Thank you for your visit and welcome to"
+  }
 
  }
  

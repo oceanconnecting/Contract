@@ -10,10 +10,10 @@ import { IoLogoYoutube } from "react-icons/io";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-
+import ocean2 from "../../../public/assets/logo/ocean2.svg"
 
 const Footer = ( ) =>  {
-const t=useTranslations()
+const t=useTranslations("homepage.footer")
 const socialLinks = [
     { "id": 1, "label": "Facebook", "to": "https://www.facebook.com/the.ocean.connecting/" },
     { "id": 2, "label": "Instagram", "to": "https://www.instagram.com/oceanconnecting.ma/" },
@@ -24,55 +24,55 @@ const contactInfo = [
     {
       id: 1,
       Icon: "HiLocationMarker",
-      title: "Adresse",
+      title: t("contactInfo.contact1.title"),
       content: "Immeubles Coralia, 2ème étage, ISLAN, Hay Mohammadi, AGADIR",
     },
     {
       id: 2,
       Icon: "PiPhoneCallFill",
-      title: "Appelez-nous",
+      title: t("contactInfo.contact2.title"),
       content: ["+212 657-236635", "+212 808649090", "+49 15157575045"],
     },
     {
       id: 3,
       Icon: "MdMarkEmailRead",
-      title: "Envoyez-nous un e-mail",
+      title: t("contactInfo.contact3.title"),
       content: "oceanconnecting.org@gmail.com",
     },
   ];
 
   const pageElements = [
-    { id: 1, label: "Demande de Devis", link: "/Devis" },
-    { id: 2, label: "Services", link: "/#service" },
-    { id: 3, label: "Gallery", link: "/gallery" },
-    { id: 4, label: "À propos de nous", link: "/#about-section" },
-    { id: 5, label: "Contactez-nous", link: "/contact" },
+    { id: 1, label: t("pageElements.page1.label"), link: "/Devis" },
+    { id: 2, label:  t("pageElements.page2.label"), link: "/#service" },
+    { id: 3, label: t("pageElements.page3.label"), link: "/gallery" },
+    { id: 4, label:  t("pageElements.page4.label"), link: "/#about-section" },
+    { id: 5, label: t("pageElements.page5.label"), link: "/contact" },
   ];
 
   const ourFormation = [
     {
       id: 1,
-      label: "Nettoyage des façades",
+      label:  t("ourFormation.formation1.label"),
       link: "/nettoyage-des-interfaces",
     },
     {
       id: 2,
-      label: "Nettoyage des panneaux solaires",
+      label:  t("ourFormation.formation2.label"),
       link: "/nettoyage-des-panneaux-solaires",
     },
     {
       id: 3,
-      label: "Maintenance électrique à domicile",
+      label: t("ourFormation.formation3.label"),
       link: "/reparations-electriques-a-domicile",
     },
     {
       id: 4,
-      label: "Plomberie et canalisation à domicile",
+      label: t("ourFormation.formation4.label"),
       link: "/reparations-de-l-eau-a-domicile",
     },
     {
       id: 5,
-      label: "Destruction des insectes nuisibles",
+      label: t("ourFormation.formation5.label"),
       link: "/destruction-des-insectes-nuisibles",
     },
   ];
@@ -80,22 +80,141 @@ const contactInfo = [
   const ourServices = [
     {
       id: 1,
-      label: "Development Informatique",
+      label: t("ourServices.service1.label"),
       link: "https://www.oceanconnecting.dev/",
     },
-    { id: 2, label: "Language Center", link: "https://oceanconnecting.info/" },
-    { id: 3, label: "Formation", link: "https://www.oceanconnecting.net/" },
+    { id: 2,
+       label: t("ourServices.service2.label"),
+        link: "https://oceanconnecting.info/" 
+      },
+    { id: 3,
+       label: t("ourServices.service3.label"),
+        link: "https://www.oceanconnecting.net/" },
     {
       id: 4,
-      label: "Nettoyage et Réparation",
+      label: t("ourServices.service4.label"),
       link: "https://www.oceanconnecting.org/",
     },
-    { id: 5, label: "Recrutement", link: "https://www.oceanconnecting.org/" },
+    { id: 5,
+       label: t("ourServices.service5.label"),
+       link: "https://www.oceanconnecting.org/" 
+      },
   ];
 
   return (
     <footer className="bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300 pt-4 text-black">
+      <div className="grid grid-rows-2 gap-2     "      style={{
+          backgroundImage:
+            'url("https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}>
+     
+  {/* Section Contacts */}
+  <div className=" ml-11 justify-center align-center">
+
+ 
+  <div className="flex flex-wrap items-center  align-middle justify-between w-3/4">
+  <div> <Image
+                src={ocean2}
+                alt="Ocean Connecting Logo"
+                width={240}
+                height={50}
+              /></div>
+    {contactInfo.map(({ id, Icon, title, content }) => (
+      <div key={id} className="flex items-center ">
+        {/* Icône avec meilleur style */}
+        <div className="bg-blue-500 p-3 rounded-full shadow-md">
+          {Icon === "HiLocationMarker" && (
+            <HiLocationMarker className="h-6 w-6 text-white" />
+          )}
+          {Icon === "PiPhoneCallFill" && (
+            <PiPhoneCallFill className="h-6 w-6 text-white" />
+          )}
+          {Icon === "MdMarkEmailRead" && (
+            <MdMarkEmailRead className="h-6 w-6 text-white" />
+          )}
+        </div>
+
+        {/* Texte associé */}
+        <div>
+          {/* <p className="text-sm font-bold text-gray-800">{title}</p> */}
+          <div
+            className="text-sm w-60 font-semibold text-gray-800"
+            style={{ direction: "ltr", unicodeBidi: "plaintext" }}
+          >
+            {Array.isArray(content)
+              ? content.map((number, index) => <div key={index}>{number}</div>)
+              : content}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  </div>
+  {/* Section Liens */}
+  
+  <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 justify-center  ">
+  {/* Liens sociaux */}
+  <div className="flex justify-center gap-4">
+    {socialLinks.map(({ id, label, to }) => (
       <div
+        key={id}
+        className="bg-blue-500 p-3 h-12 w-12 flex items-center justify-center rounded-full shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+      >
+        <Link
+          href={to}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={label}
+        >
+          {label === "Facebook" && <FaFacebookF className="h-6 w-6 text-white" />}
+          {label === "Instagram" && <PiInstagramLogoFill className="h-6 w-6 text-white" />}
+          {label === "YouTube" && <IoLogoYoutube className="h-6 w-6 text-white" />}
+          {label === "LinkedIn" && <ImLinkedin2 className="h-6 w-6 text-white" />}
+        </Link>
+      </div>
+    ))}
+  </div>
+    <div className="justify-center items-center text-start">
+
+    <FooterLinkSection title="Nos services" links={ourServices} />
+    </div>
+    <div className="justify-center items-center text-start">
+  <FooterLinkSection title="Nos formations" links={ourFormation} />
+    </div>
+    <div className="justify-center items-center text-start">
+    <FooterLinkSection title="Nos pages" links={pageElements} />
+
+    </div>
+</div>
+<div>
+<div className="mt-2">
+          <hr className="content-center my-4 border-t-2 border-gray-700" />
+          <div>
+            <div className="flex flex-col items-center space-y-2 lg:flex-row lg:items-center lg:justify-between lg:space-y-0 lg:space-x-4 pb-4">
+              <p className="font-semibold text-md">
+                Droit d&apos;auteur © {new Date().getFullYear()}{" "}
+                <Link href="/#" className="text-blue-600 hover:text-white">
+                  Ocean Connecting
+                </Link>
+                .{t("droit")}.
+              </p>
+              <p className="font-semibold text-md">
+                {t("merci")} à{" "}
+                <Link href="/#" className="text-blue-600 ml-2 hover:text-white">
+                  Ocean Connecting
+                </Link>
+              </p>
+            </div>
+          </div>
+  
+</div>
+</div>
+</div>
+
+     
+      {/* <div
         className="container mx-auto px-4 md:px-6 lg:px-8"
         style={{
           backgroundImage:
@@ -199,7 +318,7 @@ const contactInfo = [
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

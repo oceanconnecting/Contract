@@ -34,7 +34,7 @@ export default function HomePage() {
       <Why />
       <Network />
       <StepsSection/>
-      <QuestionSection/>
+      {/* <QuestionSection/> */}
       <Clientsay />
      
       <Footer/>

@@ -249,7 +249,63 @@
   "p2": "personas de diferentes ámbitos profesionales y nunca esté solo.",
   "h3": "Jony Scotty",
   "h4": "Diseñador UI"
-}
+},
+"footer": {
+    "contactInfo": {
+      "contact1": {
+        "title": "Dirección"
+      },
+      "contact2": {
+        "title": "Llámennos"
+      },
+      "contact3": {
+        "title": "Envíenos un correo electrónico"
+      }
+    },
+    "pageElements": {
+      "page1": {
+        "label": "Solicitud de presupuesto"
+      },
+      "page2": {
+        "label": "Servicios"
+      },
+      "page3": {
+        "label": "Galería"
+      },
+      "page4": {
+        "label": "Sobre nosotros"
+      },
+      "page5": {
+        "label": "Contáctenos"
+      }
+    },
+    "ourFormation": {
+      "formation1": {
+        "label": "Limpieza de fachadas"
+      },
+      "formation2": {
+        "label": "Limpieza de paneles solares"
+      },
+      "formation3": {
+        "label": "Mantenimiento eléctrico doméstico"
+      },
+      "formation4": {
+        "label": "Fontanería y canalización doméstica"
+      },
+      "formation5": {
+        "label": "Eliminación de insectos nocivos"
+      }
+    },
+    "ourServices": {
+      "service1": { "label": "Desarrollo informático" },
+      "service2": { "label": "Centro de idiomas" },
+      "service3": { "label": "Formación" },
+      "service4": { "label": "Limpieza y reparación" },
+      "service5": { "label": "Reclutamiento" }
+    },
+    "droit": "Todos los derechos reservados",
+    "merci": "Gracias por su visita y bienvenido a"
+  }
 
     }
   }
