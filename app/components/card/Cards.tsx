@@ -36,12 +36,22 @@ const ContractCard: React.FC<ContractsCardProps> = ({ contract }) => {
         <CardTooltip contract={contract} message={`View details for ${t("title", { defaultValue: "this contract" })}`} html>
           <div>
             <Image
-              src={imageUrl }
+              src={imageUrl}
               alt={t(`contract${contract.id}.country`, { defaultValue: "Pays inconnu" })}
               width={400}
               height={225}
-              className="rounded-t-lg object-cover w-full h-[225px]"
+              
+              className="rounded-md object-cover  w-full "
             />
+
+{/* <Image 
+  src="/_next/static/media/croatia.3d00fa4f.jpg" 
+  alt="Croatia" 
+  width={500} 
+  height={300} 
+  layout="responsive" // Ancienne propriété 'layout'
+ /> */}
+
           </div>
         </CardTooltip>
         <div className="absolute top-4 left-4 bg-background-50 px-2 py-1 rounded-full text-xs font-semibold text-text-700 uppercase">

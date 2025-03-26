@@ -5,12 +5,14 @@ import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 import { Loader, Users } from "lucide-react";
 import NumberStepper from "../../components/ui/numberStepper";
-
-
+import haj from "../../../public/assets/hajj/hajj.jpg"
+import { useTranslations } from "next-intl";
 const notifySuccess = () => toast.success("form submited Successfully!");
 const notifyError = () => toast.error("This is an error!");
 
 function Page() {
+
+  const t=useTranslations("haj")
   const [formData, setFormData] = useState({
     nomPrenom: "",
     email: "",
@@ -23,56 +25,72 @@ function Page() {
 
   const [onCountrySelect, setOnCountryselect] = useState<string>("");
 
+    
+
+
   const countries = [
     {
-      title: "Maroc",
-      subitems: ["Agadir","Ouejda", "Marrakech", "Casablanca", "Tanger", "Meknes","Dakhla","Aiyoun"],
+      title: t("Maroc.title"),
+      subitems: [t("Maroc.subitems.Agadir"),t("Maroc.subitems.Ouejda"),t("Maroc.subitems.Marrakech"),t("Maroc.subitems.Casablanca"),t("Maroc.subitems.Tanger"),t("Maroc.subitems.Meknes"),t("Maroc.subitems.Dakhla"),t("Maroc.subitems.Aiyoun"),
+      ],
     },
     {
-      title: "Italia",
-      subitems: ["Rome", "Milan", "Naples", "Turin", "Florence"],
+      title: t("Italia.title"),
+      subitems: [t("Italia.subitems.Rome"),t("Italia.subitems.Milan"),t("Italia.subitems.Naples"),t("Italia.subitems.Turin"),t("Italia.subitems.Florence"),
+      ],
     },
     {
-      title: "France",
-      subitems: ["Paris", "Marseille", "Lyon", "Toulouse", "Nice"],
+      title: t("France.title"),
+      subitems: [t("France.subitems.Paris"),t("France.subitems.Marseille"),t("France.subitems.Lyon"),t("France.subitems.Toulouse"),t("France.subitems.Nice"),
+      ],
     },
     {
-      title: "Allemagne",
-      subitems: ["Berlin", "Hamburg", "Munich", "Cologne", "Frankfurt"],
+      title: t("Allemagne.title"),
+      subitems: [t("Allemagne.subitems.Berlin"),t("Allemagne.subitems.Hamburg"),t("Allemagne.subitems.Munich"),t("Allemagne.subitems.Cologne"),t("Allemagne.subitems.Frankfurt"),
+      ],
     },
     {
-      title: "Espagne",
-      subitems: ["Madrid", "Barcelona", "Valencia", "Seville", "Zaragoza"],
+      title: t("Espagne.title"),
+      subitems: [t("Espagne.subitems.Madrid"),t("Espagne.subitems.Barcelona"),t("Espagne.subitems.Valencia"),t("Espagne.subitems.Seville"),t("Espagne.subitems.Zaragoza"),
+      ],
     },
     {
-      title: "UK",
-      subitems: ["London", "Birmingham", "Manchester", "Glasgow", "Liverpool"],
+      title: t("UK.title"),
+      subitems: [ t("UK.subitems.London"), t("UK.subitems.Birmingham"), t("UK.subitems.Manchester"), t("UK.subitems.Glasgow"), t("UK.subitems.Liverpool"),
+      ],
     },
     {
-      title: "Autriche",
-      subitems: ["Vienna"],
+      title: t("Autriche.title"),
+      subitems: [t("Autriche.subitems.Vienna")],
     },
     {
-      title: "Niederlande",
-      subitems: ["Amsterdam", "Rotterdam"],
+      title: t("Niederlande.title"),
+      subitems: [ t("Niederlande.subitems.Amsterdam"), t("Niederlande.subitems.Rotterdam"),
+      ],
     },
     {
-      title: "Belgique",
-      subitems: ["Brussels"],
+      title: t("Belgique.title"),
+      subitems: [t("Belgique.subitems.Brussels")],
     },
     {
-      title: "Swiss",
-      subitems: ["Basel", "Zurich"],
+      title: t("Swiss.title"),
+      subitems: [ t("Swiss.subitems.Basel"), t("Swiss.subitems.Zurich"),
+      ],
     },
     {
-      title: "Allemagne",
-      subitems: ["Düsseldorf", "Essen"],
+      title: t("Allemagne1.title"),
+      subitems: [t("Allemagne1.subitems.Düsseldorf"),t("Allemagne1.subitems.Essen"),
+      ],
     },
   ];
-  const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
+  
+
+
+
+
+   const months = [t("months.January"),t("months.February"),t("months.March"),t("months.April"),t("months.May"),t("months.June"),t("months.July"),t("months.August"),t("months.September"),t("months.October"),t("months.November"),t("months.December")
   ];
+  
   const [IsSubmitting, setIsSubmitting] = useState(false);
 
   const nameInput = useRef<HTMLInputElement>(null);
@@ -95,6 +113,11 @@ function Page() {
     }));
   };
 
+
+
+
+
+  
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (IsSubmitting) return;
@@ -124,28 +147,28 @@ function Page() {
     <div className="min-h-screen relative bg-gray-100 flex items-center justify-center py-24 px-4 sm:px-6 lg:px-8">
       <Toaster />
       <Image
-        src={"/assets/hajj/hajj.jpg"}
-        alt={"hh"}
+        src={haj}
+        alt={"Haj"}
         width={1280}
         height={720}
-        className=" absolute w-full h-full z-0"
+        className="absolute w-full h-full z-0"
       ></Image>
       <div className="bg-navyblue bg-opacity-50 z-[1] absolute w-full h-full" />
       <div className="max-w-md w-full z-[2] space-y-8 bg-white p-6 rounded-xl shadow-md">
-      
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Omra Registration
+            
+      {t("form.Omra")}
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Veuillez remplir le formulaire ci-dessous
+            {t("form.title")}
           </p>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-3">
             <div>
             <div>
-              <label htmlFor="country">country</label>
+              <label htmlFor="country"> {t("form.country")} </label>
               <select
                 id="country"
                 name="country"
@@ -161,7 +184,7 @@ function Page() {
                   }));
                 }}
               >
-                <option value="">--select country-</option>
+                <option value="">--{t("form.selectcountry")}-</option>
                 {countries.map((country, idx) => (
                   <option key={idx} value={country.title}>
                     {country.title}
@@ -172,7 +195,7 @@ function Page() {
 
             {onCountrySelect !== "" && (
               <div>
-                <label htmlFor="ville">Ville</label>
+                <label htmlFor="ville"> {t("form.country")} </label>
                 <select
                   id="ville"
                   name="ville"
@@ -181,7 +204,7 @@ function Page() {
                   value={formData.ville}
                   onChange={handleChange}
                 >
-                  <option value="">--select ville-</option>
+                  <option value="">-- {t("form.selectcity")} -</option>
                   {countries
                     .find((country) => country.title === onCountrySelect)
                     ?.subitems.map((ville, idx) => (
@@ -192,7 +215,7 @@ function Page() {
                 </select>
               </div>
             )}
-              <label htmlFor="nomPrenom">Nom/Prénom</label>
+              <label htmlFor="nomPrenom"> {t("form.name")} </label>
               <input
                 id="nomPrenom"
                 name="nomPrenom"
@@ -200,13 +223,13 @@ function Page() {
                 ref={nameInput}
                 required
                 className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
-                placeholder="Nom/Prénom"
+                placeholder={t("form.name")}
                 value={formData.nomPrenom}
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email"> {t("form.email")} </label>
               <input
                 id="email"
                 name="email"
@@ -214,13 +237,13 @@ function Page() {
                 ref={emailInput}
                 required
                 className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
-                placeholder="Email"
+                placeholder={t("form.email")}
                 value={formData.email}
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="tel">Téléphone</label>
+              <label htmlFor="tel">    {t("form.Téléphone")} </label>
               <input
                 id="tel"
                 name="tel"
@@ -228,14 +251,14 @@ function Page() {
                 ref={teleInput}
                 required
                 className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
-                placeholder="Téléphone"
+                placeholder= {t("form.Téléphone")}
                 value={formData.tel}
                 onChange={handleChange}
               />
             </div>
           </div>
           <div>
-              <label htmlFor="month">Month</label>
+              <label htmlFor="month">    {t("form.Month")} </label>
               <select
                 id="month"
                 name="month"
@@ -244,7 +267,7 @@ function Page() {
                 value={formData.month}
                 onChange={handleChange}
               >
-                <option value="">--Select Month--</option>
+                <option value="">--    {t("form.Select_Month")} --</option>
                 {months.map((month, idx) => (
                   <option key={idx} value={month}>
                     {month}
@@ -255,17 +278,21 @@ function Page() {
           
           
           <div className="flex justify-between items-center w-full">
-            <label htmlFor="numPeople">Nombre de personnes</label>
+            <label htmlFor="numPeople"> {t("form.nbrPoeples")} </label>
+           
             <NumberStepper
-              min={1}
-              max={9}
-              onChange={(value) => {
-                setFormData((prevData) => ({
-                  ...prevData,
-                  numPeople: value,
-                }));
-              }}
-            />
+  min={1}
+  max={9}
+  onChange={(value) => {
+    if (formData.numPeople !== value) {  // ✅ Prevent unnecessary state updates
+      setFormData((prevData) => ({
+        ...prevData,
+        numPeople: value,
+      }));
+    }
+  }}
+/>
+
           </div>
           <div>
             <button

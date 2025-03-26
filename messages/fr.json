@@ -312,9 +312,136 @@
         "service4": { "label": "Nettoyage et Réparation" },
         "service5": { "label": "Recrutement" }
       },
-      "droit":" Tous droits réservés",
-      "merci":" Merci de votre visite et bienvenue  à"
-
+      "droit": " Tous droits réservés",
+      "merci": " Merci de votre visite et bienvenue  à"
     }
+  },
+
+  "haj": {
+    
+      "Maroc": {
+        "title": "Maroc",
+        "subitems": {
+          "Agadir": "Agadir",
+          "Ouejda": "Ouejda",
+          "Marrakech": "Marrakech",
+          "Casablanca": "Casablanca",
+          "Tanger": "Tanger",
+          "Meknes": "Meknes",
+          "Dakhla": "Dakhla",
+          "Aiyoun": "Aiyoun"
+        }
+      },
+      "Italia": {
+        "title": "Italia",
+        "subitems": {
+          "Rome": "Rome",
+          "Milan": "Milan",
+          "Naples": "Naples",
+          "Turin": "Turin",
+          "Florence": "Florence"
+        }
+      },
+      "France": {
+        "title": "France",
+        "subitems": {
+          "Paris": "Paris",
+          "Marseille": "Marseille",
+          "Lyon": "Lyon",
+          "Toulouse": "Toulouse",
+          "Nice": "Nice"
+        }
+      },
+      "Allemagne": {
+        "title": "Allemagne",
+        "subitems": {
+          "Berlin": "Berlin",
+          "Hamburg": "Hamburg",
+          "Munich": "Munich",
+          "Cologne": "Cologne",
+          "Frankfurt": "Frankfurt"
+        }
+      },
+      "Espagne": {
+        "title": "Espagne",
+        "subitems": {
+          "Madrid": "Madrid",
+          "Barcelona": "Barcelona",
+          "Valencia": "Valencia",
+          "Seville": "Seville",
+          "Zaragoza": "Zaragoza"
+        }
+      },
+      "UK": {
+        "title": "UK",
+        "subitems": {
+          "London": "London",
+          "Birmingham": "Birmingham",
+          "Manchester": "Manchester",
+          "Glasgow": "Glasgow",
+          "Liverpool": "Liverpool"
+        }
+      },
+      "Autriche": {
+        "title": "Autriche",
+        "subitems": {
+          "Vienna": "Vienna"
+        }
+      },
+      "Niederlande": {
+        "title": "Niederlande",
+        "subitems": {
+          "Amsterdam": "Amsterdam",
+          "Rotterdam": "Rotterdam"
+        }
+      },
+      "Belgique": {
+        "title": "Belgique",
+        "subitems": {
+          "Brussels": "Brussels"
+        }
+      },
+      "Swiss": {
+        "title": "Swiss",
+        "subitems": {
+          "Basel": "Basel",
+          "Zurich": "Zurich"
+        }
+      },
+      "Allemagne1": {
+        "title": "Allemagne",
+        "subitems": {
+          "Düsseldorf": "Düsseldorf",
+          "Essen": "Essen"
+        }
+      },
+      "months": {
+        "January": "Janvier",
+        "February": "Février",
+        "March": "Mars",
+        "April": "Avril",
+        "May": "Mai",
+        "June": "Juin",
+        "July": "Juillet",
+        "August": "Août",
+        "September": "Septembre",
+        "October": "Octobre",
+        "November": "Novembre",
+        "December": "Décembre"
+      },
+      "form":{
+        "Omra":"Omra Registration",
+        "title":"Veuillez remplir le formulaire ci-dessous",
+        "country":"ville",
+       "selectcountry":"selectionner la pay",
+       "selectcity":"selectionner la  ville",
+       "name":"Nom/Prénom",
+       "email":"Email",
+       "Téléphone":"Téléphone",
+       "Month":"Month",
+       "Select_Month":"Selectionner le moin",
+       "nbrPoeples":"Nombre de personnes"
+      }
+    
   }
 }

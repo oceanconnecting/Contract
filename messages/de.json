@@ -307,5 +307,131 @@
   }
 
 
+    },
+    "haj": {
+  "Maroc": {
+    "title": "Marokko",
+    "subitems": {
+      "Agadir": "Agadir",
+      "Ouejda": "Ouejda",
+      "Marrakech": "Marrakesch",
+      "Casablanca": "Casablanca",
+      "Tanger": "Tanger",
+      "Meknes": "Meknès",
+      "Dakhla": "Dakhla",
+      "Aiyoun": "Aiyoun"
     }
+  },
+  "Italia": {
+    "title": "Italien",
+    "subitems": {
+      "Rome": "Rom",
+      "Milan": "Mailand",
+      "Naples": "Neapel",
+      "Turin": "Turin",
+      "Florence": "Florenz"
+    }
+  },
+  "France": {
+    "title": "Frankreich",
+    "subitems": {
+      "Paris": "Paris",
+      "Marseille": "Marseille",
+      "Lyon": "Lyon",
+      "Toulouse": "Toulouse",
+      "Nice": "Nizza"
+    }
+  },
+  "Allemagne": {
+    "title": "Deutschland",
+    "subitems": {
+      "Berlin": "Berlin",
+      "Hamburg": "Hamburg",
+      "Munich": "München",
+      "Cologne": "Köln",
+      "Frankfurt": "Frankfurt"
+    }
+  },
+  "Espagne": {
+    "title": "Spanien",
+    "subitems": {
+      "Madrid": "Madrid",
+      "Barcelona": "Barcelona",
+      "Valencia": "Valencia",
+      "Seville": "Sevilla",
+      "Zaragoza": "Zaragoza"
+    }
+  },
+  "UK": {
+    "title": "Vereinigtes Königreich",
+    "subitems": {
+      "London": "London",
+      "Birmingham": "Birmingham",
+      "Manchester": "Manchester",
+      "Glasgow": "Glasgow",
+      "Liverpool": "Liverpool"
+    }
+  },
+  "Autriche": {
+    "title": "Österreich",
+    "subitems": {
+      "Vienna": "Wien"
+    }
+  },
+  "Niederlande": {
+    "title": "Niederlande",
+    "subitems": {
+      "Amsterdam": "Amsterdam",
+      "Rotterdam": "Rotterdam"
+    }
+  },
+  "Belgique": {
+    "title": "Belgien",
+    "subitems": {
+      "Brussels": "Brüssel"
+    }
+  },
+  "Swiss": {
+    "title": "Schweiz",
+    "subitems": {
+      "Basel": "Basel",
+      "Zurich": "Zürich"
+    }
+  },
+  "Allemagne1": {
+    "title": "Deutschland",
+    "subitems": {
+      "Düsseldorf": "Düsseldorf",
+      "Essen": "Essen"
+    }
+  },
+  "months": {
+    "January": "Januar",
+    "February": "Februar",
+    "March": "März",
+    "April": "April",
+    "May": "Mai",
+    "June": "Juni",
+    "July": "Juli",
+    "August": "August",
+    "September": "September",
+    "October": "Oktober",
+    "November": "November",
+    "December": "Dezember"
+  },
+  "form": {
+    "Omra": "Omra Anmeldung",
+    "title": "Bitte füllen Sie das untenstehende Formular aus",
+    "country": "Land",
+    "selectcountry": "Land auswählen",
+    "selectcity": "Stadt auswählen",
+    "name": "Vorname/Nachname",
+    "email": "E-Mail",
+    "Téléphone": "Telefon",
+    "Month": "Monat",
+    "Select_Month": "Monat auswählen",
+    "nbrPoeples": "Anzahl der Personen"
+  }
+}
+
   }

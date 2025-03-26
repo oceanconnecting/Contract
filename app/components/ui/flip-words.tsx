@@ -24,14 +24,18 @@ export const FlipWords = ({
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div
-        key={words[currentIndex]}
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -40, x: 40, filter: "blur(8px)", scale: 2, position: "absolute" }}
-        transition={{ type: "spring", stiffness: 100, damping: 10 }}
-        className={cn("z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2", className)}
-      >
+    <motion.div
+  key={words[currentIndex]}
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  exit={{ opacity: 0, y: -40, x: 40, filter: "blur(8px)", scale: 2 }}
+  transition={{ type: "spring", stiffness: 100, damping: 10 }}
+  className={cn(
+    "z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2",
+    className
+  )}
+>
+
         {words[currentIndex].split(" ").map((word, wordIndex) => (
           <motion.span
             key={`word-${wordIndex}`}

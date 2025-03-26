@@ -307,5 +307,131 @@
     "merci": "Gracias por su visita y bienvenido a"
   }
 
+    },
+    "haj": {
+  "Maroc": {
+    "title": "Marruecos",
+    "subitems": {
+      "Agadir": "Agadir",
+      "Ouejda": "Ouejda",
+      "Marrakech": "Marrakech",
+      "Casablanca": "Casablanca",
+      "Tanger": "Tánger",
+      "Meknes": "Meknes",
+      "Dakhla": "Dajla",
+      "Aiyoun": "Aiyoun"
     }
+  },
+  "Italia": {
+    "title": "Italia",
+    "subitems": {
+      "Rome": "Roma",
+      "Milan": "Milán",
+      "Naples": "Nápoles",
+      "Turin": "Turín",
+      "Florence": "Florencia"
+    }
+  },
+  "France": {
+    "title": "Francia",
+    "subitems": {
+      "Paris": "París",
+      "Marseille": "Marsella",
+      "Lyon": "Lyon",
+      "Toulouse": "Toulouse",
+      "Nice": "Niza"
+    }
+  },
+  "Allemagne": {
+    "title": "Alemania",
+    "subitems": {
+      "Berlin": "Berlín",
+      "Hamburg": "Hamburgo",
+      "Munich": "Múnich",
+      "Cologne": "Colonia",
+      "Frankfurt": "Fráncfort"
+    }
+  },
+  "Espagne": {
+    "title": "España",
+    "subitems": {
+      "Madrid": "Madrid",
+      "Barcelona": "Barcelona",
+      "Valencia": "Valencia",
+      "Seville": "Sevilla",
+      "Zaragoza": "Zaragoza"
+    }
+  },
+  "UK": {
+    "title": "Reino Unido",
+    "subitems": {
+      "London": "Londres",
+      "Birmingham": "Birmingham",
+      "Manchester": "Manchester",
+      "Glasgow": "Glasgow",
+      "Liverpool": "Liverpool"
+    }
+  },
+  "Autriche": {
+    "title": "Austria",
+    "subitems": {
+      "Vienna": "Viena"
+    }
+  },
+  "Niederlande": {
+    "title": "Países Bajos",
+    "subitems": {
+      "Amsterdam": "Ámsterdam",
+      "Rotterdam": "Róterdam"
+    }
+  },
+  "Belgique": {
+    "title": "Bélgica",
+    "subitems": {
+      "Brussels": "Bruselas"
+    }
+  },
+  "Swiss": {
+    "title": "Suiza",
+    "subitems": {
+      "Basel": "Basilea",
+      "Zurich": "Zúrich"
+    }
+  },
+  "Allemagne1": {
+    "title": "Alemania",
+    "subitems": {
+      "Düsseldorf": "Düsseldorf",
+      "Essen": "Essen"
+    }
+  },
+  "months": {
+    "January": "Enero",
+    "February": "Febrero",
+    "March": "Marzo",
+    "April": "Abril",
+    "May": "Mayo",
+    "June": "Junio",
+    "July": "Julio",
+    "August": "Agosto",
+    "September": "Septiembre",
+    "October": "Octubre",
+    "November": "Noviembre",
+    "December": "Diciembre"
+  },
+  "form": {
+    "Omra": "Registro de Omra",
+    "title": "Por favor, complete el formulario a continuación",
+    "country": "País",
+    "selectcountry": "Seleccionar país",
+    "selectcity": "Seleccionar ciudad",
+    "name": "Nombre/Apellido",
+    "email": "Correo electrónico",
+    "Téléphone": "Teléfono",
+    "Month": "Mes",
+    "Select_Month": "Seleccionar mes",
+    "nbrPoeples": "Número de personas"
+  }
+}
+
   }

@@ -42,7 +42,7 @@ const Why = () => {
               alt="Illustration image"
               width={600}
               height={800}
-              className="rounded-lg shadow-2xl object-cover h-full transform transition-transform hover:scale-105"
+              className="rounded-lg shadow-2xl object-cover h-auto transform transition-transform hover:scale-105"
             />
           </div>
 
