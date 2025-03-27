@@ -13,21 +13,8 @@ const notifyError = () => toast.error("This is an error!");
 function Page() {
 
   const t=useTranslations("haj")
-  const [formData, setFormData] = useState({
-    nomPrenom: "",
-    email: "",
-    tel: "",
-    country: "",
-    ville: "",
-    numPeople: NaN,
-    month:""
-  });
-
-  const [onCountrySelect, setOnCountryselect] = useState<string>("");
-
-    
-
-
+  
+  
   const countries = [
     {
       title: t("Maroc.title"),
@@ -84,12 +71,25 @@ function Page() {
     },
   ];
   
-
-
-
-
-   const months = [t("months.January"),t("months.February"),t("months.March"),t("months.April"),t("months.May"),t("months.June"),t("months.July"),t("months.August"),t("months.September"),t("months.October"),t("months.November"),t("months.December")
+  
+  
+  
+  
+  const months = [t("months.January"),t("months.February"),t("months.March"),t("months.April"),t("months.May"),t("months.June"),t("months.July"),t("months.August"),t("months.September"),t("months.October"),t("months.November"),t("months.December")
   ];
+  const [formData, setFormData] = useState({
+    nomPrenom: "",
+    email: "",
+    tel: "",
+    country: "",
+    ville: "",
+    numPeople: NaN,
+    month:""
+  });
+
+  const [onCountrySelect, setOnCountryselect] = useState<string>("");
+
+    
   
   const [IsSubmitting, setIsSubmitting] = useState(false);
 

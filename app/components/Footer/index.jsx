@@ -118,14 +118,14 @@ const contactInfo = [
     <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-8">
       {/* Logo */}
       <div className="w-full lg:w-auto flex justify-center lg:justify-start">
-        <Image
-          src={ocean1}
-          alt="Ocean Connecting Logo"
-          width={240}
-          height={50}
-          className="max-w-[200px] md:max-w-[240px]"
-          style={{ width: "auto", height: "auto" }}
-        />
+      <Image
+  src={ocean1}
+  alt="Ocean Connecting Logo"
+  width={240}
+  height={50}
+  className="max-w-[200px] md:max-w-[240px] h-auto"
+/>
+
       </div>
       
       {/* Contact Items */}

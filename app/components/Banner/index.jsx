@@ -9,7 +9,6 @@ import dynamic from "next/dynamic";
 import { useRouter, useParams } from "next/navigation"; // ✅ Importer useParams
 import { FlipWordsDemo } from "./FlipWord";
 import { useTranslations } from "next-intl";
-
 const LeafletMap = dynamic(() => import("./leaflet"), { ssr: false });
 
 const HeroSection = () => {
