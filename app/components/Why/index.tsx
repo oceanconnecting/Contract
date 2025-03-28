@@ -32,6 +32,7 @@ const Why = () => {
       tt("whyData.subheading3"),},
   ];
   return (
+    <section id ="why">
     <div id="about" className="bg-gray-50 py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row lg:items-stretch gap-12">
@@ -94,6 +95,7 @@ const Why = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

@@ -7,14 +7,17 @@ import { MdMarkEmailRead } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa6";
 import { ImLinkedin2 } from "react-icons/im";
 import { IoLogoYoutube } from "react-icons/io";
+
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useLocale } from "use-intl";
 import ocean2 from "../../../public/assets/logo/ocean2.svg"
 import ocean1 from "../../../public/assets/logo/ocean1.svg";
 const Footer = ( ) =>  {
-const t=useTranslations("homepage.footer")
-const socialLinks = [
+  const t=useTranslations("homepage.footer")
+  const locale = useLocale(); // Récupère la langue actuelle
+  const socialLinks = [
     { "id": 1, "label": "Facebook", "to": "https://www.facebook.com/the.ocean.connecting/" },
     { "id": 2, "label": "Instagram", "to": "https://www.instagram.com/oceanconnecting.ma/" },
     { "id": 3, "label": "YouTube", "to": "https://www.youtube.com/@OceanConnecting" },
@@ -40,12 +43,12 @@ const contactInfo = [
       content: "oceanconnecting.org@gmail.com",
     },
   ];
-
   const pageElements = [
     { id: 1, label: t("pageElements.page1.label"), link: "/Devis" },
-    { id: 2, label:  t("pageElements.page2.label"), link: "/#service" },
-    { id: 3, label: t("pageElements.page3.label"), link: "/gallery" },
-    { id: 4, label:  t("pageElements.page4.label"), link: "/#about-section" },
+    // { name: tt("navbare.umrah"), href: `/${locale}/umrah`, current: false },
+    { id: 2, label:  t("pageElements.page2.label"), link: "/#services" },
+    { id: 3, label: t("pageElements.page3.label"), link: `/${locale}/umrah` },
+    { id: 4, label:  t("pageElements.page4.label"), link: "/#why" },
     { id: 5, label: t("pageElements.page5.label"), link: "/contact" },
   ];
 
@@ -53,27 +56,27 @@ const contactInfo = [
     {
       id: 1,
       label:  t("ourFormation.formation1.label"),
-      link: "/nettoyage-des-interfaces",
+      link: "https://oceanconnecting.net/en/nettoyage-des-interfaces",
     },
     {
       id: 2,
       label:  t("ourFormation.formation2.label"),
-      link: "/nettoyage-des-panneaux-solaires",
+      link: "https://oceanconnecting.net/en/nettoyage-des-panneaux-solaires",
     },
     {
       id: 3,
       label: t("ourFormation.formation3.label"),
-      link: "/reparations-electriques-a-domicile",
+      link: "https://oceanconnecting.net/en/reparations-electriques-a-domicile",
     },
     {
       id: 4,
       label: t("ourFormation.formation4.label"),
-      link: "/reparations-de-l-eau-a-domicile",
+      link: "https://oceanconnecting.net/en/reparations-de-l-eau-a-domicile",
     },
     {
       id: 5,
       label: t("ourFormation.formation5.label"),
-      link: "/destruction-des-insectes-nuisibles",
+      link: "https://oceanconnecting.net/en/destruction-des-insectes-nuisibles",
     },
   ];
 
@@ -118,14 +121,7 @@ const contactInfo = [
     <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-8">
       {/* Logo */}
       <div className="w-full lg:w-auto flex justify-center lg:justify-start">
-      <Image
-  src={ocean1}
-  alt="Ocean Connecting Logo"
-  width={240}
-  height={50}
-  className="max-w-[200px] md:max-w-[240px] h-auto"
-/>
-
+      
       </div>
       
       {/* Contact Items */}
