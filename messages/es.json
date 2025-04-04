@@ -1,5 +1,4 @@
 {
-    "welcome": "Bienvenido",
     "homepage": {
       "contact": {
         "name": "Nombre",
@@ -195,7 +194,244 @@
   "heading3": "Clientes satisfechos",
   "subheading3": "La mayoría de nuestros clientes valoran nuestros servicios.",
   "review3": "Atención al cliente excepcional, ¡lo recomiendo mucho!"
+},
+"network": {
+    "p1": "Nuestra red & mundo",
+  "p2": "Detalles del trabajo.",
+  "dataNetwork": {
+    "network1": {  
+      "country": "Bangladés",
+      "paragraph": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced."
+    }, 
+    "network2": {
+      "country": "Estados Unidos",
+      "paragraph": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced."
+    },
+    "network3": {
+      "country": "Australia",
+      "paragraph": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced."
+    },
+    "network4": {
+      "country": "China",
+      "paragraph": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced."
+    }
+  }
+},
+"stepsContent": {
+  "heading": "Cómo funciona",
+  "title": "Pasos para proporcionar un contrato offshore a nuestros clientes",
+  "description": "Obtenga su contrato con las mejores empresas de Europa en solo 4 sencillos pasos",
+  "steps": {
+    "step1": {
+      "title": "Contáctenos",
+      "description": "Utilice sus propias bases de datos de Notion o reproduzca las nuestras."
+    },
+    "step2": {
+      "title": "Recibir el expediente con los documentos",
+      "description": "Empareje sus campos de Notion con los campos de Plume."
+    },
+    "step3": {
+      "title": "Contrato y visa",
+      "description": "Elija un dominio o subdominio para su blog."
+    },
+    "step4": {
+      "title": "Viaje",
+      "description": "¡Eso es todo! Obtendrá un blog profesional."
+    }
+  }
+},
+"Clientsay": {
+  "title": "Qué dicen nuestros clientes sobre nosotros",
+  "description1": "Locura de eventos reuniendo innovadores y entusiastas de la tecnología en Speced.",
+  "description2": "Obtén más información.",
+  "p": "Desarrolle su educación financiera con total transparencia",
+  "p1": "Únase a una comunidad. Siga a otros inversores, comparta con",
+  "p2": "personas de diferentes ámbitos profesionales y nunca esté solo.",
+  "h3": "Jony Scotty",
+  "h4": "Diseñador UI"
+},
+"footer": {
+    "contactInfo": {
+      "contact1": {
+        "title": "Dirección"
+      },
+      "contact2": {
+        "title": "Llámennos"
+      },
+      "contact3": {
+        "title": "Envíenos un correo electrónico"
+      }
+    },
+    "pageElements": {
+      "page1": {
+        "label": "Solicitud de presupuesto"
+      },
+      "page2": {
+        "label": "Servicios"
+      },
+      "page3": {
+        "label": "Umrah"
+      },
+      "page4": {
+        "label": "Sobre nosotros"
+      },
+      "page5": {
+        "label": "proyecto"
+      }
+    },
+    "ourFormation": {
+      "formation1": {
+        "label": "Limpieza de fachadas"
+      },
+      "formation2": {
+        "label": "Limpieza de paneles solares"
+      },
+      "formation3": {
+        "label": "Mantenimiento eléctrico doméstico"
+      },
+      "formation4": {
+        "label": "Fontanería y canalización doméstica"
+      },
+      "formation5": {
+        "label": "Eliminación de insectos nocivos"
+      }
+    },
+    "ourServices": {
+      "service1": { "label": "Desarrollo informático" },
+      "service2": { "label": "Centro de idiomas" },
+      "service3": { "label": "Formación" },
+      "service4": { "label": "Limpieza y reparación" },
+      "service5": { "label": "Reclutamiento" }
+    },
+    "droit": "Todos los derechos reservados",
+    "merci": "Gracias por su visita y bienvenido a"
+  }
+
+    },
+    "haj": {
+  "Maroc": {
+    "title": "Marruecos",
+    "subitems": {
+      "Agadir": "Agadir",
+      "Ouejda": "Ouejda",
+      "Marrakech": "Marrakech",
+      "Casablanca": "Casablanca",
+      "Tanger": "Tánger",
+      "Meknes": "Meknes",
+      "Dakhla": "Dajla",
+      "Aiyoun": "Aiyoun"
+    }
+  },
+  "Italia": {
+    "title": "Italia",
+    "subitems": {
+      "Rome": "Roma",
+      "Milan": "Milán",
+      "Naples": "Nápoles",
+      "Turin": "Turín",
+      "Florence": "Florencia"
+    }
+  },
+  "France": {
+    "title": "Francia",
+    "subitems": {
+      "Paris": "París",
+      "Marseille": "Marsella",
+      "Lyon": "Lyon",
+      "Toulouse": "Toulouse",
+      "Nice": "Niza"
+    }
+  },
+  "Allemagne": {
+    "title": "Alemania",
+    "subitems": {
+      "Berlin": "Berlín",
+      "Hamburg": "Hamburgo",
+      "Munich": "Múnich",
+      "Cologne": "Colonia",
+      "Frankfurt": "Fráncfort"
+    }
+  },
+  "Espagne": {
+    "title": "España",
+    "subitems": {
+      "Madrid": "Madrid",
+      "Barcelona": "Barcelona",
+      "Valencia": "Valencia",
+      "Seville": "Sevilla",
+      "Zaragoza": "Zaragoza"
+    }
+  },
+  "UK": {
+    "title": "Reino Unido",
+    "subitems": {
+      "London": "Londres",
+      "Birmingham": "Birmingham",
+      "Manchester": "Manchester",
+      "Glasgow": "Glasgow",
+      "Liverpool": "Liverpool"
+    }
+  },
+  "Autriche": {
+    "title": "Austria",
+    "subitems": {
+      "Vienna": "Viena"
+    }
+  },
+  "Niederlande": {
+    "title": "Países Bajos",
+    "subitems": {
+      "Amsterdam": "Ámsterdam",
+      "Rotterdam": "Róterdam"
+    }
+  },
+  "Belgique": {
+    "title": "Bélgica",
+    "subitems": {
+      "Brussels": "Bruselas"
+    }
+  },
+  "Swiss": {
+    "title": "Suiza",
+    "subitems": {
+      "Basel": "Basilea",
+      "Zurich": "Zúrich"
+    }
+  },
+  "Allemagne1": {
+    "title": "Alemania",
+    "subitems": {
+      "Düsseldorf": "Düsseldorf",
+      "Essen": "Essen"
+    }
+  },
+  "months": {
+    "January": "Enero",
+    "February": "Febrero",
+    "March": "Marzo",
+    "April": "Abril",
+    "May": "Mayo",
+    "June": "Junio",
+    "July": "Julio",
+    "August": "Agosto",
+    "September": "Septiembre",
+    "October": "Octubre",
+    "November": "Noviembre",
+    "December": "Diciembre"
+  },
+  "form": {
+    "Omra": "Registro de Omra",
+    "title": "Por favor, complete el formulario a continuación",
+    "country": "País",
+    "selectcountry": "Seleccionar país",
+    "selectcity": "Seleccionar ciudad",
+    "name": "Nombre/Apellido",
+    "email": "Correo electrónico",
+    "Téléphone": "Teléfono",
+    "Month": "Mes",
+    "Select_Month": "Seleccionar mes",
+    "nbrPoeples": "Número de personas"
+  }
 }
 
-    }
   }

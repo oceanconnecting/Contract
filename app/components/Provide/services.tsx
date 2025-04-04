@@ -65,6 +65,7 @@ const Services = () => {
   ]
 
   return (
+    <section id="services">
     <ul className="grid grid-cols-1   grid-rows-none gap-6 md:grid-cols-12 md:grid-rows-3 lg:gap-6 xl:max-h-[20rem] xl:grid-rows-2">
       {services.map((service, index) => (
         <GridItem
@@ -80,6 +81,7 @@ const Services = () => {
         />
       ))}
     </ul>
+    </section>
 
   )
 }

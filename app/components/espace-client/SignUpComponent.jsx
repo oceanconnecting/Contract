@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-
+import { useTranslations } from "next-intl";
 const SignUpComponent = ({ onBackToSignIn }) => {
+  const t=useTranslations("espaceClient.connecter")
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
@@ -60,7 +61,7 @@ const SignUpComponent = ({ onBackToSignIn }) => {
           <input
             className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-300 placeholder-gray-400 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
             type="text"
-            placeholder="Votre Nom"
+            placeholder={t("form.FirstName")}
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -68,7 +69,7 @@ const SignUpComponent = ({ onBackToSignIn }) => {
           <input
             className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-300 placeholder-gray-400 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
             type="text"
-            placeholder="Votre Prénom"
+            placeholder={t("form.lasteName")}
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             required
@@ -76,7 +77,7 @@ const SignUpComponent = ({ onBackToSignIn }) => {
           <input
             className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-300 placeholder-gray-400 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
             type="tel"
-            placeholder="Votre Téléphone"
+            placeholder={t("form.phone")}
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             pattern="[0-9]{10}" // Adjust pattern for your required format
@@ -86,7 +87,7 @@ const SignUpComponent = ({ onBackToSignIn }) => {
           <input
             className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-300 placeholder-gray-400 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
             type="email"
-            placeholder="Votre Email"
+            placeholder={t("form.email")}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -94,7 +95,7 @@ const SignUpComponent = ({ onBackToSignIn }) => {
           <input
             className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-300 placeholder-gray-400 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
             type="password"
-            placeholder="Votre Mot de passe"
+            placeholder={t("form.password")}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -103,7 +104,7 @@ const SignUpComponent = ({ onBackToSignIn }) => {
             type="submit"
             className="mt-5 tracking-wide font-bold bg-gradient-to-r from-blue-600 to-red-600 text-white w-full py-4 rounded-lg hover:bg-green-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
           >
-            Créer un compte
+           {t("form.createCompte")}
           </button>
         </form>
         {message && (
@@ -112,13 +113,12 @@ const SignUpComponent = ({ onBackToSignIn }) => {
           </p>
         )}
         <p className="mt-6 text-xs text-gray-700 text-center">
-          Vous avez déjà un compte?
-          <button
-            className="border-b ml-2 font-bold border-dotted"
-            onClick={onBackToSignIn}
-          >
-            Se connecter
-          </button>
+          
+          {t("form.pcreate")}
+          <button className="border-b ml-2 font-bold border-dotted"
+            onClick={onBackToSignIn}>
+          {t("form.thisConnect")}         
+ </button>
         </p>
       </div>
     </div>

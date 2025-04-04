@@ -17,7 +17,6 @@ import Navbar from 'app/components/Navbar';
 import Footer from 'app/components/Footer';
 import Map from '../components/Map/map';
 import { contractContent } from '../components/Data/data';
-import OfflineChat from 'app/components/offlineChat/OfflineChat';
 export default function HomePage() {
   const t = useTranslations();
   return (
@@ -30,7 +29,6 @@ export default function HomePage() {
       <CardSection />
       <Buyers />
       <Provide />
-      <OfflineChat/>
       <Why />
       <Network />
       <StepsSection/>

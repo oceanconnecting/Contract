@@ -1,5 +1,4 @@
 {
-    "welcome": "Willkommen",
     "homepage": {
       "contact": {
         "name": "Name",
@@ -126,7 +125,7 @@
       "chatOffline": {
         "title": "Online-Chat",
         "description": "Haben Sie Fragen? Kontaktieren Sie uns über unseren Online-Chat für weitere Informationen.",
-        "serv": "diesen Dienst",
+        
         "select": "Wählen Sie eine Frage",
         "offline": "Offline",
         "data": {
@@ -150,6 +149,7 @@
         "title": "Unsere Dienstleistungen",
         "description": "Wir bieten eine Reihe von Dienstleistungen an, um Sie bei Ihrer Jobsuche und Umsiedlung nach Europa zu unterstützen. Unser Team ist darauf spezialisiert, Ihnen die richtigen Möglichkeiten zu finden und den Prozess einfach zu gestalten.",
         "btnServices": "Dienstleistungen anzeigen",
+        "serv": "diesen Dienst",
         "service1": {
           "title": "Vertragsmanagement",
           "description": "Wir verwalten alle Aspekte Ihres Arbeitsvertrags, von der Beschaffung der notwendigen Dokumente bis zur Einhaltung der lokalen Vorschriften. Unser Team steht Ihnen während des gesamten Prozesses zur Seite."
@@ -193,8 +193,245 @@
   "heading3": "Zufriedene Kunden",
   "subheading3": "Die Mehrheit unserer Kunden schätzt unseren Service.",
   "review3": "Hervorragender Kundenservice, ich kann es nur empfehlen!"
+},
+"network": {
+   "p1": "Unser Netzwerk & Welt",
+  "p2": "Arbeitsdetails.",
+  "dataNetwork": {
+    "network1": {  
+      "country": "Bangladesch",
+      "paragraph": "Event-Wahnsinn versammelt Innovatoren und Technologiebegeisterte in Speced."
+    }, 
+    "network2": {
+      "country": "Vereinigte Staaten",
+      "paragraph": "Event-Wahnsinn versammelt Innovatoren und Technologiebegeisterte in Speced."
+    },
+    "network3": {
+      "country": "Australien",
+      "paragraph": "Event-Wahnsinn versammelt Innovatoren und Technologiebegeisterte in Speced."
+    },
+    "network4": {
+      "country": "China",
+      "paragraph": "Event-Wahnsinn versammelt Innovatoren und Technologiebegeisterte in Speced."
+    }
+  }
+},
+"stepsContent": {
+    "heading": "Wie es funktioniert",
+    "title": "Schritte zur Bereitstellung eines Offshore-Vertrags für unsere Kunden",
+    "description": "Erhalten Sie Ihren Vertrag mit den besten Unternehmen Europas in nur 4 einfachen Schritten",
+    "steps": {
+      "step1": {
+        "title": "Kontaktieren Sie uns",
+        "description": "Verwenden Sie Ihre eigenen Notion-Datenbanken oder reproduzieren Sie unsere."
+      },
+      "step2": {
+        "title": "Erhalten Sie die Unterlagen",
+        "description": "Ordnen Sie Ihre Notion-Felder den Plume-Feldern zu."
+      },
+      "step3": {
+        "title": "Vertrag und Visum",
+        "description": "Wählen Sie eine Domain oder eine Subdomain für Ihren Blog aus."
+      },
+      "step4": {
+        "title": "Reise",
+        "description": "Das war’s! Sie erhalten einen professionellen Blog."
+      }
+    }
+  },
+  "Clientsay": {
+    "title": "Was sagen unsere Kunden über uns",
+    "description1": "Event-Wahnsinn versammelt Innovatoren und Technologiebegeisterte in Speced.",
+    "description2": "Erhalten Sie weitere Informationen.",
+    "p": "Bauen Sie Ihre finanzielle Bildung in voller Transparenz auf",
+    "p1": "Treten Sie einer Community bei. Folgen Sie anderen Investoren, teilen Sie mit",
+    "p2": "Menschen aus verschiedenen beruflichen Bereichen und seien Sie nie allein.",
+    "h3": "Jony Scotty",
+    "h4": "UI-Designer"
+  },
+  "footer": {
+    "contactInfo": {
+      "contact1": {
+        "title": "Adresse"
+      },
+      "contact2": {
+        "title": "Rufen Sie uns an"
+      },
+      "contact3": {
+        "title": "Senden Sie uns eine E-Mail"
+      }
+    },
+    "pageElements": {
+      "page1": {
+        "label": "Angebotsanfrage"
+      },
+      "page2": {
+        "label": "Dienstleistungen"
+      },
+      "page3": {
+        "label": "Umrah"
+      },
+      "page4": {
+        "label": "Über uns"
+      },
+      "page5": {
+        "label": "Projekt"
+      }
+    },
+    "ourFormation": {
+      "formation1": {
+        "label": "Fassadenreinigung"
+      },
+      "formation2": {
+        "label": "Solarpanelreinigung"
+      },
+      "formation3": {
+        "label": "Haushalts-Elektrowartung"
+      },
+      "formation4": {
+        "label": "Haushaltsinstallationen und Rohrleitungen"
+      },
+      "formation5": {
+        "label": "Schädlingsbekämpfung"
+      }
+    },
+    "ourServices": {
+      "service1": { "label": "IT-Entwicklung" },
+      "service2": { "label": "Sprachzentrum" },
+      "service3": { "label": "Schulung" },
+      "service4": { "label": "Reinigung und Reparatur" },
+      "service5": { "label": "Rekrutierung" }
+    },
+    "droit": "Alle Rechte vorbehalten",
+    "merci": "Vielen Dank für Ihren Besuch und willkommen bei"
+  }
+
+
+    },
+    "haj": {
+  "Maroc": {
+    "title": "Marokko",
+    "subitems": {
+      "Agadir": "Agadir",
+      "Ouejda": "Ouejda",
+      "Marrakech": "Marrakesch",
+      "Casablanca": "Casablanca",
+      "Tanger": "Tanger",
+      "Meknes": "Meknès",
+      "Dakhla": "Dakhla",
+      "Aiyoun": "Aiyoun"
+    }
+  },
+  "Italia": {
+    "title": "Italien",
+    "subitems": {
+      "Rome": "Rom",
+      "Milan": "Mailand",
+      "Naples": "Neapel",
+      "Turin": "Turin",
+      "Florence": "Florenz"
+    }
+  },
+  "France": {
+    "title": "Frankreich",
+    "subitems": {
+      "Paris": "Paris",
+      "Marseille": "Marseille",
+      "Lyon": "Lyon",
+      "Toulouse": "Toulouse",
+      "Nice": "Nizza"
+    }
+  },
+  "Allemagne": {
+    "title": "Deutschland",
+    "subitems": {
+      "Berlin": "Berlin",
+      "Hamburg": "Hamburg",
+      "Munich": "München",
+      "Cologne": "Köln",
+      "Frankfurt": "Frankfurt"
+    }
+  },
+  "Espagne": {
+    "title": "Spanien",
+    "subitems": {
+      "Madrid": "Madrid",
+      "Barcelona": "Barcelona",
+      "Valencia": "Valencia",
+      "Seville": "Sevilla",
+      "Zaragoza": "Zaragoza"
+    }
+  },
+  "UK": {
+    "title": "Vereinigtes Königreich",
+    "subitems": {
+      "London": "London",
+      "Birmingham": "Birmingham",
+      "Manchester": "Manchester",
+      "Glasgow": "Glasgow",
+      "Liverpool": "Liverpool"
+    }
+  },
+  "Autriche": {
+    "title": "Österreich",
+    "subitems": {
+      "Vienna": "Wien"
+    }
+  },
+  "Niederlande": {
+    "title": "Niederlande",
+    "subitems": {
+      "Amsterdam": "Amsterdam",
+      "Rotterdam": "Rotterdam"
+    }
+  },
+  "Belgique": {
+    "title": "Belgien",
+    "subitems": {
+      "Brussels": "Brüssel"
+    }
+  },
+  "Swiss": {
+    "title": "Schweiz",
+    "subitems": {
+      "Basel": "Basel",
+      "Zurich": "Zürich"
+    }
+  },
+  "Allemagne1": {
+    "title": "Deutschland",
+    "subitems": {
+      "Düsseldorf": "Düsseldorf",
+      "Essen": "Essen"
+    }
+  },
+  "months": {
+    "January": "Januar",
+    "February": "Februar",
+    "March": "März",
+    "April": "April",
+    "May": "Mai",
+    "June": "Juni",
+    "July": "Juli",
+    "August": "August",
+    "September": "September",
+    "October": "Oktober",
+    "November": "November",
+    "December": "Dezember"
+  },
+  "form": {
+    "Omra": "Omra Anmeldung",
+    "title": "Bitte füllen Sie das untenstehende Formular aus",
+    "country": "Land",
+    "selectcountry": "Land auswählen",
+    "selectcity": "Stadt auswählen",
+    "name": "Vorname/Nachname",
+    "email": "E-Mail",
+    "Téléphone": "Telefon",
+    "Month": "Monat",
+    "Select_Month": "Monat auswählen",
+    "nbrPoeples": "Anzahl der Personen"
+  }
 }
 
-
-    }
   }

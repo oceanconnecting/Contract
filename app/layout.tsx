@@ -57,7 +57,10 @@ export default async function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-        
+        {/* <link rel="preload" as="style" href="/_next/static/css/app/layout.css?v=1742992690490"/> */}
+        <link rel="icon" type="image/png" href="/lang/es.png" sizes="192x192" />
+        {/* <link rel="preload" href="/_next/static/css/app/layout.css?v=1742997052875" as="style" media="(min-width: 768px)" /> */}
+
         <link rel="manifest" href={`/${locale}/site.webmanifest`} />
       </head>
       <body>

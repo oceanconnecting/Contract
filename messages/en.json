@@ -1,5 +1,5 @@
 {
-  "welcome": "welcome",
+  
   "homepage": {
     "contact": {
       "name": "Name",
@@ -208,7 +208,268 @@
   "heading3": "Satisfied Clients",
   "subheading3": "The majority of our clients appreciate our services.",
   "review3": "Exceptional customer service, I highly recommend it!"
+},
+"network":{
+  "p1":"Our network & world",
+  "p2":"work details.",
+  "dataNetwork":{
+    "network1":{  
+        "country": "Bangladesh",
+        "paragraph": "Event madness gathering innoies, & tech enthusiasts in Speced."
+    }, 
+    "network2": {
+      "country": "United States",
+      "paragraph": "Event madness gathering innoies, & tech enthusiasts in Speced."
+
+  },
+ "network3": {
+      "country": "Australia",
+      "paragraph": "Event madness gathering innoies, & tech enthusiasts in Speced."
+
+  },
+ "network4": {
+      "country": "China",
+      "paragraph": "Event madness gathering innoies, & tech enthusiasts in Speced."
+
+  }
+  }
+ },
+
+"stepsContent": {
+  "heading": "How it works",
+  "title": "Steps for providing an offshore contract to our clients",
+  "description": "Get your contract with the best companies in Europe in just 4 simple steps",
+  "steps": {
+    "step1": {
+      "title": "Contact us",
+      "description": "Use your own Notion databases or replicate ours."
+    },
+    "step2": {
+      "title": "Receive the file with documents",
+      "description": "Match your Notion fields with Plume fields."
+    },
+    "step3": {
+      "title": "Contract and visa",
+      "description": "Choose a domain or subdomain for your blog."
+    },
+    "step4": {
+      "title": "Travel",
+      "description": "That's it. You will get a professional blog."
+    }
+  }
+},
+"Clientsay":{
+  "title":"What say clients about us",
+  "description1":"Event madness gathering innoies,& tech enthusiasts in Speced. ",
+  "description2":"do more informations.",
+  "p":"Build your financial literacy within a transparent",
+  "p1":"community. Follow other investors, share people from",
+  "p2":"different professional backgrounds, and never be alone",
+  "h3":"Jony Scotty",
+  "h4":"UI Designer"
+
+
+},
+"footer": {
+    "contactInfo": {
+      "contact1": {
+        "title": "Address"
+      },
+      "contact2": {
+        "title": "Call Us"
+      },
+      "contact3": {
+        "title": "Send Us an Email"
+      }
+    },
+    "pageElements": {
+      "page1": {
+        "label": "Quote Request"
+      },
+      "page2": {
+        "label": "Services"
+      },
+      "page3": {
+        "label": "Omrah"
+      },
+      "page4": {
+        "label": "About Us"
+      },
+      "page5": {
+        "label": "Project"
+      }
+    },
+    "ourFormation": {
+      "formation1": {
+        "label": "Facade Cleaning"
+      },
+      "formation2": {
+        "label": "Solar Panel Cleaning"
+      },
+      "formation3": {
+        "label": "Home Electrical Maintenance"
+      },
+      "formation4": {
+        "label": "Home Plumbing and Piping"
+      },
+      "formation5": {
+        "label": "Pest Control"
+      }
+    },
+    "ourServices": {
+      "service1": { "label": "IT Development" },
+      "service2": { "label": "Language Center" },
+      "service3": { "label": "Training" },
+      "service4": { "label": "Cleaning and Repair" },
+      "service5": { "label": "Recruitment" }
+    },
+    "droit": "All rights reserved",
+    "merci": "Thank you for your visit and welcome to"
+  }
+
+ },
+ "haj": {
+  "Maroc": {
+    "title": "Morocco",
+    "subitems": {
+      "Agadir": "Agadir",
+      "Ouejda": "Ouejda",
+      "Marrakech": "Marrakech",
+      "Casablanca": "Casablanca",
+      "Tanger": "Tangier",
+      "Meknes": "Meknes",
+      "Dakhla": "Dakhla",
+      "Aiyoun": "Aiyoun"
+    }
+  },
+  "Italia": {
+    "title": "Italy",
+    "subitems": {
+      "Rome": "Rome",
+      "Milan": "Milan",
+      "Naples": "Naples",
+      "Turin": "Turin",
+      "Florence": "Florence"
+    }
+  },
+  "France": {
+    "title": "France",
+    "subitems": {
+      "Paris": "Paris",
+      "Marseille": "Marseille",
+      "Lyon": "Lyon",
+      "Toulouse": "Toulouse",
+      "Nice": "Nice"
+    }
+  },
+  "Allemagne": {
+    "title": "Germany",
+    "subitems": {
+      "Berlin": "Berlin",
+      "Hamburg": "Hamburg",
+      "Munich": "Munich",
+      "Cologne": "Cologne",
+      "Frankfurt": "Frankfurt"
+    }
+  },
+  "Espagne": {
+    "title": "Spain",
+    "subitems": {
+      "Madrid": "Madrid",
+      "Barcelona": "Barcelona",
+      "Valencia": "Valencia",
+      "Seville": "Seville",
+      "Zaragoza": "Zaragoza"
+    }
+  },
+  "UK": {
+    "title": "UK",
+    "subitems": {
+      "London": "London",
+      "Birmingham": "Birmingham",
+      "Manchester": "Manchester",
+      "Glasgow": "Glasgow",
+      "Liverpool": "Liverpool"
+    }
+  },
+  "Autriche": {
+    "title": "Austria",
+    "subitems": {
+      "Vienna": "Vienna"
+    }
+  },
+  "Niederlande": {
+    "title": "Netherlands",
+    "subitems": {
+      "Amsterdam": "Amsterdam",
+      "Rotterdam": "Rotterdam"
+    }
+  },
+  "Belgique": {
+    "title": "Belgium",
+    "subitems": {
+      "Brussels": "Brussels"
+    }
+  },
+  "Swiss": {
+    "title": "Switzerland",
+    "subitems": {
+      "Basel": "Basel",
+      "Zurich": "Zurich"
+    }
+  },
+  "Allemagne1": {
+    "title": "Germany",
+    "subitems": {
+      "Düsseldorf": "Düsseldorf",
+      "Essen": "Essen"
+    }
+  },
+  "months": {
+    "January": "January",
+    "February": "February",
+    "March": "March",
+    "April": "April",
+    "May": "May",
+    "June": "June",
+    "July": "July",
+    "August": "August",
+    "September": "September",
+    "October": "October",
+    "November": "November",
+    "December": "December"
+  },
+  "form": {
+    "Omra": "Omra Registration",
+    "title": "Please fill out the form below",
+    "country": "Country",
+    "selectcountry": "Select country",
+    "selectcity": "Select city",
+    "name": "First Name/Last Name",
+    "email": "Email",
+    "Téléphone": "Phone",
+    "Month": "Month",
+    "Select_Month": "Select Month",
+    "nbrPoeples": "Number of People"
+  }
+},
+"espaceClient":{
+  "connecter":{
+    "form":{
+      "FirstName":"First Name",
+      "lasteName":"laste Name",
+      "phone":"Number phone",
+      "email":"Email",
+      "password":"password",
+      "connect":"connect...",
+      "thisConnect":"this connect",
+      "compte": "If you don't have an account:",
+      "pcreate": "Do you already have an account?",
+      "createCompte":"Create account"
+    }
+  }
 }
 
- } }
+ 
+ }
 

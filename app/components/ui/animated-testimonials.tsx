@@ -112,10 +112,26 @@ export const AnimatedTestimonials = ({
               {testimonials[active].percent.split(" ").map((word, index) => (
                 <motion.div
                   key={index}
-                  initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
-                  animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
+                  // initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
+                  // animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
                   transition={{ duration: 0.2, ease: "easeInOut", delay: 0.02 * index }}
                   className="inline-block"
+
+
+
+
+                 
+                  initial={{ 
+                    filter: `blur(${Math.max(10, 0)}px)`, // Assurez-vous que la valeur est positive
+                    opacity: 0,
+                    y: 5 
+                  }}
+                  animate={{ 
+                    filter: `blur(${Math.max(0, 0)}px)`, // De même ici, garantir un blur positif
+                    opacity: 1,
+                    y: 0 
+                  }}
+                 
                 >
                   <p className=" text-gray-600 dark:text-gray-300 mt-4">
                   &quot;  {testimonials[active].review}&quot;

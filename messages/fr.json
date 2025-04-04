@@ -1,5 +1,4 @@
 {
-  "welcome": "welcome",
   "homepage": {
     "contact": {
       "name": "Nom",
@@ -34,99 +33,95 @@
         "title": "Pays disponibles pour la recherche d'emploi à l'étranger",
         "description": "Bonjour ! Laissez-nous un message, nous vous répondrons dès que possible.",
         "select": "Sélectionnez une question",
-          "country": "Pays",
-          "city": "Ville",
-          "language": "Langue",
-          "levelLanguage": "Niveau de langue",
-          "level":"Niveau d'études requis",
-          "experience": "Expérience",
-          "visaDuration": "Durée du visa",
-          "contractDuration": "Durée du contrat",
-          "contractPrice": "Prix du contrat",
-          "additionalInfo": "Informations supplémentaires",
-          "international": "International",
-          "yes": "Oui", 
-          "more": "Plus",
-          "no": "Non",
-          "sector": "Secteur",
-          
-          
-          "contract1": {
-            "country": "Croatie",
-            "city": "Zagreb",
-            "sector": {
-              "Construction": "Construction",
-              "Forge": "Forge",
-              "Menuiserie": "Menuiserie",
-              "Peinture": "Peinture",
-              "Mecanique": "Mécanique électrique",
-              "electrique": "Électrique",
-              "Climatisation": "Climatisation",
-              "Permis": "Permis de conduire D",
-              "Boucherie": "Boucherie",
-              "Hotellerie": "Hôtellerie"
-            },
-            "language": "Langue non requise",
-            "label": "Un contrat en Croatie ",
+        "country": "Pays",
+        "city": "Ville",
+        "language": "Langue",
+        "levelLanguage": "Niveau de langue",
+        "level": "Niveau d'études requis",
+        "experience": "Expérience",
+        "visaDuration": "Durée du visa",
+        "contractDuration": "Durée du contrat",
+        "contractPrice": "Prix du contrat",
+        "additionalInfo": "Informations supplémentaires",
+        "international": "International",
+        "yes": "Oui",
+        "more": "Plus",
+        "no": "Non",
+        "sector": "Secteur",
 
-            
-            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté."
+        "contract1": {
+          "country": "Croatie",
+          "city": "Zagreb",
+          "sector": {
+            "Construction": "Construction",
+            "Forge": "Forge",
+            "Menuiserie": "Menuiserie",
+            "Peinture": "Peinture",
+            "Mecanique": "Mécanique électrique",
+            "electrique": "Électrique",
+            "Climatisation": "Climatisation",
+            "Permis": "Permis de conduire D",
+            "Boucherie": "Boucherie",
+            "Hotellerie": "Hôtellerie"
           },
-          "contract2": {
-            "country": "Allemagne",
-            "city": "Berlin",
-            "sector": {
-              "Sante": "Santé ",
-              "Soins_infirmiers": "soins infirmiers",
-              "Hotels": "Hôtels",
-              "Programmation": "Programmation"
-            },
-            "language": "Langue requise B1",
-            "label": "Un contrat en Allemagne ",
-  
-            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté."
+          "language": "Langue non requise",
+          "label": "Un contrat en Croatie ",
+
+          "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté."
+        },
+        "contract2": {
+          "country": "Allemagne",
+          "city": "Berlin",
+          "sector": {
+            "Sante": "Santé ",
+            "Soins_infirmiers": "soins infirmiers",
+            "Hotels": "Hôtels",
+            "Programmation": "Programmation"
           },
-          "contract3": {
-            "country": "Belgique",
-            "city": "Bruxelles",
-            "sector": {
-              "Sante": "Santé",
-              "Soins_infirmiers": "Soins infirmiers",
-              "Hotels": "Hôtels",
-              "Programmation": "Programmation"
-            },
-            "language": "Langue requise B1",
-            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-            "label": "Un contrat en Belgique  ."
-  
+          "language": "Langue requise B1",
+          "label": "Un contrat en Allemagne ",
+
+          "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté."
+        },
+        "contract3": {
+          "country": "Belgique",
+          "city": "Bruxelles",
+          "sector": {
+            "Sante": "Santé",
+            "Soins_infirmiers": "Soins infirmiers",
+            "Hotels": "Hôtels",
+            "Programmation": "Programmation"
           },
-          "contract4": {
-            "country": "Italie",
-            "city": "Rome",
-            "sector": {
-              "Sante": "Santé",
-              "Soins_infirmiers": "Soins infirmiers",
-              "Hotellerie": "Hôtellerie",
-              "Agriculture": "Agriculture"
-            },
-            "label": "Un contrat en Italie .",
-  
-            "language": "Langue requise B1",
-            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté."
+          "language": "Langue requise B1",
+          "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
+          "label": "Un contrat en Belgique  ."
+        },
+        "contract4": {
+          "country": "Italie",
+          "city": "Rome",
+          "sector": {
+            "Sante": "Santé",
+            "Soins_infirmiers": "Soins infirmiers",
+            "Hotellerie": "Hôtellerie",
+            "Agriculture": "Agriculture"
           },
-          "contract5": {
-            "country": "Espagne",
-            "city": "Madrid",
-            "sector": {
-              "Sante": "Santé",
-              "Soins_infirmiers": "Soins infirmiers",
-              "Hotellerie": "Hôtellerie",
-              "Agriculture": "Agriculture"
-            },
-            "language": "Langue requise B1",
-            "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
-            "label": "Un contrat en Espagne ."
-         
+          "label": "Un contrat en Italie .",
+
+          "language": "Langue requise B1",
+          "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté."
+        },
+        "contract5": {
+          "country": "Espagne",
+          "city": "Madrid",
+          "sector": {
+            "Sante": "Santé",
+            "Soins_infirmiers": "Soins infirmiers",
+            "Hotellerie": "Hôtellerie",
+            "Agriculture": "Agriculture"
+          },
+          "language": "Langue requise B1",
+          "additionalInfo": "Logement, soins médicaux, renouvelables pour 5 ans, et aide à la citoyenneté.",
+          "label": "Un contrat en Espagne ."
         }
       }
     },
@@ -135,33 +130,33 @@
       "description": "Notre équipe est disponible pour répondre à vos questions. N'hésitez pas à nous contacter pour obtenir de l'aide ou des informations supplémentaires.",
       "button": "Chat en ligne",
       "offline": "Hors ligne",
-      "select":"selectionner un question",
-      "data":{
-        "q1":"Durée du contrat  ?",
-        "r1":"La durée du contrat varie en fonction du pays et du secteur. En général, les contrats sont renouvelables pour une période de 5 ans.",
-        "q2":"Quels sont les secteurs disponibles pour les contrats de travail ?",
-        "r2":"Nous proposons des contrats dans divers secteurs, notamment la santé, l'hôtellerie, l'agriculture, la programmation, les soins infirmiers, la construction, la forge, la menuiserie, la peinture, la mécanique électrique, l'électricité, la climatisation, la boucherie, etc.",
-        "q3":"Quels sont les avantages des contrats de travail en Europe ?",
-        "r3":"Les contrats de travail en Europe offrent de nombreux avantages, notamment un salaire attractif, des conditions de travail favorables, des opportunités de carrière, des soins médicaux, un logement, une aide à la citoyenneté, etc.",
-        "q4":"Quels sont les niveaux de langue requis pour les contrats de travail en Europe ?",
-        "r4":"Les niveaux de langue requis varient en fonction du pays et du secteur. En général, un niveau B1 est requis pour la plupart des contrats.",
-        "q5":"Quels sont les documents nécessaires pour postuler à un contrat de travail en Europe ?",
-        "r5":"Les documents nécessaires pour postuler à un contrat de travail en Europe comprennent un CV, une lettre de motivation, des certificats de formation, des références professionnelles, un passeport, etc.",
-        "q6":"Quels sont les pays disponibles pour la recherche d'emploi à l'étranger ?",
-        "r6":"Nous proposons des contrats de travail dans divers pays européens, notamment la Croatie, l'Allemagne, la Belgique, l'Italie, l'Espagne, etc.",
-        "q7":"Quels sont les frais associés aux contrats de travail en Europe ?",
-        "r7":"Les frais associés aux contrats de travail en Europe varient en fonction du pays et du secteur. En général, les frais comprennent le prix du contrat, les frais de visa, les frais de logement, les frais médicaux, etc."
+      "select": "selectionner un question",
+      "data": {
+        "q1": "Durée du contrat  ?",
+        "r1": "La durée du contrat varie en fonction du pays et du secteur. En général, les contrats sont renouvelables pour une période de 5 ans.",
+        "q2": "Quels sont les secteurs disponibles pour les contrats de travail ?",
+        "r2": "Nous proposons des contrats dans divers secteurs, notamment la santé, l'hôtellerie, l'agriculture, la programmation, les soins infirmiers, la construction, la forge, la menuiserie, la peinture, la mécanique électrique, l'électricité, la climatisation, la boucherie, etc.",
+        "q3": "Quels sont les avantages des contrats de travail en Europe ?",
+        "r3": "Les contrats de travail en Europe offrent de nombreux avantages, notamment un salaire attractif, des conditions de travail favorables, des opportunités de carrière, des soins médicaux, un logement, une aide à la citoyenneté, etc.",
+        "q4": "Quels sont les niveaux de langue requis pour les contrats de travail en Europe ?",
+        "r4": "Les niveaux de langue requis varient en fonction du pays et du secteur. En général, un niveau B1 est requis pour la plupart des contrats.",
+        "q5": "Quels sont les documents nécessaires pour postuler à un contrat de travail en Europe ?",
+        "r5": "Les documents nécessaires pour postuler à un contrat de travail en Europe comprennent un CV, une lettre de motivation, des certificats de formation, des références professionnelles, un passeport, etc.",
+        "q6": "Quels sont les pays disponibles pour la recherche d'emploi à l'étranger ?",
+        "r6": "Nous proposons des contrats de travail dans divers pays européens, notamment la Croatie, l'Allemagne, la Belgique, l'Italie, l'Espagne, etc.",
+        "q7": "Quels sont les frais associés aux contrats de travail en Europe ?",
+        "r7": "Les frais associés aux contrats de travail en Europe varient en fonction du pays et du secteur. En général, les frais comprennent le prix du contrat, les frais de visa, les frais de logement, les frais médicaux, etc."
       }
     },
     "services": {
       "title": "Nos services",
       "description": "Nous proposons une gamme de services pour vous accompagner dans votre recherche d'emploi en Europe. Découvrez nos offres et trouvez celle qui vous convient le mieux.",
-      "serv":"ce service",
+      "serv": "ce service",
       "btnServices": "Voir tous les services",
       "service1": {
         "title": "Contrats de travail",
         "description": ""
-  },
+      },
       "service2": {
         "title": "Recrutement et Placement",
         "description": ""
@@ -181,40 +176,272 @@
     },
     "whay": {
       "whyData": {
-       "heading1":"Qualité",
-       "subheading1": "Nos contrats garantissent les meilleures opportunités, développant ainsi votre carrière avec confiance.",
-        "heading2":"Sécurité",
+        "heading1": "Qualité",
+        "subheading1": "Nos contrats garantissent les meilleures opportunités, développant ainsi votre carrière avec confiance.",
+        "heading2": "Sécurité",
         "subheading2": "Nous vous offrons des contrats de travail sécurisés et légaux pour une transition en douceur.",
-        "heading3":"Simplicité",
+        "heading3": "Simplicité",
         "subheading3": "Notre service simplifie le processus de recherche d'emploi en Europe pour vous faire gagner du temps et de l'énergie."
-       
-
- 
-      
       },
       "title": "Pourquoi nous choisir",
       "description": "Nous sommes une équipe de professionnels dévoués à vous aider à trouver un emploi en Europe. Découvrez pourquoi nous sommes le meilleur choix pour vous accompagner dans votre recherche d'emploi.",
-      "sec":"Ne perdez plus de temps dans des démarches compliquées. Notre service de fourniture de contrats de travail en Europe automatise et simplifie le processus pour vous. Sécurisez votre emploi, minimisez les erreurs administratives et gagnez du temps précieux."
+      "sec": "Ne perdez plus de temps dans des démarches compliquées. Notre service de fourniture de contrats de travail en Europe automatise et simplifie le processus pour vous. Sécurisez votre emploi, minimisez les erreurs administratives et gagnez du temps précieux."
     },
-    "bayer":{
-      "heading1":"Contrats signés",
+    "bayer": {
+      "heading1": "Contrats signés",
       "subheading1": "Des milliers d'emplois sécurisés en Europe.",
       "review1": "Grâce à eux, j'ai trouvé un emploi en seulement 2 semaines !",
       "heading2": "Partenaires en Europe",
       "subheading2": "Collaboration avec plus de cinquante partenaires.",
       "review2": "Une excellente collaboration avec des entreprises de renom.",
 
-
-
       "heading3": "Clients satisfaits",
       "subheading3": "La majorité de nos clients apprécient nos services.",
-      
+
       "review3": "Service client exceptionnel, je recommande vivement !"
+    },
+    "network": {
+      "p1": "Notre réseau & monde",
+      "p2": "Détails du travail.",
+      "dataNetwork": {
+        "network1": {
+          "country": "Bangladesh",
+          "paragraph": "Folie événementielle rassemblant des innovateurs et des passionnés de technologie à Speced."
+        },
+        "network2": {
+          "country": "États-Unis",
+          "paragraph": "Folie événementielle rassemblant des innovateurs et des passionnés de technologie à Speced."
+        },
+        "network3": {
+          "country": "Australie",
+          "paragraph": "Folie événementielle rassemblant des innovateurs et des passionnés de technologie à Speced."
+        },
+        "network4": {
+          "country": "Chine",
+          "paragraph": "Folie événementielle rassemblant des innovateurs et des passionnés de technologie à Speced."
+        }
+      }
+    },
+    "stepsContent": {
+      "heading": "Comment ça marche",
+      "title": "Étapes de la fourniture d'un contrat offshore à nos clients",
+      "description": "Obtenez votre contrat avec les meilleures entreprises d'Europe en seulement 4 étapes simples",
+      "steps": {
+        "step1": {
+          "title": "Contactez nous",
+          "description": "Utilisez vos propres bases de données Notion ou reproduisez les nôtres."
+        },
 
+        "step2": {
+          "title": "Recevoir le dossier avec les documents",
+          "description": "Mettez en correspondance vos champs Notion avec les champs Plume."
+        },
+
+        "step3": {
+          "title": "Contrat et visa",
+          "description": "Choisissez un domaine ou un sous-domaine pour votre blog."
+        },
+
+        "step4": {
+          "title": "Voyage",
+          "description": "C'est tout. Vous obtiendrez un blog professionnel."
+        }
+      }
+    },
+    "Clientsay": {
+      "title": "Que disent nos clients à propos de nous",
+      "description1": "Folie événementielle rassemblant des innovateurs et des passionnés de technologie à Speced.",
+      "description2": "Obtenez plus d'informations.",
+      "p": "Développez votre culture financière en toute transparence",
+      "p1": "Rejoignez une communauté. Suivez d'autres investisseurs, partagez avec",
+      "p2": "des personnes de différents horizons professionnels et ne soyez jamais seul.",
+      "h3": "Jony Scotty",
+      "h4": "Designer UI"
+    },
+    "footer": {
+      "contactInfo": {
+        "contact1": {
+          "title": "Adresse"
+        },
+        "contact2": {
+          "title": "Appelez-nous"
+        },
+        "contact3": {
+          "title": "Envoyez-nous un e-mail"
+        }
+      },
+      "pageElements": {
+        "page1": {
+          "label": "Demande de Devis"
+        },
+        "page2": {
+          "label": "Services"
+        },
+        "page3": {
+          "label": "Omra"
+        },
+        "page4": {
+          "label": "À propos de nous"
+        },
+        "page5": {
+          "label": "Projet"
+        }
+      },
+      "ourFormation": {
+        "formation1": {
+          "label": "Nettoyage des façades"
+        },
+        "formation2": {
+          "label": "Nettoyage des panneaux solaires"
+        },
+        "formation3": {
+          "label": "Maintenance électrique à domicile"
+        },
+        "formation4": {
+          "label": "Plomberie et canalisation à domicile"
+        },
+        "formation5": {
+          "label": "Destruction des insectes nuisibles"
+        }
+      },
+
+      "ourServices": {
+        "service1": { "label": "Development Informatique" },
+        "service2": { "label": "Language Center" },
+        "service3": { "label": "Formation" },
+        "service4": { "label": "Nettoyage et Réparation" },
+        "service5": { "label": "Recrutement" }
+      },
+      "droit": " Tous droits réservés",
+      "merci": " Merci de votre visite et bienvenue  à"
     }
+  },
 
-
-    } }
-  
-  
-  
+  "haj": {
+    
+      "Maroc": {
+        "title": "Maroc",
+        "subitems": {
+          "Agadir": "Agadir",
+          "Ouejda": "Ouejda",
+          "Marrakech": "Marrakech",
+          "Casablanca": "Casablanca",
+          "Tanger": "Tanger",
+          "Meknes": "Meknes",
+          "Dakhla": "Dakhla",
+          "Aiyoun": "Aiyoun"
+        }
+      },
+      "Italia": {
+        "title": "Italia",
+        "subitems": {
+          "Rome": "Rome",
+          "Milan": "Milan",
+          "Naples": "Naples",
+          "Turin": "Turin",
+          "Florence": "Florence"
+        }
+      },
+      "France": {
+        "title": "France",
+        "subitems": {
+          "Paris": "Paris",
+          "Marseille": "Marseille",
+          "Lyon": "Lyon",
+          "Toulouse": "Toulouse",
+          "Nice": "Nice"
+        }
+      },
+      "Allemagne": {
+        "title": "Allemagne",
+        "subitems": {
+          "Berlin": "Berlin",
+          "Hamburg": "Hamburg",
+          "Munich": "Munich",
+          "Cologne": "Cologne",
+          "Frankfurt": "Frankfurt"
+        }
+      },
+      "Espagne": {
+        "title": "Espagne",
+        "subitems": {
+          "Madrid": "Madrid",
+          "Barcelona": "Barcelona",
+          "Valencia": "Valencia",
+          "Seville": "Seville",
+          "Zaragoza": "Zaragoza"
+        }
+      },
+      "UK": {
+        "title": "UK",
+        "subitems": {
+          "London": "London",
+          "Birmingham": "Birmingham",
+          "Manchester": "Manchester",
+          "Glasgow": "Glasgow",
+          "Liverpool": "Liverpool"
+        }
+      },
+      "Autriche": {
+        "title": "Autriche",
+        "subitems": {
+          "Vienna": "Vienna"
+        }
+      },
+      "Niederlande": {
+        "title": "Niederlande",
+        "subitems": {
+          "Amsterdam": "Amsterdam",
+          "Rotterdam": "Rotterdam"
+        }
+      },
+      "Belgique": {
+        "title": "Belgique",
+        "subitems": {
+          "Brussels": "Brussels"
+        }
+      },
+      "Swiss": {
+        "title": "Swiss",
+        "subitems": {
+          "Basel": "Basel",
+          "Zurich": "Zurich"
+        }
+      },
+      "Allemagne1": {
+        "title": "Allemagne",
+        "subitems": {
+          "Düsseldorf": "Düsseldorf",
+          "Essen": "Essen"
+        }
+      },
+      "months": {
+        "January": "Janvier",
+        "February": "Février",
+        "March": "Mars",
+        "April": "Avril",
+        "May": "Mai",
+        "June": "Juin",
+        "July": "Juillet",
+        "August": "Août",
+        "September": "Septembre",
+        "October": "Octobre",
+        "November": "Novembre",
+        "December": "Décembre"
+      },
+      "form":{
+        "Omra":"Omra Registration",
+        "title":"Veuillez remplir le formulaire ci-dessous",
+        "country":"ville",
+       "selectcountry":"selectionner la pay",
+       "selectcity":"selectionner la  ville",
+       "name":"Nom/Prénom",
+       "email":"Email",
+       "Téléphone":"Téléphone",
+       "Month":"Month",
+       "Select_Month":"Selectionner le moin",
+       "nbrPoeples":"Nombre de personnes"
+      }
+    
+  }
+}
