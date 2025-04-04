@@ -49,7 +49,7 @@ const contactInfo = [
     { id: 2, label:  t("pageElements.page2.label"), link: "/#services" },
     { id: 3, label: t("pageElements.page3.label"), link: `/${locale}/umrah` },
     { id: 4, label:  t("pageElements.page4.label"), link: "/#why" },
-    { id: 5, label: t("pageElements.page5.label"), link: "/contact" },
+    { id: 5, label: t("pageElements.page5.label"), link: "/#project" },
   ];
 
   const ourFormation = [
@@ -88,20 +88,20 @@ const contactInfo = [
     },
     { id: 2,
        label: t("ourServices.service2.label"),
-        link: "https://oceanconnecting.info/" 
+       link: "https://www.oceanconnecting.net/" 
       },
-    { id: 3,
-       label: t("ourServices.service3.label"),
-        link: "https://www.oceanconnecting.net/" },
+      { id: 3,
+        label: t("ourServices.service3.label"),
+        link: "https://www.oceanconnecting.ma/" },
+        { id: 4,
+           label: t("ourServices.service5.label"),
+           link: "https://www.oceanconnecting.org/en" 
+          },
     {
-      id: 4,
+      id: 5,
       label: t("ourServices.service4.label"),
-      link: "https://www.oceanconnecting.org/",
+      link: "https://oceanconnecting.net/en",
     },
-    { id: 5,
-       label: t("ourServices.service5.label"),
-       link: "https://www.oceanconnecting.org/" 
-      },
   ];
 
   return (

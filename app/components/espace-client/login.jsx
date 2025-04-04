@@ -5,8 +5,10 @@ import React, { useState, Suspense } from "react";
 import Image from "next/image";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import SignUpComponent from "./SignUpComponent";
-
+import logo from "../../../public/assets/logo/ocean1.svg"
+import { useTranslations } from "next-intl";
 const SignInComponent = () => {
+  const t=useTranslations("espaceClient.connecter")
   const router = useRouter();
   const [loginData, setLoginData] = useState({ email: "", password: "" });
   const [isLoading, setIsLoading] = useState(false);
@@ -80,23 +82,23 @@ const SignInComponent = () => {
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="max-w-screen-xl m-0 sm:m-10 bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300 shadow rounded-xl flex justify-center flex-1">
-        <div className="flex-1 bg-green-100 text-center hidden lg:flex  rounded-xl relative">
-          <div
-            className="absolute inset-0  bg-[rgba(0,0,0,0.8)] before:content-[''] before:absolute before:inset-0  before:bg-[rgba(0,0,0,0.8)]"
-            style={{
-              backgroundImage:
-                "url('https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fcontrat%2Flogin.jpg?alt=media&token=6ffd1357-0328-4ed5-8633-9e761e9af4a7')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
-        </div>
+<div 
+  className="absolute opacity-50 inset-0 flex items-center justify-center"
+  style={{
+    backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fcontrat%2Flogin.jpg?alt=media&token=6ffd1357-0328-4ed5-8633-9e761e9af4a7')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    // opacity: 0.5 // 70% d'opacité (ajustable)
+  }}
+>
+      <div className="max-w-screen-xl m-0 sm:m-10 bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300 shadow rounded-xl flex justify-center z-10 flex-1">
+        
         <div className="lg:w-1/2 xl:w-6/12 p-6 sm:p-12">
           <div>
             <Image
-              src="/assets/logo/ocean1.svg"
+              src={logo}
               alt="Sign In"
               width={200}
               height={100}
@@ -111,7 +113,7 @@ const SignInComponent = () => {
                     <input
                       className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-300 placeholder-gray-400 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
                       type="email"
-                      placeholder="Email"
+                      placeholder={t("form.email")}
                       id="email"
                       name="email"
                       value={loginData.email}
@@ -123,7 +125,7 @@ const SignInComponent = () => {
                       <input
                         className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-300 placeholder-gray-400 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
                         type={showPassword ? "text" : "password"}
-                        placeholder="Mot de passe"
+                        placeholder={t("form.password")}
                         // value={password}
                         // type="password"
                         id="password"
@@ -166,16 +168,17 @@ const SignInComponent = () => {
                       type="submit"
                       disabled={isLoading}
                     >
-                      {isLoading ? "Connexion..." : "Se connecter"}
+                      
+                      {isLoading ? t("form.connect") :  t("form.thisConnect") }
                       {/* <span className="ml-3">Se connecter</span> */}
                     </button>
                     <p className="mt-6 text-xs text-gray-700 text-center">
-                      Si vous n&apos;avez pas de compte:
+                      {t("form.compte")}
                       <button
                         onClick={handleToggleView}
                         className="border-b ml-2 font-bold border-dotted"
                       >
-                        Créer un compte
+                       {t("form.createCompte")}
                       </button>
                     </p>
                   </form>

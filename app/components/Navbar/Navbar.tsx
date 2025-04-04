@@ -75,7 +75,7 @@ const Navbar = () => {
               <DropdownMenuLanguages />
 
               {/* Bouton Espace Client */}
-              <Link href="/espace-client" passHref>
+              <Link href={`${locale}/espace-client`} passHref>
                 <button className="hidden lg:flex items-center bg-gradient-to-r from-blue-600 to-red-600 text-white font-bold text-lg px-6 py-2 rounded-lg transition hover:opacity-80">
                   <MdAccountCircle className="mr-2 text-2xl" />
                   {tt("navbare.espace")}

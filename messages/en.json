@@ -296,7 +296,7 @@
         "label": "About Us"
       },
       "page5": {
-        "label": "Contact Us"
+        "label": "Project"
       }
     },
     "ourFormation": {
@@ -451,6 +451,22 @@
     "Month": "Month",
     "Select_Month": "Select Month",
     "nbrPoeples": "Number of People"
+  }
+},
+"espaceClient":{
+  "connecter":{
+    "form":{
+      "FirstName":"First Name",
+      "lasteName":"laste Name",
+      "phone":"Number phone",
+      "email":"Email",
+      "password":"password",
+      "connect":"connect...",
+      "thisConnect":"this connect",
+      "compte": "If you don't have an account:",
+      "pcreate": "Do you already have an account?",
+      "createCompte":"Create account"
+    }
   }
 }
 
