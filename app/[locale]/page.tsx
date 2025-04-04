@@ -10,7 +10,8 @@ import Network from '../components/Network/index';
 import Clientsay from '../components/Clientsay/index';
 import Newsletter from '../components/Newsletter/Newsletter';
 import HeroSection from '../components/Banner/index';
-import QuestionSection from '../components/question/question';
+// import QuestionSection from '../components/question/question';
+import OfflineChat from '../components/offlineChat/OfflineChat';
 import StepsSection from '../components/steps/steps';
 import CardSection from '../components/card/card';
 import Navbar from 'app/components/Navbar';
@@ -25,14 +26,14 @@ export default function HomePage() {
       <Navbar />
             <HeroSection />
        <Map />
-      
+       <OfflineChat/>
       <CardSection />
       <Buyers />
       <Provide />
       <Why />
       <Network />
       <StepsSection/>
-      <QuestionSection/>
+      {/* <QuestionSection/> */}
       <Clientsay />
      
       <Footer/>
