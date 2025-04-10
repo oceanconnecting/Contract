@@ -1,6 +1,8 @@
 import Image from "next/image";
 import map from "../../../public/assets/network/map.png"
 import bangladesh from "../../../public/assets/network/bangladesh.svg";
+
+import  europ from "../../../public/assets/network/europ.png"
 import america from "../../../public/assets/network/america.svg"
 import australia from "../../../public/assets/network/australia.svg"
 import china from "../../../public/assets/network/china.svg"
@@ -17,7 +19,7 @@ const Network = () => {
     const t=useTranslations("homepage.network")
     const Aboutdata: datatype[] = [
         {
-            imgSrc: bangladesh,
+            imgSrc: europ,
             country: t("dataNetwork.network1.country"),
             paragraph: t("dataNetwork.network1.paragraph"),
     
