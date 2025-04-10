@@ -11,10 +11,29 @@ import { FlipWordsDemo } from "./FlipWord";
 import { useTranslations } from "next-intl";
 const LeafletMap = dynamic(() => import("./leaflet"), { ssr: false });
 
+
+
+
+
+
 const HeroSection = () => {
   const tt=useTranslations("homepage.HeroSection")
   const router = useRouter();
   const { locale } = useParams(); // ✅ Récupérer la locale
+
+
+  const handleDownload = () => {
+    const fileId = '18TNEKkU0fCQmxrpT3BBmUF5VeAGDNcnV';
+    const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+    
+    // Créer un lien temporaire et déclencher le téléchargement
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.setAttribute('download', 'mon-formulaire.pdf'); // Nom du fichier
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -54,19 +73,19 @@ const HeroSection = () => {
                 <Link
                   title=""
                   className="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-red-600 border rounded-xl font-pj hover:bg-gray-600 hover:to-red-500 transform hover:scale-105 leafbutton"
+                  onClick={handleClick}
                   type="button"
                   href={`/${locale}/Contact`} // ✅ Ajouter locale
-                  onClick={handleClick}
                 >
                   {tt("banner.contact")} 
                 </Link>
-                <a
-                        href="/form/Formulaire.pdf"
-                        download="Formulaire.pdf"
+                <button
+                         onClick={handleDownload}
                         className="inline-flex items-center px-4 py-4 text-lg font-bold transition-all duration-200 bg-transparent rounded-full hover:bg-gradient-to-r from-blue-400 to-red-400 hover:text-white hover:to-red-500 transform hover:scale-105 leafbutton"
                       >
                        {tt("banner.form")}
-                      </a>
+                      </button>
+                    
 
               </div>
             </div>
