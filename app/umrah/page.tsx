@@ -20,7 +20,7 @@ function Page() {
     numPeople: NaN,
     month:""
   });
-
+console.log("shite")
   const [onCountrySelect, setOnCountryselect] = useState<string>("");
 
   const countries = [
